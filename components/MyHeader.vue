@@ -1,8 +1,10 @@
 <template>
   <div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+      <div class="container">
+        <NuxtLink class="navbar-brand" to="/">
+          shinbunbun
+        </NuxtLink>
         <button
           class="navbar-toggler"
           type="button"
@@ -17,13 +19,19 @@
         <div id="navbarNavDropdown" class="collapse navbar-collapse">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <NuxtLink class="nav-link active" aria-current="page" to="/">
+                Home
+              </NuxtLink>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <NuxtLink class="nav-link" to="/abount">
+                About Me
+              </NuxtLink>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <NuxtLink class="nav-link" to="/products">
+                Products
+              </NuxtLink>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -34,16 +42,21 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown link
+                SNS
               </a>
               <ul
                 class="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="https://twitter.com/shinbunbun_">
+                    Twitter
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://www.facebook.com/yuto.takamune.77">
+                    Facebook
+                  </a>
                 </li>
               </ul>
             </li>
@@ -53,3 +66,9 @@
     </nav>
   </div>
 </template>
+
+<style scoped>
+.navbar{
+  font-size: 130%
+}
+</style>
