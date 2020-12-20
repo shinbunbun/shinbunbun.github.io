@@ -17,6 +17,8 @@
         </div>
       </div>
     </div>
+
+    <MyFooter />
   </div>
 </template>
 
