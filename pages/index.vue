@@ -74,7 +74,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .h2title{
   position: relative;
   left: 5%;
