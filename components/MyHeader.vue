@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <NuxtLink class="navbar-brand" to="/">
-          shinbunbun
+          しんぶんぶん
         </NuxtLink>
         <button
           class="navbar-toggler"

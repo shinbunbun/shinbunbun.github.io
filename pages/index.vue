@@ -10,18 +10,10 @@
         （高棟 雄斗）
       </h2>
 
-      <div class="row">
-        <div class="col">
-          <div class="card">
-            <span class="material-icons">
-              person
-            </span>
-            <div class="card-body">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the card's content.
-              </p>
-            </div>
-          </div>
+      <div class="py-4" />
+      <div class="row row-cols-md-4 row-cols-2">
+        <div v-for="card in cards" :key="card.title">
+          <HomeCard :data="card" />
         </div>
       </div>
     </div>
@@ -30,7 +22,54 @@
 
 <script>
 // eslint-disable-next-line semi
-export default {}
+export default {
+  data() {
+    return {
+      cards: [
+        {
+          icon: 'person',
+          title: 'About Me',
+          to: '/person'
+        },
+        {
+          icon: 'apps',
+          title: 'Products',
+          to: '/products'
+        },
+        {
+          icon: 'group_add',
+          title: 'SNS',
+          to: '/sns'
+        },
+        {
+          icon: 'menu_book',
+          title: 'book',
+          to: '/book'
+        },
+        {
+          src: '/images/favicon.png',
+          title: 'Qiita',
+          to: 'https://qiita.com/shinbunbun_'
+        },
+        {
+          src: '/images/GitHub-Mark-120px-plus.png',
+          title: 'GitHub',
+          to: 'https://github.com/shinbunbun'
+        },
+        {
+          src: '/images/GitHub-Mark-120px-plus.png',
+          title: 'Lapras',
+          to: 'https://lapras.com/public/HNWZIHB'
+        },
+        {
+          src: '/images/connpass_logo_3.png',
+          title: 'connpass',
+          to: 'https://connpass.com/user/unix_yuto/'
+        }
+      ]
+    }
+  }
+}
 </script>
 
 <style>
