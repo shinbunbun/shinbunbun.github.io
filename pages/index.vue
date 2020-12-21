@@ -31,7 +31,7 @@ export default {
         {
           icon: 'person',
           title: 'About Me',
-          to: '/person'
+          to: '/about'
         },
         {
           icon: 'apps',

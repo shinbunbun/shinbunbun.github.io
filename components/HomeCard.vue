@@ -1,30 +1,28 @@
 <template>
   <div class="col">
-    <div v-if="data.icon">
+    <div v-if="data.icon" class="card rounded h-100" :class="data.title">
       <NuxtLink :to="data.to">
-        <div class="card rounded">
+        <div>
           <span class="material-icons icon">
             {{ data.icon }}
           </span>
-          <div class="card-body">
-            <p class="card_title">
-              {{ data.title }}
-            </p>
-          </div>
+        </div>
+        <div class="card-body">
+          <p class="card_title">
+            {{ data.title }}
+          </p>
         </div>
       </NuxtLink>
     </div>
-    <div v-else>
+    <div v-else class="card rounded h-100" :class="data.title">
       <a :href="data.to" target="_blank">
-        <div class="card rounded">
-          <div>
-            <img :class="data.title" :src="data.src" alt="">
-          </div>
-          <div class="card-body">
-            <p class="card_title">
-              {{ data.title }}
-            </p>
-          </div>
+        <div>
+          <img :src="data.src" alt="">
+        </div>
+        <div class="card-body">
+          <p class="card_title">
+            {{ data.title }}
+          </p>
         </div>
       </a>
     </div>
