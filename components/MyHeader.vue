@@ -1,9 +1,10 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="py-4" />
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
       <div class="container">
         <NuxtLink class="navbar-brand" to="/">
-          しんぶんぶん
+          SHINBUNBUN
         </NuxtLink>
         <button
           class="navbar-toggler"
@@ -17,6 +18,7 @@
           <span class="navbar-toggler-icon" />
         </button>
         <div id="navbarNavDropdown" class="collapse navbar-collapse">
+          <div class="navbar-nav me-auto mb-2 mb-lg-0" />
           <ul class="navbar-nav">
             <li class="nav-item">
               <NuxtLink class="nav-link active" aria-current="page" to="/">
@@ -24,7 +26,7 @@
               </NuxtLink>
             </li>
             <li class="nav-item">
-              <NuxtLink class="nav-link" to="/abount">
+              <NuxtLink class="nav-link" to="/about">
                 About Me
               </NuxtLink>
             </li>
@@ -49,12 +51,18 @@
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <li>
-                  <a class="dropdown-item" href="https://twitter.com/shinbunbun_">
+                  <a
+                    class="dropdown-item"
+                    href="https://twitter.com/shinbunbun_"
+                  >
                     Twitter
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="https://www.facebook.com/yuto.takamune.77">
+                  <a
+                    class="dropdown-item"
+                    href="https://www.facebook.com/yuto.takamune.77"
+                  >
                     Facebook
                   </a>
                 </li>
@@ -68,7 +76,21 @@
 </template>
 
 <style scoped>
-.navbar{
-  font-size: 130%
+.navbar {
+  font-size: 130%;
+  background-color: white;
+}
+.nav-item{
+  padding-left:  20px !important;
+}
+/*.container{
+  display: flex;
+  justify-content: space-between;
+}*/
+</style>
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
 }
 </style>

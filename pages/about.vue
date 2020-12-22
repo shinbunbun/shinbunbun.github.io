@@ -158,7 +158,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .profile_img{
   width: 200px;
 }
@@ -174,6 +174,9 @@ export default {
 .container p{
   font-size: 110%;
 }
+</style>
+
+<style>
 .AWS img{
   width: 80%;
   height: 80%;
