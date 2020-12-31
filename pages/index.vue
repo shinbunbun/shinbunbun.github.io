@@ -5,10 +5,10 @@
     <div class="container">
       <div class="py-4" />
 
-      <h1>しんぶんぶん</h1>
-      <h2 class="h2title">
+      <h1><span class="name">しんぶんぶん</span></h1>
+      <!--<h2 class="h2title">
         （高棟 雄斗）
-      </h2>
+      </h2>-->
 
       <div class="py-4" />
       <div class="row row-cols-md-4 row-cols-2">
@@ -31,42 +31,50 @@ export default {
         {
           icon: 'person',
           title: 'About Me',
-          to: '/about'
+          to: '/about',
+          color: 'rgba(246,124,27,0.45)'
         },
         {
           icon: 'apps',
           title: 'Products',
-          to: '/products'
+          to: '/products',
+          color: 'rgba(227,86,227,0.45)'
         },
         {
           icon: 'group_add',
           title: 'SNS',
-          to: '/sns'
+          to: '/sns',
+          color: 'rgba(227,98,98,0.45)'
         },
         {
           icon: 'menu_book',
           title: 'book',
-          to: '/book'
+          to: '/book',
+          color: 'rgba(75,227,204,0.45)'
         },
         {
           src: '/images/favicon.png',
           title: 'Qiita',
-          to: 'https://qiita.com/shinbunbun_'
+          to: 'https://qiita.com/shinbunbun_',
+          color: 'rgba(157,227,120,0.45)'
         },
         {
           src: '/images/GitHub-Mark-120px-plus.png',
           title: 'GitHub',
-          to: 'https://github.com/shinbunbun'
+          to: 'https://github.com/shinbunbun',
+          color: 'rgba(46,80,166,0.45)'
         },
         {
           src: '/images/GitHub-Mark-120px-plus.png',
           title: 'Lapras',
-          to: 'https://lapras.com/public/HNWZIHB'
+          to: 'https://lapras.com/public/HNWZIHB',
+          color: 'rgba(250,228,35,0.45)'
         },
         {
           src: '/images/connpass_logo_3.png',
           title: 'connpass',
-          to: 'https://connpass.com/user/unix_yuto/'
+          to: 'https://connpass.com/user/unix_yuto/',
+          color: 'rgba(107,73,61,0.45)'
         }
       ]
     }
@@ -78,5 +86,9 @@ export default {
 .h2title{
   position: relative;
   left: 5%;
+}
+
+.name{
+  background: linear-gradient(transparent 70%, var(--nuxt-green) 70%);
 }
 </style>

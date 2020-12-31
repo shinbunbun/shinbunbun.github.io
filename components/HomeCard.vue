@@ -1,6 +1,6 @@
 <template>
   <div class="col">
-    <div v-if="data.icon" class="card rounded h-100" :class="data.title">
+    <div v-if="data.icon" class="card rounded h-100" :class="data.title" :style="{ 'background-color': data.color}">
       <NuxtLink :to="data.to">
         <div>
           <span class="material-icons icon">
@@ -14,7 +14,7 @@
         </div>
       </NuxtLink>
     </div>
-    <div v-else class="card rounded h-100" :class="data.title">
+    <div v-else class="card rounded h-100" :class="data.title" :style="{ 'background-color': data.color}">
       <a :href="data.to" target="_blank">
         <div>
           <img :src="data.src" alt="">
@@ -52,6 +52,9 @@ export default {
 
 .card{
   text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #ccc;
+  border: solid 2px;
 }
 
 img{
