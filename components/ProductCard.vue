@@ -1,6 +1,6 @@
 <template>
-  <div class="col col-12">
-    <div class="card">
+  <div class="col col-12 productCard">
+    <div class="card h-100">
       <img :src="data.src" class="card-img-top" alt="">
       <div class="card-body border-top">
         <h5 class="card-title">
@@ -16,7 +16,6 @@
         </p>
       </div>
     </div>
-    <div class="py-2" />
   </div>
 </template>
 
@@ -77,13 +76,32 @@ a{
   color: white;
 }
 
-.Clova.Skill{
+.Clova{
   background-color: #05d686;
   color: white;
 }
 
 .Nuxt\.js{
   background-color: #2f495e;
+  color: white;
+}
+
+.Vue\.js{
+  background-color: #2f495e;
+  color: white;
+}
+
+.productCard {
+  padding-bottom: 20px;
+}
+
+.Alexa{
+  background-color: #31C4F3;
+  color: white;
+}
+
+.GAS{
+  background-color: #1a73e8;
   color: white;
 }
 
