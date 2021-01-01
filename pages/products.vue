@@ -91,7 +91,19 @@ export default {
           src: '/images/jikanwai-bot.png',
           title: '2018年文化祭大賞投票bot',
           tags: ['AWS', 'LINE Bot'],
-          date: '2020/12/31'
+          date: '2020/12/31',
+          youtube: 'https://www.youtube.com/embed/urwlANazl-s',
+          qiita: 'https://qiita.com/shinbunbun_/items/af55e35888c441a5b878',
+          webapp: 'https://vote-test.shinbunbun.info/',
+          description: `2018年夏に制作。
+          文化祭の出展投票をLINE Botからできるシステム。
+          1000人以上の方に追加して頂いた。
+          投票番号を入力するとFlexMessageで該当する出展の詳細が表示される。
+          投票ボタンを押すと確認のボタンが送られてくるので、「はい」を押すと投票が完了する。
+
+          最初はGAS&スプレッドシートを使用して作っていたが、本番1週間前に行った負荷テストで高トラフィックに耐えられないことがわかり、3日かけて死に物狂いでLambda&DynamoDBに移行した。
+          当日はDynamoDBのキャパシティユニットを40に設定するなどして高負荷対策を行ったが、蓋を開けてみると3で十分な程度の負荷しかかからなかった。
+          `
         },
         {
           src: '/images/jikanwai-bot.png',
@@ -182,7 +194,7 @@ export default {
 .title_container{
   text-align: center;
 }
-.container p{
+/*.container p{
   font-size: 110%;
-}
+}*/
 </style>
