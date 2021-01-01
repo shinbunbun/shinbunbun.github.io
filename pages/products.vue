@@ -60,7 +60,7 @@ export default {
           Clovaスキル版、LIFFアプリ版もある。`
         },
         {
-          src: '/images/jikanwai-bot.png',
+          src: '/images/2019graduate.png',
           title: '2019年度卒業生御祝いページ',
           tags: ['AWS', 'WebApp', 'Vue.js'],
           date: '2020/12/31',
@@ -73,7 +73,7 @@ export default {
           `
         },
         {
-          src: '/images/jikanwai-bot.png',
+          src: '/images/2019votesystem.png',
           title: '2019年文化祭投票システム',
           tags: ['AWS', 'WebApp', 'Vue.js'],
           date: '2020/12/31',
@@ -88,7 +88,7 @@ export default {
           バックエンドはLambdaを使用し、DBはDynamoDBを使用した。`
         },
         {
-          src: '/images/jikanwai-bot.png',
+          src: '/images/2018votesystem.jpg',
           title: '2018年文化祭大賞投票bot',
           tags: ['AWS', 'LINE Bot'],
           date: '2020/12/31',
@@ -105,7 +105,7 @@ export default {
           `
         },
         {
-          src: '/images/jikanwai-bot.png',
+          src: '/images/2018tgc.jpg',
           title: '2018年ミスコン投票bot',
           tags: ['AWS', 'LINE Bot'],
           date: '2020/12/31',
@@ -122,7 +122,7 @@ export default {
           `
         },
         {
-          src: '/images/jikanwai-bot.png',
+          src: '/images/trainbot.jpg',
           title: 'ぶんぶんの運行情報bot',
           tags: ['AWS', 'LINE Bot'],
           date: '2020/12/31',
@@ -136,7 +136,7 @@ export default {
           `
         },
         {
-          src: '/images/jikanwai-bot.png',
+          src: '/images/urlshoter.jpg',
           title: 'URL短縮bot',
           tags: ['GAS', 'LINE Bot'],
           date: '2020/12/31',
@@ -149,7 +149,7 @@ export default {
           `
         },
         {
-          src: '/images/jikanwai-bot.png',
+          src: '/images/weatherbot.jpg',
           title: 'お天気bot',
           tags: ['AWS', 'GAS'],
           date: '2020/12/31',
@@ -165,11 +165,12 @@ export default {
           `
         },
         {
-          src: '/images/jikanwai-bot.png',
+          src: 'http://img.youtube.com/vi/uzbAfId6HkI/hqdefault.jpg',
           title: 'ぶんぶんの電車運行情報',
           tags: ['AWS', 'Clova', 'Alexa'],
           date: '2020/12/31',
           youtube: 'https://www.youtube.com/embed/uzbAfId6HkI',
+          qiita: 'https://qiita.com/shinbunbun_/items/21129544134f8f725c83#2%E3%81%A4%E7%9B%AE%E3%81%B6%E3%82%93%E3%81%B6%E3%82%93%E3%81%AE%E9%9B%BB%E8%BB%8A%E9%81%8B%E8%A1%8C%E6%83%85%E5%A0%B1',
           alexa: 'https://www.amazon.co.jp/%E3%81%B6%E3%82%93%E3%81%B6%E3%82%93-%E3%81%B6%E3%82%93%E3%81%B6%E3%82%93%E3%81%AE%E9%9B%BB%E8%BB%8A%E9%81%8B%E8%A1%8C%E6%83%85%E5%A0%B1/dp/B07LGMNQNR',
           description: `2018年12月製作。
           路線名を言うとその路線の運行情報を教えてくれる。
@@ -177,7 +178,7 @@ export default {
           Lambdaを使用しており、電車運行情報は鉄道遅延情報のjsonから取得している。`
         },
         {
-          src: '/images/jikanwai-bot.png',
+          src: 'http://img.youtube.com/vi/e3FB_Cc9RrQ/hqdefault.jpg',
           title: 'ひな祭りの豆知識',
           tags: ['AWS', 'Clova', 'Alexa'],
           date: '2020/12/31',
@@ -190,7 +191,7 @@ export default {
           `
         },
         {
-          src: '/images/jikanwai-bot.png',
+          src: 'http://img.youtube.com/vi/fG9QNzsgg_Q/hqdefault.jpg',
           title: 'トイレの音消し',
           tags: ['AWS', 'Clova', 'Alexa'],
           date: '2020/12/31',
@@ -205,7 +206,7 @@ export default {
           `
         },
         {
-          src: '/images/jikanwai-bot.png',
+          src: 'http://img.youtube.com/vi/TQUemTeiCKM/hqdefault.jpg',
           title: '宿題終わってる？',
           tags: ['AWS', 'Clova'],
           date: '2020/12/31',
@@ -218,7 +219,7 @@ export default {
           `
         },
         {
-          src: '/images/jikanwai-bot.png',
+          src: 'http://img.youtube.com/vi/tqTjjA9f_4M/hqdefault.jpg',
           title: 'ぶんぶんのルーレット',
           tags: ['AWS', 'Alexa'],
           date: '2020/12/31',
@@ -232,7 +233,7 @@ export default {
           `
         },
         {
-          src: '/images/jikanwai-bot.png',
+          src: 'http://img.youtube.com/vi/9uzIM6ICO-U/hqdefault.jpg',
           title: '大晦日カウントダウン',
           tags: ['AWS', 'Alexa'],
           date: '2020/12/31',
@@ -246,7 +247,7 @@ export default {
           `
         },
         {
-          src: '/images/jikanwai-bot.png',
+          src: 'http://img.youtube.com/vi/3UH8_1woBak/hqdefault.jpg',
           title: '今日の太陽',
           tags: ['AWS', 'Alexa'],
           date: '2020/12/31',

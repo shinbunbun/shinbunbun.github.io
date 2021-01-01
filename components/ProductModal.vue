@@ -21,6 +21,9 @@
             <div v-else-if="data.twitterId" class="twitter">
               <Tweet :id="data.twitterId" />
             </div>
+            <div v-else d-flex align-items-center>
+              <img :src="data.src" alt="">
+            </div>
             <div class="py-3" />
           </div>
           <div class="col-md-6">
