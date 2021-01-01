@@ -1,5 +1,5 @@
 <template>
-  <div class="col col-12 productCard">
+  <div class="col col-12 productCard" @click="$emit('openModal', data)">
     <div class="card h-100">
       <img :src="data.src" class="card-img-top" alt="">
       <div class="card-body border-top">

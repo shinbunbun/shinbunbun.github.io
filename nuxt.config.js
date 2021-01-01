@@ -3,6 +3,9 @@ export default {
   router: {
     base: '/portfolio/'
   },
+  env: {
+    qiita: 'https://qiita.com/shinbunbun_'
+  },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'portfolio',

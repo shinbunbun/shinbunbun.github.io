@@ -9,9 +9,11 @@
       <div class="py-4" />
 
       <div class="row row-cols-md-4 row-cols-2">
-        <ProductCard v-for="product in products" :key="product.title" :data="product" />
+        <ProductCard v-for="product in products" :key="product.title" :data="product" @openModal="openModal" />
       </div>
     </div>
+
+    <ProductModal ref="ProductModal" :data="choseProduct" />
 
     <MyFooter />
   </div>
@@ -22,18 +24,22 @@
 export default {
   data() {
     return {
+      modal: false,
+      choseProduct: {},
       products: [
         {
           src: '/images/jikanwai-bot.png',
           title: 'ポートフォリオサイト',
           tags: ['AWS', 'WebApp', 'Nuxt.js'],
-          date: '2020/12/31'
+          date: '2020/12/31',
+          github: 'https://github.com/shinbunbun/portfolio'
         },
         {
           src: '/images/jikanwai-bot.png',
           title: '時間割bot',
           tags: ['AWS', 'LINE Bot', 'WebApp', 'Clova', 'Nuxt.js'],
-          date: '2020/12/31'
+          date: '2020/12/31',
+          qiita: 'https://qiita.com/shinbunbun_/items/00c4064c8133a34cf7c3'
         },
         {
           src: '/images/jikanwai-bot.png',
@@ -120,6 +126,13 @@ export default {
           date: '2020/12/31'
         }
       ]
+    }
+  },
+
+  methods: {
+    openModal(data) {
+      this.choseProduct = data
+      this.$refs.ProductModal.openModal()
     }
   }
 }
