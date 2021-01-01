@@ -68,7 +68,7 @@
               </button>
             </div>
             <div v-if="data.alexa" class="btn-wrapper">
-              <button type="button" class="btn alexa-btn" @click="openLink(data.clova)">
+              <button type="button" class="btn alexa-btn" @click="openLink(data.alexa)">
                 <b>Alexaスキル</b>
                 <span style="font-family: Material Icons">
                   open_in_new
