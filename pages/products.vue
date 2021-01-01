@@ -77,7 +77,6 @@ export default {
           title: '2019年文化祭投票システム',
           tags: ['AWS', 'WebApp', 'Vue.js'],
           date: '2020/12/31',
-          // eslint-disable-next-line no-useless-escape
           twitterId: '1179361752951250944',
           github: 'https://github.com/shinbunbun/vote-system-2019',
           qiita: 'https://qiita.com/shinbunbun_/items/b6f69cf931eb17eed69b',
