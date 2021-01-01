@@ -152,7 +152,17 @@ export default {
           src: '/images/jikanwai-bot.png',
           title: 'お天気bot',
           tags: ['AWS', 'GAS'],
-          date: '2020/12/31'
+          date: '2020/12/31',
+          youtube: 'https://www.youtube.com/embed/YOY9ii2-aRI',
+          qiita: 'https://qiita.com/shinbunbun_/items/23e2100abbe0fcd0274c',
+          github: 'https://github.com/shinbunbun/Weather-bot',
+          linebot: 'https://line.me/R/ti/p/%40unq9376d',
+          description: `2018年10月製作。
+          郵便番号を送信すると、その地域の3時間毎の天気予報をFlexMessageで返信してくれる。
+
+          GASで動いており、OpenWeatherMapのAPIを使用している。
+          OpenWeatherMapのサイトで閲覧する天気予報とAPIで取得する天気予報が違うなどの不可解な点は少しあるが、無料枠でもそこそこ使えるので結構便利。
+          `
         },
         {
           src: '/images/jikanwai-bot.png',
