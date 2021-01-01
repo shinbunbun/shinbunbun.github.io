@@ -94,7 +94,6 @@ export default {
           date: '2020/12/31',
           youtube: 'https://www.youtube.com/embed/urwlANazl-s',
           qiita: 'https://qiita.com/shinbunbun_/items/af55e35888c441a5b878',
-          webapp: 'https://vote-test.shinbunbun.info/',
           description: `2018年夏に制作。
           文化祭の出展投票をLINE Botからできるシステム。
           1000人以上の方に追加して頂いた。
@@ -109,7 +108,18 @@ export default {
           src: '/images/jikanwai-bot.png',
           title: '2018年ミスコン投票bot',
           tags: ['AWS', 'LINE Bot'],
-          date: '2020/12/31'
+          date: '2020/12/31',
+          youtube: 'https://www.youtube.com/embed/mQTMMxiH_y8',
+          linebot: 'https://line.me/R/ti/p/%40awj3413y',
+          description: `2018年春製作。僕が通っている高校は男子校だが文化祭でミスコンがある。その投票システムを制作した。
+          リッチメニューの「投票」ボタンを押すと立候補者一覧のFlexMessageが表示される。
+          投票したい候補者を選択すると確認のボタンが送られてくるので、「はい」を押すと投票が完了する。
+
+          こちらも文化祭大賞投票botと同様に最初はGAS&スプレッドシートを使用して作っていたが、本番1週間前に行った負荷テストで高トラフィックに耐えられないことがわかり、3日かけて死に物狂いでLambda&DynamoDBに移行した。
+          当日はDynamoDBのキャパシティユニットを40に設定するなどして高負荷対策を行ったが、蓋を開けてみると5で十分な程度の負荷しかかからなかった。
+
+          上記の友達追加ボタンは、テスト用に作成した航空会社の投票botの追加リンク。これはGAS&スプレッドシートで動いている。
+          `
         },
         {
           src: '/images/jikanwai-bot.png',
