@@ -32,14 +32,32 @@ export default {
           title: 'ポートフォリオサイト',
           tags: ['AWS', 'WebApp', 'Nuxt.js'],
           date: '2020/12/31',
-          github: 'https://github.com/shinbunbun/portfolio'
+          github: 'https://github.com/shinbunbun/portfolio',
+          webapp: 'https://shinbunbun.info',
+          description: `2020年12月〜2021年1月にかけて制作。
+          高校一年生の頃から使っていたポートフォリオサイトが一つあったのだが、EC2のパーミッションをミスってSSHもFTPも入れなくなってしまい、1年ほど放置していた。
+          さすがにそのままはよくないなーと思い、Nuxt.jsとBootstrap5を使って新しいポートフォリオサイト（これ）を制作した。
+          GitHub Pagesにホスティングしている。
+          `
         },
         {
           src: '/images/jikanwai-bot.png',
           title: '時間割bot',
           tags: ['AWS', 'LINE Bot', 'WebApp', 'Clova', 'Nuxt.js'],
           date: '2020/12/31',
-          qiita: 'https://qiita.com/shinbunbun_/items/00c4064c8133a34cf7c3'
+          youtube: 'https://www.youtube.com/embed/8OPSW_0tWmU',
+          github: 'https://github.com/shinbunbun/jikanwari-bot',
+          qiita: 'https://qiita.com/shinbunbun_/items/00c4064c8133a34cf7c3',
+          webapp: 'jikanwari-bot.shinbunbun.info',
+          linebot: 'https://line.me/R/ti/p/%40ywg0561x',
+          clova: 'https://clova.line.me/clova-ai/skillstore/skill/com.takamuneyuto.skill.second',
+          description: `2018年夏に制作。
+          友達追加数2739人（2021/01/01現在）。
+          LINEで時間割を確認できるLINE Bot。
+          「今日の時間割」、「明日の時間割」などを確認できるほか、毎日指定した時間に時間割を通知してくれる機能もある。
+          「時間割共有機能」もあり、同じクラスの友達内で時間割の共有ができる。
+          グループでの使用も可能。
+          Clovaスキル版、LIFFアプリ版もある。`
         },
         {
           src: '/images/jikanwai-bot.png',

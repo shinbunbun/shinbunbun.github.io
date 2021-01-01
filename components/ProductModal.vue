@@ -8,7 +8,7 @@
       <br>
       <div class="container modal-container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 d-flex align-items-center">
             <div class="youtube-wrapper">
               <iframe
                 class="embed-responsive-item"
@@ -63,14 +63,8 @@
               </button>
             </div>
             <br><br>
-            <p>
-              2018年夏に制作。<br>
-              友達追加数2739人（2021/01/01現在）。<br>
-              LINEで時間割を確認できるLINE Bot。<br>
-              「今日の時間割」、「明日の時間割」などを確認できるほか、毎日指定した時間に時間割を通知してくれる機能もある。<br>
-              「時間割共有機能」もあり、同じクラスの友達内で時間割の共有ができる。<br>
-              グループでの使用も可能。<br>
-              Clovaスキル版、LIFFアプリ版もある。
+            <p class="description">
+              {{ data.description }}
             </p>
           </div>
         </div>
@@ -165,5 +159,9 @@ font-size: 110%;
 .btn-wrapper{
   display: inline-block;
   padding-bottom: 5px;
+}
+.description{
+  white-space: pre-line;
+  text-align: left;
 }
 </style>
