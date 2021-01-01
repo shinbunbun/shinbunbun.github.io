@@ -193,31 +193,69 @@ export default {
           src: '/images/jikanwai-bot.png',
           title: 'トイレの音消し',
           tags: ['AWS', 'Clova', 'Alexa'],
-          date: '2020/12/31'
+          date: '2020/12/31',
+          youtube: 'https://www.youtube.com/embed/fG9QNzsgg_Q',
+          qiita: 'https://qiita.com/shinbunbun_/items/21129544134f8f725c83#1%E3%81%A4%E7%9B%AE%E3%83%88%E3%82%A4%E3%83%AC%E3%81%AE%E9%9F%B3%E6%B6%88%E3%81%97',
+          alexa: 'https://www.amazon.co.jp/%E3%81%B6%E3%82%93%E3%81%B6%E3%82%93-%E3%83%88%E3%82%A4%E3%83%AC%E3%81%AE%E9%9F%B3%E6%B6%88%E3%81%97/dp/B07LFRHLL4',
+          clova: 'https://clova.line.me/clova-ai/skillstore/skill/com.takamuneyuto.skill.first',
+          description: `2018年12月製作。
+          「音を流して」と言うとトイレの音を掻き消す水音を流してくれる。
+
+          Lambdaを使用している。
+          `
         },
         {
           src: '/images/jikanwai-bot.png',
           title: '宿題終わってる？',
           tags: ['AWS', 'Clova'],
-          date: '2020/12/31'
+          date: '2020/12/31',
+          youtube: 'https://www.youtube.com/embed/TQUemTeiCKM',
+          clova: 'https://clova.line.me/clova-ai/skillstore/skill/info.shinbunbun.syukudai',
+          description: `2019年3月に制作。
+          みんなで宿題の進捗状況を共有することが出来る。
+
+          Lambda&DynamoDBを使用している
+          `
         },
         {
           src: '/images/jikanwai-bot.png',
           title: 'ぶんぶんのルーレット',
           tags: ['AWS', 'Alexa'],
-          date: '2020/12/31'
+          date: '2020/12/31',
+          youtube: 'https://www.youtube.com/embed/tqTjjA9f_4M',
+          qiita: 'https://qiita.com/shinbunbun_/items/21129544134f8f725c83#4%E3%81%A4%E7%9B%AE%E3%81%B6%E3%82%93%E3%81%B6%E3%82%93%E3%81%AE%E3%83%AB%E3%83%BC%E3%83%AC%E3%83%83%E3%83%88',
+          alexa: 'https://www.amazon.co.jp/%E3%81%B6%E3%82%93%E3%81%B6%E3%82%93-%E3%81%B6%E3%82%93%E3%81%B6%E3%82%93%E3%81%AE%E3%83%AB%E3%83%BC%E3%83%AC%E3%83%83%E3%83%88/dp/B07LGMKZ1V',
+          description: `2018年12月製作。
+          好きな数字を言うと、1からその数字までのルーレットを回してくれる。
+
+          Lambdaを使用している。
+          `
         },
         {
           src: '/images/jikanwai-bot.png',
           title: '大晦日カウントダウン',
           tags: ['AWS', 'Alexa'],
-          date: '2020/12/31'
+          date: '2020/12/31',
+          youtube: 'https://www.youtube.com/embed/9uzIM6ICO-U',
+          qiita: 'https://qiita.com/shinbunbun_/items/21129544134f8f725c83#3%E3%81%A4%E7%9B%AE%E5%A4%A7%E6%99%A6%E6%97%A5%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%83%80%E3%82%A6%E3%83%B3',
+          alexa: 'https://www.amazon.co.jp/%E3%81%B6%E3%82%93%E3%81%B6%E3%82%93-%E5%A4%A7%E6%99%A6%E6%97%A5%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%83%80%E3%82%A6%E3%83%B3/dp/B07LF22NQR',
+          description: `2018年12月製作。
+          大晦日まであと何日か教えてくれる。
+
+          Lambdaを使用している。
+          `
         },
         {
           src: '/images/jikanwai-bot.png',
           title: '今日の太陽',
           tags: ['AWS', 'Alexa'],
-          date: '2020/12/31'
+          date: '2020/12/31',
+          youtube: 'https://www.youtube.com/embed/3UH8_1woBak',
+          alexa: 'https://www.amazon.co.jp/%E3%81%B6%E3%82%93%E3%81%B6%E3%82%93-%E4%BB%8A%E6%97%A5%E3%81%AE%E5%A4%AA%E9%99%BD/dp/B07N6JJD46',
+          description: `2019年1月製作。
+          日の出時刻、日の入り時刻を教えてくれる。
+          Lambdaを使用している。
+          `
         }
       ]
     }
