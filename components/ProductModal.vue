@@ -9,7 +9,7 @@
       <div class="container modal-container">
         <div class="row">
           <div class="col-md-6 d-flex align-items-center">
-            <div class="youtube-wrapper">
+            <div v-if="data.youtube" class="youtube-wrapper">
               <iframe
                 class="embed-responsive-item"
                 :src="data.youtube"
@@ -18,6 +18,7 @@
                 allowfullscreen
               />
             </div>
+            <div v-else-if="data.twitter" class="twitter" v-html="data.twitter" />
             <div class="py-3" />
           </div>
           <div class="col-md-6">
@@ -163,5 +164,8 @@ font-size: 110%;
 .description{
   white-space: pre-line;
   text-align: left;
+}
+.twitter{
+  max-width: 100%;
 }
 </style>
