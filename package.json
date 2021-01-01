@@ -12,14 +12,25 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.12.2",
+    "@popperjs/core": "^2.6.0",
+    "bootstrap": "^5.0.0-beta1",
     "core-js": "^3.6.5",
-    "nuxt": "^2.14.6"
+    "nuxt": "^2.14.6",
+    "nuxt-webfontloader": "^1.1.0",
+    "stylus": "^0.54.8",
+    "stylus-loader": "^4.3.1",
+    "vue": "^2.6.12",
+    "vue-js-modal": "^2.0.0-rc.6"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",
     "@nuxtjs/eslint-module": "^2.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.10.0",
-    "eslint-plugin-nuxt": "^1.0.0"
+    "eslint-plugin-nuxt": "^1.0.0",
+    "fibers": "^5.0.0",
+    "sass": "^1.30.0",
+    "sass-loader": "^10.1.0",
+    "vue-tweet-embed": "^2.4.0"
   }
 }

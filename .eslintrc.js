@@ -14,5 +14,18 @@ module.exports = {
   plugins: [
   ],
   // add your custom rules here
-  rules: {}
+  rules: {
+    quotes: [
+      2,
+      'single'
+    ],
+    'linebreak-style': [
+      2,
+      'unix'
+    ],
+    'no-console': 0,
+    'space-before-function-paren': 0,
+    'no-new': 0,
+    'no-undef': 'error'
+  }
 }

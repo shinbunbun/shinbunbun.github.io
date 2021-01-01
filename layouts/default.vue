@@ -4,17 +4,32 @@
   </div>
 </template>
 
+<style lang="scss">
+  // Default options
+$defaultDuration: .3s;
+$primaryColour: #ececec;
+$secondaryColour: #666;
+$shadowColour: rgba(0, 0, 0, .6);
+
+.card {
+  transition-duration: $defaultDuration;
+  transition-property: transform;
+
+  //@include hideTapHighlightColor();
+  //@include hardwareAccel();
+  //@include improveAntiAlias();
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+</style>
+
 <style>
 html {
-  font-family:
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -59,4 +74,9 @@ html {
   color: #fff;
   background-color: #35495e;
 }
+
+:root {
+  --nuxt-green: #00c58e
+}
+
 </style>
