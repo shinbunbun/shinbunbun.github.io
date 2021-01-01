@@ -168,7 +168,13 @@ export default {
           src: '/images/jikanwai-bot.png',
           title: 'ぶんぶんの電車運行情報',
           tags: ['AWS', 'Clova', 'Alexa'],
-          date: '2020/12/31'
+          date: '2020/12/31',
+          youtube: 'https://www.youtube.com/embed/uzbAfId6HkI',
+          alexa: 'https://www.amazon.co.jp/%E3%81%B6%E3%82%93%E3%81%B6%E3%82%93-%E3%81%B6%E3%82%93%E3%81%B6%E3%82%93%E3%81%AE%E9%9B%BB%E8%BB%8A%E9%81%8B%E8%A1%8C%E6%83%85%E5%A0%B1/dp/B07LGMNQNR',
+          description: `2018年12月製作。
+          路線名を言うとその路線の運行情報を教えてくれる。
+
+          Lambdaを使用しており、電車運行情報は鉄道遅延情報のjsonから取得している。`
         },
         {
           src: '/images/jikanwai-bot.png',
