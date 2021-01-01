@@ -13,9 +13,23 @@
       <div class="py-4" />
       <div class="row row-cols-md-4 row-cols-2">
         <div v-for="card in cards" :key="card.title">
-          <HomeCard :data="card" />
+          <HomeCard :data="card" @openModal="openModal" />
         </div>
       </div>
+
+      <MyModal v-if="modal" @close="closeModal">
+        <span class="material-icons colse-button" @click="closeModal">
+          close
+        </span>
+        <br>
+        <div class="container modal-container">
+          <div class="row row-cols-md-4 row-cols-1">
+            <div v-for="card in sns" :key="card.title">
+              <HomeCard :data="card" @openModal="openModal" />
+            </div>
+          </div>
+        </div>
+      </MyModal>
     </div>
 
     <MyFooter />
@@ -27,6 +41,19 @@
 export default {
   data() {
     return {
+      modal: false,
+      sns: [
+        {
+          src: '/images/twitter.png',
+          title: 'Twitter',
+          to: 'https://twitter.com/shinbunbun_'
+        },
+        {
+          src: '/images/facebook.png',
+          title: 'Facebook',
+          to: 'https://www.facebook.com/yuto.takamune.77'
+        }
+      ],
       cards: [
         {
           icon: 'person',
@@ -43,8 +70,8 @@ export default {
         {
           icon: 'group_add',
           title: 'SNS',
-          to: '/sns',
-          color: 'rgba(227,98,98,0.45)'
+          color: 'rgba(227,98,98,0.45)',
+          modal: true
         },
         {
           icon: 'menu_book',
@@ -65,7 +92,7 @@ export default {
           color: 'rgba(46,80,166,0.45)'
         },
         {
-          src: '/images/GitHub-Mark-120px-plus.png',
+          src: '/images/lapras.png',
           title: 'Lapras',
           to: 'https://lapras.com/public/HNWZIHB',
           color: 'rgba(250,228,35,0.45)'
@@ -77,6 +104,17 @@ export default {
           color: 'rgba(107,73,61,0.45)'
         }
       ]
+    }
+  },
+  methods: {
+    openLink(url) {
+      window.open(url, '_blank')
+    },
+    openModal() {
+      this.modal = true
+    },
+    closeModal() {
+      this.modal = false
     }
   }
 }
@@ -90,5 +128,8 @@ export default {
 
 .name{
   background: linear-gradient(transparent 70%, var(--nuxt-green) 70%);
+}
+.colse-button{
+  font-size: 45px;
 }
 </style>
