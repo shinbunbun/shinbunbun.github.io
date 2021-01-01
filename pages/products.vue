@@ -64,6 +64,7 @@ export default {
           title: '2019年度卒業生御祝いページ',
           tags: ['AWS', 'WebApp', 'Vue.js'],
           date: '2020/12/31',
+          github: 'https://github.com/shinbunbun/2019_graduate',
           description: `2020年3月に制作。
           卒業する文化祭執行部の先輩に向けて、今までの文化祭の写真が見れるサイトを作った。
           フロントエンドはVue.jsとBootstrap4で作成し、S3&CloudFrontへホスティング。
