@@ -18,11 +18,15 @@
                 allowfullscreen
               />
             </div>
-            <div v-else-if="data.twitter" class="twitter" v-html="data.twitter" />
+            <div v-else-if="data.twitterId" class="twitter">
+              <Tweet :id="data.twitterId" />
+            </div>
             <div class="py-3" />
           </div>
           <div class="col-md-6">
+            <div class="py-2" />
             <h2>{{ data.title }}</h2>
+            <div class="py-2" />
             <div v-if="data.github" class="btn-wrapper">
               <button type="button" class="btn github-btn" @click="openLink(data.github)">
                 <b>GitHub</b>
@@ -75,7 +79,11 @@
 </template>
 
 <script>
+import { Tweet } from 'vue-tweet-embed'
 export default {
+  components: {
+    Tweet
+  },
   props: {
     data: {
       type: Object,
@@ -166,6 +174,6 @@ font-size: 110%;
   text-align: left;
 }
 .twitter{
-  max-width: 100%;
+  width: 100%;
 }
 </style>

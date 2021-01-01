@@ -30,6 +30,7 @@
     "eslint-plugin-nuxt": "^1.0.0",
     "fibers": "^5.0.0",
     "sass": "^1.30.0",
-    "sass-loader": "^10.1.0"
+    "sass-loader": "^10.1.0",
+    "vue-tweet-embed": "^2.4.0"
   }
 }

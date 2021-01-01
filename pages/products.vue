@@ -75,7 +75,17 @@ export default {
           src: '/images/jikanwai-bot.png',
           title: '2019年文化祭投票システム',
           tags: ['AWS', 'WebApp', 'Vue.js'],
-          date: '2020/12/31'
+          date: '2020/12/31',
+          // eslint-disable-next-line no-useless-escape
+          twitterId: '1179361752951250944',
+          github: 'https://github.com/shinbunbun/vote-system-2019',
+          qiita: 'https://qiita.com/shinbunbun_/items/b6f69cf931eb17eed69b',
+          webapp: 'https://vote-test.shinbunbun.info/',
+          description: `2019年夏に制作。
+          文化祭の出展投票をWebからできるシステム。
+          2018年はLINEBotを使ったが、2019年はVue.jsを使用してWebアプリを作った。
+          フロント側はVue.jsとBootstrap4で作り、S3&CloudFrontにホスティング。
+          バックエンドはLambdaを使用し、DBはDynamoDBを使用した。`
         },
         {
           src: '/images/jikanwai-bot.png',
