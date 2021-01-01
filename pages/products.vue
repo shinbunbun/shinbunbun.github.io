@@ -180,7 +180,14 @@ export default {
           src: '/images/jikanwai-bot.png',
           title: 'ひな祭りの豆知識',
           tags: ['AWS', 'Clova', 'Alexa'],
-          date: '2020/12/31'
+          date: '2020/12/31',
+          youtube: 'https://www.youtube.com/embed/e3FB_Cc9RrQ',
+          alexa: 'https://www.amazon.co.jp/%E3%81%B6%E3%82%93%E3%81%B6%E3%82%93-%E3%81%B2%E3%81%AA%E7%A5%AD%E3%82%8A%E3%81%AE%E8%B1%86%E7%9F%A5%E8%AD%98/dp/B07P6QGDTP',
+          clova: 'https://clova.line.me/clova-ai/skillstore/skill/com.takamuneyuto.skill.hinamaturi',
+          description: `2019年2月製作。
+          ひな祭りに関する豆知識を教えてくれる。
+          Lambdaを使用している。
+          `
         },
         {
           src: '/images/jikanwai-bot.png',
