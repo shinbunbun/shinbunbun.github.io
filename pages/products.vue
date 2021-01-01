@@ -123,9 +123,17 @@ export default {
         },
         {
           src: '/images/jikanwai-bot.png',
-          title: 'ぶんぶんの運行情報',
+          title: 'ぶんぶんの運行情報bot',
           tags: ['AWS', 'LINE Bot'],
-          date: '2020/12/31'
+          date: '2020/12/31',
+          youtube: 'https://www.youtube.com/embed/j_ET-VkRlNo',
+          linebot: 'https://line.me/R/ti/p/%40buo7278w',
+          description: `2018年9月製作。友達追加数162人(2021/1/1現在)
+          運行情報を検索したい路線名を送信するとその路線の運行情報を返信する。
+          Clovaスキルとも紐づいており、Clovaスキルで路線を検索した際にその路線が遅延・運休していたら、botがその路線の詳細な運行情報へのリンクを送信してくれる。
+
+          GASで動いており、電車運行情報は鉄道遅延情報のjson（https://rti-giken.jp/fhc/api/train_tetsudo/）から取得している。
+          `
         },
         {
           src: '/images/jikanwai-bot.png',
