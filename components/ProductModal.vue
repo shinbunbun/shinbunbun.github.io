@@ -67,6 +67,14 @@
                 </span>
               </button>
             </div>
+            <div v-if="data.alexa" class="btn-wrapper">
+              <button type="button" class="btn clova-btn" @click="openLink(data.clova)">
+                <b>Alexaスキル</b>
+                <span style="font-family: Material Icons">
+                  open_in_new
+                </span>
+              </button>
+            </div>
             <br><br>
             <p class="description">
               {{ data.description }}
@@ -163,6 +171,10 @@ font-size: 110%;
 }
 .github-btn{
   background-color: black;
+  color: white;
+}
+.alexa-btn{
+  background-color: #31C4F3;
   color: white;
 }
 .btn-wrapper{
