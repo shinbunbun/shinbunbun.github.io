@@ -139,7 +139,14 @@ export default {
           src: '/images/jikanwai-bot.png',
           title: 'URL短縮bot',
           tags: ['GAS', 'LINE Bot'],
-          date: '2020/12/31'
+          date: '2020/12/31',
+          youtube: 'https://www.youtube.com/embed/BZ8KkrT5sHU',
+          linebot: 'https://line.me/R/ti/p/%40shr5133j',
+          description: `2018年9月製作。
+          URLを送信するとそのURLの短縮URLを作成する。
+
+          GASで動いており、bitlyのAPIを叩いて短縮URLを作成している。
+          `
         },
         {
           src: '/images/jikanwai-bot.png',
