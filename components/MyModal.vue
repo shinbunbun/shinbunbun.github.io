@@ -81,4 +81,14 @@
   overflow:scroll;
 }
 
+@media screen and (min-width:1111px) {
+  .modal-window{
+    min-width: 1000px
+  }
+}
+@media screen and (min-width:768px) and ( max-width:1111px) {
+  .modal-window{
+    width: 90%
+  }
+}
 </style>
