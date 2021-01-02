@@ -41,8 +41,8 @@
       </div>
 
       <div class="row">
-        <div v-for="(image, index) in images" :key="index" class="py-3" :class="imgClass">
-          <img :src="image.src" @click="showLightbox(index)">
+        <div v-for="index in pictureCount" :key="index" class="py-3" :class="imgClass">
+          <img v-lazy="`/images/photos/${pictureCount - index + 1}.jpeg`" @click="showLightbox(index - 1)">
         </div>
       </div>
       <client-only>
@@ -57,28 +57,23 @@
 export default {
   data() {
     return {
-      pictureCount: 3,
+      pictureCount: 21,
       btnClass: {
         min: 'btn-light',
         mid: 'btn-secondary',
         big: 'btn-light'
       },
-      images: [
-        {
-          src: '/images/photos.png',
-          thumb: '/images/photos.png'
-        },
-        {
-          src: '/images/photos.png',
-          thumb: '/images/photos.png'
-        },
-        {
-          src: '/images/photos.png',
-          thumb: '/images/photos.png'
-        }
-      ],
+      images: [],
       imgClass: 'col-6 col-md-4'
     }
+  },
+  mounted() {
+    const pictureCount = this.pictureCount
+    const images = this.images
+    for (let i = 0; i < pictureCount; i++) {
+      images.push({ src: `/images/photos/${pictureCount - i}.jpeg`, thumb: `/images/photos/${pictureCount - i}.jpeg` })
+    }
+    this.images = images
   },
   methods: {
     showLightbox(index) {
