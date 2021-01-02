@@ -75,11 +75,24 @@ export default {
         },
         {
           src: '/images/book.png',
-          title: 'book',
+          title: 'Book',
           to: '/book',
           internal: true
           // color: 'rgba(75,227,204,0.45)'
         },
+        {
+          src: '/images/photos.png',
+          title: 'Photos',
+          to: '/photos',
+          internal: true
+          // color: 'rgba(75,227,204,0.45)'
+        },
+        /* {
+          src: '/images/work.png',
+          title: 'Work',
+          to: '/work',
+          internal: true
+        }, */
         {
           src: '/images/favicon.png',
           title: 'Qiita',

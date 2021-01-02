@@ -45,6 +45,17 @@
                 </ul>
               </p>
             </div>
+            <!--<div class="row">
+              <h3>仕事</h3>
+              <br>
+              <p>
+                <ul>
+                  <li>アイカサ バックエンド開発（2018年12月~2019年12月）</li>
+                  <li>株式会社夜間飛行 ホームページ制作案件受注（2019年12月〜現在）</li>
+                  <li><a href="https://lastrust.io/" target="blank_">LasTrust株式会社 インターンシップ（R&D） （2020年12月〜現在）</a></li>
+                </ul>
+              </p>
+            </div>-->
           </div>
         </div>
         <div class="py-4" />
