@@ -6,23 +6,63 @@
       <h1>写真</h1>
       <div class="py-4" />
 
-      <img v-for="(image, index) in images" :key="index" :src="image.src" @click="showLightbox(index)">
-      <LightBox ref="lightbox" :media="images" />
+      <div class="row">
+        <div class="col">
+          <div class="btn-group" role="group">
+            <button
+              type="button"
+              class="btn size-btn"
+              :class="btnClass.min"
+              value="min"
+              @click="sizeChange"
+            >
+              小
+            </button>
+            <button
+              type="button"
+              class="btn size-btn"
+              :class="btnClass.mid"
+              value="mid"
+              @click="sizeChange"
+            >
+              中
+            </button>
+            <button
+              type="button"
+              class="btn size-btn"
+              :class="btnClass.big"
+              value="big"
+              @click="sizeChange"
+            >
+              大
+            </button>
+          </div>
+        </div>
+      </div>
 
-      <MyFooter />
+      <div class="row">
+        <div v-for="(image, index) in images" :key="index" class="py-3" :class="imgClass">
+          <img :src="image.src" @click="showLightbox(index)">
+        </div>
+      </div>
+      <client-only>
+        <light-box ref="lightbox" :media="images" :show-light-box="false" />
+      </client-only>
     </div>
+    <MyFooter />
   </div>
 </template>
 
 <script>
-import LightBox from 'vue-image-lightbox'
-require('vue-image-lightbox/dist/vue-image-lightbox.min.css')
 export default {
-  components: {
-    LightBox
-  },
   data() {
     return {
+      pictureCount: 3,
+      btnClass: {
+        min: 'btn-light',
+        mid: 'btn-secondary',
+        big: 'btn-light'
+      },
       images: [
         {
           src: '/images/photos.png',
@@ -36,27 +76,52 @@ export default {
           src: '/images/photos.png',
           thumb: '/images/photos.png'
         }
-      ]
+      ],
+      imgClass: 'col-6 col-md-4'
     }
   },
   methods: {
     showLightbox(index) {
       this.$refs.lightbox.showImage(index)
+    },
+    sizeChange(e) {
+      const value = e.target.value
+      switch (value) {
+        case 'min':
+          this.btnClass = {
+            min: 'btn-secondary',
+            mid: 'btn-light',
+            big: 'btn-light'
+          }
+          this.imgClass = 'col-4 col-md-3'
+          break
+        case 'mid':
+          this.btnClass = {
+            min: 'btn-light',
+            mid: 'btn-secondary',
+            big: 'btn-light'
+          }
+          this.imgClass = 'col-6 col-md-4'
+          break
+        case 'big':
+          this.btnClass = {
+            min: 'btn-light',
+            mid: 'btn-light',
+            big: 'btn-secondary'
+          }
+          this.imgClass = 'col-12 col-md-6'
+          break
+
+        default:
+          break
+      }
     }
   }
 }
 </script>
 
 <style scoped>
-.colse-button{
-  font-size: 45px;
-}
-.description{
-  white-space: pre-line;
-  text-align: left;
-}
-.amazon-btn{
-  background-color: #f67c1b;
-  color: white;
+img{
+  max-width: 100%;
 }
 </style>
