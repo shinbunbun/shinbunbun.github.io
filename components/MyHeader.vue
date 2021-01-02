@@ -4,7 +4,7 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-light">
       <div class="container">
         <NuxtLink class="navbar-brand" to="/">
-          SHINBUNBUN
+          <img src="/images/ポートフォリオサイトロゴ.png" alt="">
         </NuxtLink>
         <button
           class="navbar-toggler"
@@ -100,6 +100,10 @@ export default {
   display: flex;
   justify-content: space-between;
 }*/
+img{
+  max-width:200px;
+  max-height: 65px;
+}
 </style>
 
 <style>

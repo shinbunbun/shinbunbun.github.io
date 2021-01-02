@@ -5,7 +5,7 @@
     <div class="container">
       <div class="py-4" />
 
-      <h1><span class="name">しんぶんぶん</span></h1>
+      <!--<h1><span class="name">しんぶんぶん</span></h1>-->
       <!--<h2 class="h2title">
         （高棟 雄斗）
       </h2>-->
