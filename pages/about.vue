@@ -53,26 +53,26 @@
           <br>
           <h4>言語</h4>
           <br>
-          <div class="row row-cols-md-4 row-cols-2">
+          <div class="row row-cols-md-4 row-cols-sm-2 row-cols-1">
             <HomeCard v-for="language in languages" :key="language.title" :data="language" />
           </div>
           <br>
           <h4>フロントエンドフレームワーク</h4>
           <br>
-          <div class="row row-cols-md-4 row-cols-2">
+          <div class="row row-cols-md-4 row-cols-sm-2 row-cols-1">
             <HomeCard v-for="framework in frameworks" :key="framework.title" :data="framework" />
           </div>
         </div>
         <br>
         <h4>クラウド</h4>
         <br>
-        <div class="row row-cols-md-4 row-cols-2">
+        <div class="row row-cols-md-4 row-cols-sm-2 row-cols-1">
           <HomeCard v-for="cloud in clouds" :key="cloud.title" :data="cloud" />
         </div>
         <br>
         <h4>その他</h4>
         <br>
-        <div class="row row-cols-md-4 row-cols-2">
+        <div class="row row-cols-md-4 row-cols-sm-2 row-cols-1">
           <HomeCard v-for="other in others" :key="other.title" :data="other" />
         </div>
       </div>
@@ -177,9 +177,9 @@ export default {
 </style>
 
 <style>
-.AWS img{
+/*.AWS img{
   width: 80%;
   height: 80%;
   object-fit: cover;
-}
+}*/
 </style>

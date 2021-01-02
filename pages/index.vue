@@ -11,7 +11,7 @@
       </h2>-->
 
       <div class="py-4" />
-      <div class="row row-cols-md-4 row-cols-2">
+      <div class="row row-cols-md-4 row-cols-sm-2 row-cols-1">
         <div v-for="card in cards" :key="card.title">
           <HomeCard :data="card" @openModal="openModal" />
         </div>
