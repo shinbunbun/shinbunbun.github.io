@@ -1,22 +1,24 @@
 <template>
-  <div class="col col-12 productCard" @click="$emit('openModal', data)">
-    <div class="card h-100">
-      <img :src="data.src" class="card-img-top" alt="">
-      <div class="card-body border-top">
-        <h5 class="card-title">
-          {{ data.title }}
-        </h5>
-        <div v-for="tag in data.tags" :key="tag" class="tag col">
-          <div class="rounded tag_text" :class="tag">
-            #{{ tag }}
+  <transition name="fade">
+    <div v-if="narrowTags(data.tags, narrowDownTags)[0]" class="productCard" @click="$emit('openModal', data)">
+      <div class="card h-100">
+        <img :src="data.src" class="card-img-top" alt="">
+        <div class="card-body border-top">
+          <h5 class="card-title">
+            {{ data.title }}
+          </h5>
+          <div v-for="tag in data.tags" :key="tag" class="tag col">
+            <div class="rounded tag_text" :class="tag">
+              #{{ tag }}
+            </div>
           </div>
+          <p class="card-text">
+            追加日: {{ data.date }}
+          </p>
         </div>
-        <p class="card-text">
-          追加日: {{ data.date }}
-        </p>
       </div>
     </div>
-  </div>
+  </transition>
 </template>
 
 <script>
@@ -25,6 +27,15 @@ export default {
     data: {
       type: Object,
       required: true
+    },
+    narrowDownTags: {
+      type: Array,
+      required: true
+    }
+  },
+  methods: {
+    narrowTags(tags, narrowDownTags) {
+      return tags.filter(tag => narrowDownTags.includes(tag))
     }
   }
 }
@@ -106,6 +117,22 @@ a{
 .GAS{
   background-color: #1a73e8;
   color: white;
+}
+
+@media screen and (max-width:576px) {
+  .card-img-top{
+    display: none;
+  }
+  .card-body{
+    border-top: none !important;
+  }
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 
 </style>

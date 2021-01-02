@@ -21,7 +21,19 @@
             </h2>
           </div>
         </div>
-        <div class="py-4" />
+
+        <div class="py-2" />
+        <div class="sns-icons row text-center">
+          <div class="col">
+            <img src="/images/twitter.png" alt="" @click="openLink('https://twitter.com/shinbunbun_')">
+            <img src="/images/facebook.png" alt="" @click="openLink('https://www.facebook.com/yuto.takamune.77/')">
+            <img src="/images/GitHub-Mark-120px-plus.png" alt="" @click="openLink('https://github.com/shinbunbun')">
+            <img src="/images/favicon.png" alt="qiita" @click="openLink('https://qiita.com/shinbunbun_')">
+            <img src="/images/speakerdeck.png" alt="" @click="openLink('https://speakerdeck.com/shinbunbun_')">
+          </div>
+        </div>
+
+        <div class="py-2" />
         <div class="row self_introduce">
           <div class="col">
             <h3>自己紹介</h3>
@@ -34,7 +46,7 @@
               コミュニティ活動も高一から行っており、主にLINE Developer Communityを中心に活動している。<br>
               すごくなりたいがくせいぐるーぷ運営メンバー。
             </p>
-            <div class="py-4" />
+            <div class="py-2" />
             <div class="row">
               <h3>保有資格</h3>
               <br>
@@ -45,6 +57,29 @@
                 </ul>
               </p>
             </div>
+            <div class="py-2" />
+            <div class="row">
+              <h3>研究分野</h3>
+              <br>
+              <p>
+                <ul>
+                  <li>Self-Sovereign Identity</li>
+                  <li>Decentralized Identity</li>
+                  <li>Verifiable Credentials</li>
+                </ul>
+              </p>
+            </div>
+            <!--<div class="row">
+              <h3>仕事</h3>
+              <br>
+              <p>
+                <ul>
+                  <li>アイカサ バックエンド開発（2018年12月~2019年12月）</li>
+                  <li>株式会社夜間飛行 ホームページ制作案件受注（2019年12月〜現在）</li>
+                  <li><a href="https://lastrust.io/" target="blank_">LasTrust株式会社 インターンシップ（R&D） （2020年12月〜現在）</a></li>
+                </ul>
+              </p>
+            </div>-->
           </div>
         </div>
         <div class="py-4" />
@@ -53,26 +88,26 @@
           <br>
           <h4>言語</h4>
           <br>
-          <div class="row row-cols-md-4 row-cols-2">
+          <div class="row row-cols-md-4 row-cols-sm-2 row-cols-1">
             <HomeCard v-for="language in languages" :key="language.title" :data="language" />
           </div>
           <br>
           <h4>フロントエンドフレームワーク</h4>
           <br>
-          <div class="row row-cols-md-4 row-cols-2">
+          <div class="row row-cols-md-4 row-cols-sm-2 row-cols-1">
             <HomeCard v-for="framework in frameworks" :key="framework.title" :data="framework" />
           </div>
         </div>
         <br>
         <h4>クラウド</h4>
         <br>
-        <div class="row row-cols-md-4 row-cols-2">
+        <div class="row row-cols-md-4 row-cols-sm-2 row-cols-1">
           <HomeCard v-for="cloud in clouds" :key="cloud.title" :data="cloud" />
         </div>
         <br>
         <h4>その他</h4>
         <br>
-        <div class="row row-cols-md-4 row-cols-2">
+        <div class="row row-cols-md-4 row-cols-sm-2 row-cols-1">
           <HomeCard v-for="other in others" :key="other.title" :data="other" />
         </div>
       </div>
@@ -91,12 +126,12 @@ export default {
           src: '/images/nodejs-new-pantone-black.jpg',
           title: 'Node.js',
           to: 'https://nodejs.org/'
-        },
+        }/*,
         {
           src: '/images/HTML5_Logo_512.png',
           title: 'HTML5',
           to: 'https://html.spec.whatwg.org/multipage/'
-        }
+        } */
       ],
       frameworks: [
         {
@@ -117,7 +152,7 @@ export default {
       ],
       clouds: [
         {
-          src: '',
+          src: '/images/aws.png',
           title: 'AWS',
           to: 'https://aws.amazon.com/'
         }
@@ -129,7 +164,7 @@ export default {
           to: 'https://github.co.jp/features/actions'
         },
         {
-          icon: 'lock',
+          src: '/images/oidc.png',
           title: 'OpenID Connect',
           to: 'https://openid.net/connect/'
         }
@@ -138,10 +173,10 @@ export default {
   },
   created() {
     // https://qiita.com/ksyunnnn/items/bfe2b9c568e97bb6b494
-    const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/'
+    /* const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/'
     const url = CORS_PROXY + 'https://aws.amazon.com/jp/'
 
-    fetch(url)
+     fetch(url)
       .then(res => res.text())
       .then((text) => {
         const el = new DOMParser().parseFromString(text, 'text/html')
@@ -153,7 +188,12 @@ export default {
             this.$set(this.clouds[0], 'src', v.getAttribute('content'))
           }
         })
-      })
+      }) */
+  },
+  methods: {
+    openLink(url) {
+      window.open(url, '_blank')
+    }
   }
 }
 </script>
@@ -171,15 +211,15 @@ export default {
 .border{
   padding: 20px;
 }
-.container p{
-  font-size: 110%;
+.sns-icons img{
+  width: 50px;
 }
 </style>
 
 <style>
-.AWS img{
+/*.AWS img{
   width: 80%;
   height: 80%;
   object-fit: cover;
-}
+}*/
 </style>

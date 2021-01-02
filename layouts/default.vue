@@ -11,16 +11,18 @@ $primaryColour: #ececec;
 $secondaryColour: #666;
 $shadowColour: rgba(0, 0, 0, .6);
 
-.card {
-  transition-duration: $defaultDuration;
-  transition-property: transform;
+@media screen and (min-width: 768px) {
+  .card {
+    transition-duration: $defaultDuration;
+    transition-property: transform;
 
-  //@include hideTapHighlightColor();
-  //@include hardwareAccel();
-  //@include improveAntiAlias();
+    //@include hideTapHighlightColor();
+    //@include hardwareAccel();
+    //@include improveAntiAlias();
 
-  &:hover {
-    transform: scale(1.1);
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 

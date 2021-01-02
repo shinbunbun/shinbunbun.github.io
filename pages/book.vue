@@ -6,7 +6,7 @@
       <h1>著書</h1>
       <div class="py-4" />
 
-      <div class="row row-cols-md-4 row-cols-2">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4">
         <div v-for="card in cards" :key="card.title">
           <HomeCard :data="card" @openModal="openModal(card)" />
         </div>
@@ -19,11 +19,8 @@
         <br>
         <div class="container modal-container">
           <div class="row">
-            <div class="col-md-6 d-flex align-items-center">
-              <div class="d-flex align-items-center">
-                <img :src="data.src" alt="">
-              </div>
-              <div class="py-3" />
+            <div class="col-md-6 align-items-center" style="text-align: center;">
+              <img :src="data.src" alt="">
             </div>
             <div class="col-md-6">
               <div class="py-2" />
@@ -90,9 +87,6 @@ export default {
 .description{
   white-space: pre-line;
   text-align: left;
-}
-p{
-  font-size: 110%;
 }
 .amazon-btn{
   background-color: #f67c1b;

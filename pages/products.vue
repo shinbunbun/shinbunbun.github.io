@@ -8,8 +8,78 @@
 
       <div class="py-4" />
 
-      <div class="row row-cols-md-4 row-cols-2">
-        <ProductCard v-for="product in products" :key="product.title" :data="product" @openModal="openModal" />
+      <p>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseExample"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+        >
+          ▽絞り込み
+        </button>
+      </p>
+      <div id="collapseExample" class="collapse">
+        <div class="card card-body tags-card">
+          <span v-for="tag in tags" :key="tag">
+            <label class="form-check-label rounded" :class="`label-${tag}`" :for="`check-${tag}`">
+              <input
+                :id="`check-${tag}`"
+                type="checkbox"
+                class="form-check-input"
+                value=""
+                :checked="narrowDownTags.includes(tag)"
+                @change="changeCheckBox(tag)"
+              >
+              {{ tag }}
+            </label>
+          </span>
+          <div>
+            <br>
+            <button class="btn btn-primary" @click="allCheck('on')">
+              全選択
+            </button>
+            <button class="btn btn-danger" @click="allCheck('off')">
+              選択解除
+            </button>
+          </div>
+          <div class="py-1" />
+          <p>※チェックを入れたタグが1つでも含まれている作品が表示されます</p>
+        </div>
+      </div>
+
+      <!--<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#option">
+        click me
+      </button>
+
+      <div id="option" class="collapse">
+        <div class="form-check">
+          <input id="aws" class="form-check-input" type="checkbox" value="">
+          <label class="form-check-label" for="aws">
+            AWS
+          </label><input id="webapp" class="form-check-input" type="checkbox" value="">
+          <label class="form-check-label" for="webapp">
+            WebApp
+          </label>
+          <input id="nuxt.js" class="form-check-input" type="checkbox" value="">
+          <label class="form-check-label" for="aws">
+            AWS
+          </label>
+        </div>
+      </div>-->
+
+      <div class="py-2" />
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4">
+        <ProductCard
+          v-for="product in products"
+          :key="product.title"
+          class="col"
+          :data="product"
+          :narrow-down-tags="narrowDownTags"
+          @openModal="openModal"
+        />
       </div>
     </div>
 
@@ -26,9 +96,11 @@ export default {
     return {
       modal: false,
       choseProduct: {},
+      tags: ['WebApp', 'Nuxt.js', 'Vue.js', 'LINE Bot', 'AWS', 'GAS', 'Clova', 'Alexa'],
+      narrowDownTags: ['WebApp', 'Nuxt.js', 'Vue.js', 'LINE Bot', 'AWS', 'GAS', 'Clova', 'Alexa'],
       products: [
         {
-          src: '/images/jikanwai-bot.png',
+          src: '/images/portfolio.png',
           title: 'ポートフォリオサイト',
           tags: ['AWS', 'WebApp', 'Nuxt.js'],
           date: '2020/12/31',
@@ -36,7 +108,7 @@ export default {
           webapp: 'https://shinbunbun.info',
           description: `2020年12月〜2021年1月にかけて制作。
           高校一年生の頃から使っていたポートフォリオサイトが一つあったのだが、EC2のパーミッションをミスってSSHもFTPも入れなくなってしまい、1年ほど放置していた。
-          さすがにそのままはよくないなーと思い、Nuxt.jsとBootstrap5を使って新しいポートフォリオサイト（これ）を制作した。
+          が、さすがにそのままはよくないなーと思い、Nuxt.jsとBootstrap5を使って新しいポートフォリオサイト（これ）を制作した。
           GitHub Pagesにホスティングしている。
           `
         },
@@ -266,6 +338,20 @@ export default {
     openModal(data) {
       this.choseProduct = data
       this.$refs.ProductModal.openModal()
+    },
+    changeCheckBox(tag) {
+      if (this.narrowDownTags.includes(tag)) {
+        this.narrowDownTags = this.narrowDownTags.filter(n => n !== tag)
+        return
+      }
+      this.narrowDownTags.push(tag)
+    },
+    allCheck(opt) {
+      if (opt === 'on') {
+        this.narrowDownTags = this.tags
+      } else {
+        this.narrowDownTags = []
+      }
     }
   }
 }
@@ -281,7 +367,63 @@ export default {
 .title_container{
   text-align: center;
 }
-/*.container p{
-  font-size: 110%;
-}*/
+label {
+  white-space: nowrap;
+  margin: 3px;
+  padding: 3px;
+}
+.form-check-input{
+  margin-left: 3px;
+}
+
+.label-AWS{
+  background-color: #f67c1b;
+  color: white;
+}
+.label-LINE.Bot{
+  background-color: #03ba1e;
+  color: white;
+}
+.label-WebApp{
+  background-color: #cd5c5c;
+  color: white;
+}
+.label-Clova{
+  background-color: #05d686;
+  color: white;
+}
+.label-Nuxt\.js{
+  background-color: #2f495e;
+  color: white;
+}
+.label-Vue\.js{
+  background-color: #2f495e;
+  color: white;
+}
+.label-productCard {
+  padding-bottom: 20px;
+}
+.label-Alexa{
+  background-color: #31C4F3;
+  color: white;
+}
+.label-GAS{
+  background-color: #1a73e8;
+  color: white;
+}
+
+.tags-card{
+  display: inline-block;
+}
+</style>
+
+<style lang="scss" scoped>
+.tags-card{
+  transition-duration: none !important;
+  transition-property: none !important;
+
+  &:hover {
+    transform: none !important;
+  }
+}
 </style>
