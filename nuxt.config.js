@@ -60,7 +60,7 @@ export default {
 
   webfontloader: {
     google: {
-      families: ['Lato:400,700', 'JetBrains+Mono:300']
+      families: ['M+PLUS+1p']
     }
   },
 

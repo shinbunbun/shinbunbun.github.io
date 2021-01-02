@@ -12,9 +12,7 @@
 
       <div class="py-4" />
       <div class="row row-cols-md-4 row-cols-sm-2 row-cols-1">
-        <div v-for="card in cards" :key="card.title">
-          <HomeCard :data="card" @openModal="openModal" />
-        </div>
+        <HomeCard v-for="card in cards" :key="card.title" :data="card" @openModal="openModal" />
       </div>
 
       <MyModal v-if="modal" @close="closeModal">
@@ -23,7 +21,7 @@
         </span>
         <br>
         <div class="container modal-container">
-          <div class="row row-cols-md-4 row-cols-1">
+          <div class="row row-cols-md-4 row-cols-sm-2 row-cols-1">
             <div v-for="card in sns" :key="card.title">
               <HomeCard :data="card" @openModal="openModal" />
             </div>
@@ -56,55 +54,77 @@ export default {
       ],
       cards: [
         {
-          icon: 'person',
+          src: '/images/about.png',
           title: 'About Me',
           to: '/about',
-          color: 'rgba(246,124,27,0.45)'
+          internal: true
+          // color: 'rgba(246,124,27,0.45)'
         },
         {
-          icon: 'apps',
+          src: '/images/products.png',
           title: 'Products',
           to: '/products',
-          color: 'rgba(227,86,227,0.45)'
+          internal: true
+          // color: 'rgba(227,86,227,0.45)'
         },
         {
-          icon: 'group_add',
+          src: '/images/sns.png',
           title: 'SNS',
-          color: 'rgba(227,98,98,0.45)',
+          // color: 'rgba(227,98,98,0.45)',
           modal: true
         },
         {
-          icon: 'menu_book',
+          src: '/images/book.png',
           title: 'book',
           to: '/book',
-          color: 'rgba(75,227,204,0.45)'
+          internal: true
+          // color: 'rgba(75,227,204,0.45)'
         },
         {
           src: '/images/favicon.png',
           title: 'Qiita',
-          to: 'https://qiita.com/shinbunbun_',
-          color: 'rgba(157,227,120,0.45)'
+          to: 'https://qiita.com/shinbunbun_'
+          // color: 'rgba(157,227,120,0.45)'
         },
         {
           src: '/images/GitHub-Mark-120px-plus.png',
           title: 'GitHub',
-          to: 'https://github.com/shinbunbun',
-          color: 'rgba(46,80,166,0.45)'
+          to: 'https://github.com/shinbunbun'
+          // color: 'rgba(46,80,166,0.45)'
         },
         {
           src: '/images/lapras.png',
           title: 'Lapras',
-          to: 'https://lapras.com/public/HNWZIHB',
-          color: 'rgba(250,228,35,0.45)'
+          to: 'https://lapras.com/public/HNWZIHB'
+          // color: 'rgba(250,228,35,0.45)'
         },
         {
           src: '/images/connpass_logo_3.png',
           title: 'connpass',
-          to: 'https://connpass.com/user/unix_yuto/',
-          color: 'rgba(107,73,61,0.45)'
+          to: 'https://connpass.com/user/unix_yuto/'
+          // color: 'rgba(107,73,61,0.45)'
         }
       ]
     }
+  },
+  created() {
+    // https://qiita.com/ksyunnnn/items/bfe2b9c568e97bb6b494
+    /* const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/'
+    const url = CORS_PROXY + 'https://lapras.com/'
+
+    fetch(url)
+      .then(res => res.text())
+      .then((text) => {
+        const el = new DOMParser().parseFromString(text, 'text/html')
+        const headEls = el.head.children
+        Array.from(headEls).map((v) => {
+          const prop = v.getAttribute('property')
+          if (!prop) { return }
+          if (prop === 'og:image') {
+            this.$set(this.cards[6], 'src', v.getAttribute('content'))
+          }
+        })
+      }) */
   },
   methods: {
     openLink(url) {

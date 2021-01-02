@@ -153,9 +153,6 @@ export default {
 .colse-button {
   font-size: 45px;
 }
-p{
-font-size: 110%;
-}
 .qiita-btn{
    background-color: #55c500;
    color: white;
@@ -190,5 +187,8 @@ font-size: 110%;
 }
 .twitter{
   width: 100%;
+}
+img{
+  max-width: 100%;
 }
 </style>

@@ -117,7 +117,7 @@ export default {
       ],
       clouds: [
         {
-          src: '',
+          src: '/images/aws.png',
           title: 'AWS',
           to: 'https://aws.amazon.com/'
         }
@@ -129,7 +129,7 @@ export default {
           to: 'https://github.co.jp/features/actions'
         },
         {
-          icon: 'lock',
+          src: '/images/oidc.png',
           title: 'OpenID Connect',
           to: 'https://openid.net/connect/'
         }
@@ -138,10 +138,10 @@ export default {
   },
   created() {
     // https://qiita.com/ksyunnnn/items/bfe2b9c568e97bb6b494
-    const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/'
+    /* const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/'
     const url = CORS_PROXY + 'https://aws.amazon.com/jp/'
 
-    fetch(url)
+     fetch(url)
       .then(res => res.text())
       .then((text) => {
         const el = new DOMParser().parseFromString(text, 'text/html')
@@ -153,7 +153,7 @@ export default {
             this.$set(this.clouds[0], 'src', v.getAttribute('content'))
           }
         })
-      })
+      }) */
   }
 }
 </script>
@@ -170,9 +170,6 @@ export default {
 }
 .border{
   padding: 20px;
-}
-.container p{
-  font-size: 110%;
 }
 </style>
 

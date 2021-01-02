@@ -1,5 +1,5 @@
 <template>
-  <div class="col col-12 productCard" @click="$emit('openModal', data)">
+  <div class="productCard" @click="$emit('openModal', data)">
     <div class="card h-100">
       <img :src="data.src" class="card-img-top" alt="">
       <div class="card-body border-top">
@@ -106,6 +106,15 @@ a{
 .GAS{
   background-color: #1a73e8;
   color: white;
+}
+
+@media screen and (max-width:576px) {
+  .card-img-top{
+    display: none;
+  }
+  .card-body{
+    border-top: none !important;
+  }
 }
 
 </style>

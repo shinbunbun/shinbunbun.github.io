@@ -8,8 +8,8 @@
 
       <div class="py-4" />
 
-      <div class="row row-cols-md-4 row-cols-2">
-        <ProductCard v-for="product in products" :key="product.title" :data="product" @openModal="openModal" />
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4">
+        <ProductCard v-for="product in products" :key="product.title" class="col" :data="product" @openModal="openModal" />
       </div>
     </div>
 
@@ -281,7 +281,4 @@ export default {
 .title_container{
   text-align: center;
 }
-/*.container p{
-  font-size: 110%;
-}*/
 </style>

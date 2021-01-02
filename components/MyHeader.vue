@@ -103,7 +103,7 @@ export default {
 </style>
 
 <style>
-body {
-  font-family: "Lato", sans-serif;
-}
+/*body {
+  font-family: 'M PLUS 1p'
+}*/
 </style>
