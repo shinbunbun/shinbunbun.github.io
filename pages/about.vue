@@ -21,10 +21,19 @@
             </h2>
           </div>
         </div>
-        <div class="sns-icons">
-          <img src="/images/twitter.png" alt="">
+
+        <div class="py-2" />
+        <div class="sns-icons row text-center">
+          <div class="col">
+            <img src="/images/twitter.png" alt="" @click="openLink('https://twitter.com/shinbunbun_')">
+            <img src="/images/facebook.png" alt="" @click="openLink('https://www.facebook.com/yuto.takamune.77/')">
+            <img src="/images/GitHub-Mark-120px-plus.png" alt="" @click="openLink('https://github.com/shinbunbun')">
+            <img src="/images/favicon.png" alt="qiita" @click="openLink('https://qiita.com/shinbunbun_')">
+            <img src="/images/speakerdeck.png" alt="" @click="openLink('https://speakerdeck.com/shinbunbun_')">
+          </div>
         </div>
-        <div class="py-4" />
+
+        <div class="py-2" />
         <div class="row self_introduce">
           <div class="col">
             <h3>自己紹介</h3>
@@ -180,6 +189,11 @@ export default {
           }
         })
       }) */
+  },
+  methods: {
+    openLink(url) {
+      window.open(url, '_blank')
+    }
   }
 }
 </script>
