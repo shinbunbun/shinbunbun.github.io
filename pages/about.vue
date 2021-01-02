@@ -91,12 +91,12 @@ export default {
           src: '/images/nodejs-new-pantone-black.jpg',
           title: 'Node.js',
           to: 'https://nodejs.org/'
-        },
+        }/*,
         {
           src: '/images/HTML5_Logo_512.png',
           title: 'HTML5',
           to: 'https://html.spec.whatwg.org/multipage/'
-        }
+        } */
       ],
       frameworks: [
         {

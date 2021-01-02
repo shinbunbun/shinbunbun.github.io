@@ -145,10 +145,10 @@ export default {
   position: relative;
   left: 5%;
 }
-
+/*
 .name{
   background: linear-gradient(transparent 70%, var(--nuxt-green) 70%);
-}
+}*/
 .colse-button{
   font-size: 45px;
 }
