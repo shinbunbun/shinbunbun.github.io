@@ -100,7 +100,7 @@ export default {
       narrowDownTags: ['WebApp', 'Nuxt.js', 'Vue.js', 'LINE Bot', 'AWS', 'GAS', 'Clova', 'Alexa'],
       products: [
         {
-          src: '/images/jikanwai-bot.png',
+          src: '/images/portfolio.png',
           title: 'ポートフォリオサイト',
           tags: ['AWS', 'WebApp', 'Nuxt.js'],
           date: '2020/12/31',
@@ -108,7 +108,7 @@ export default {
           webapp: 'https://shinbunbun.info',
           description: `2020年12月〜2021年1月にかけて制作。
           高校一年生の頃から使っていたポートフォリオサイトが一つあったのだが、EC2のパーミッションをミスってSSHもFTPも入れなくなってしまい、1年ほど放置していた。
-          さすがにそのままはよくないなーと思い、Nuxt.jsとBootstrap5を使って新しいポートフォリオサイト（これ）を制作した。
+          が、さすがにそのままはよくないなーと思い、Nuxt.jsとBootstrap5を使って新しいポートフォリオサイト（これ）を制作した。
           GitHub Pagesにホスティングしている。
           `
         },
