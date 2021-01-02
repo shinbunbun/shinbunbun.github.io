@@ -21,6 +21,9 @@
             </h2>
           </div>
         </div>
+        <div class="sns-icons">
+          <img src="/images/twitter.png" alt="">
+        </div>
         <div class="py-4" />
         <div class="row self_introduce">
           <div class="col">
@@ -34,7 +37,7 @@
               コミュニティ活動も高一から行っており、主にLINE Developer Communityを中心に活動している。<br>
               すごくなりたいがくせいぐるーぷ運営メンバー。
             </p>
-            <div class="py-4" />
+            <div class="py-2" />
             <div class="row">
               <h3>保有資格</h3>
               <br>
@@ -42,6 +45,18 @@
                 <ul>
                   <li>情報セキュリティマネジメント試験（2018年春合格）</li>
                   <li>応用情報技術者試験（2019年春合格）</li>
+                </ul>
+              </p>
+            </div>
+            <div class="py-2" />
+            <div class="row">
+              <h3>研究分野</h3>
+              <br>
+              <p>
+                <ul>
+                  <li>Self-Sovereign Identity</li>
+                  <li>Decentralized Identity</li>
+                  <li>Verifiable Credentials</li>
                 </ul>
               </p>
             </div>
@@ -181,6 +196,9 @@ export default {
 }
 .border{
   padding: 20px;
+}
+.sns-icons img{
+  width: 50px;
 }
 </style>
 

@@ -11,7 +11,7 @@
       </h2>-->
 
       <div class="py-4" />
-      <div class="row row-cols-md-4 row-cols-sm-2 row-cols-1">
+      <div class="row row-cols-md-4 row-cols-sm-2 row-cols-1 justify-content-center">
         <HomeCard v-for="card in cards" :key="card.title" :data="card" @openModal="openModal" />
       </div>
 
@@ -22,7 +22,7 @@
         <br>
         <div class="container modal-container">
           <div class="row row-cols-md-4 row-cols-sm-2 row-cols-1">
-            <div v-for="card in sns" :key="card.title">
+            <div v-for="card in links" :key="card.title">
               <HomeCard :data="card" @openModal="openModal" />
             </div>
           </div>
@@ -40,7 +40,7 @@ export default {
   data() {
     return {
       modal: false,
-      sns: [
+      links: [
         {
           src: '/images/twitter.png',
           title: 'Twitter',
@@ -50,49 +50,7 @@ export default {
           src: '/images/facebook.png',
           title: 'Facebook',
           to: 'https://www.facebook.com/yuto.takamune.77'
-        }
-      ],
-      cards: [
-        {
-          src: '/images/about.png',
-          title: 'About Me',
-          to: '/about',
-          internal: true
-          // color: 'rgba(246,124,27,0.45)'
         },
-        {
-          src: '/images/products.png',
-          title: 'Products',
-          to: '/products',
-          internal: true
-          // color: 'rgba(227,86,227,0.45)'
-        },
-        {
-          src: '/images/sns.png',
-          title: 'SNS',
-          // color: 'rgba(227,98,98,0.45)',
-          modal: true
-        },
-        {
-          src: '/images/book.png',
-          title: 'Book',
-          to: '/book',
-          internal: true
-          // color: 'rgba(75,227,204,0.45)'
-        },
-        {
-          src: '/images/photos.png',
-          title: 'Photos',
-          to: '/photos',
-          internal: true
-          // color: 'rgba(75,227,204,0.45)'
-        },
-        /* {
-          src: '/images/work.png',
-          title: 'Work',
-          to: '/work',
-          internal: true
-        }, */
         {
           src: '/images/favicon.png',
           title: 'Qiita',
@@ -117,6 +75,48 @@ export default {
           to: 'https://connpass.com/user/unix_yuto/'
           // color: 'rgba(107,73,61,0.45)'
         }
+      ],
+      cards: [
+        {
+          src: '/images/about.png',
+          title: 'About Me',
+          to: '/about',
+          internal: true
+          // color: 'rgba(246,124,27,0.45)'
+        },
+        {
+          src: '/images/products.png',
+          title: 'Products',
+          to: '/products',
+          internal: true
+          // color: 'rgba(227,86,227,0.45)'
+        },
+        {
+          src: '/images/book.png',
+          title: 'Book',
+          to: '/book',
+          internal: true
+          // color: 'rgba(75,227,204,0.45)'
+        },
+        {
+          src: '/images/photos.png',
+          title: 'Photos',
+          to: '/photos',
+          internal: true
+          // color: 'rgba(75,227,204,0.45)'
+        },
+        {
+          src: '/images/links.png',
+          title: 'Links',
+          // color: 'rgba(227,98,98,0.45)',
+          modal: true
+        }
+        /* {
+          src: '/images/work.png',
+          title: 'Work',
+          to: '/work',
+          internal: true
+        }, */
       ]
     }
   },
