@@ -35,71 +35,12 @@
                 Products
               </NuxtLink>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                id="navbarDropdownMenuLink"
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
+            <li class="nav-item">
+              <span class="nav-link" style="cursor: pointer;" @click="openModal">
                 Links
-              </a>
-              <ul
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="https://twitter.com/shinbunbun_"
-                  >
-                    Twitter
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="https://qiita.com/shinbunbun_"
-                  >
-                    Qiita
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="https://github.com/shinbunbun"
-                  >
-                    GitHub
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="https://connpass.com/user/unix_yuto/"
-                  >
-                    connpass
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="https://lapras.com/public/HNWZIHB"
-                  >
-                    Lapras
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="https://www.facebook.com/yuto.takamune.77"
-                  >
-                    Facebook
-                  </a>
-                </li>
-              </ul>
+              </span>
             </li>
+            <LinksModal ref="LinksModal" />
           </ul>
         </div>
       </div>
@@ -116,6 +57,11 @@ export default {
   },
   mounted() {
     this.path = this.$route.path
+  },
+  methods: {
+    openModal() {
+      this.$refs.LinksModal.openModal()
+    }
   }
 }
 </script>
