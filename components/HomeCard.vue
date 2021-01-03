@@ -61,6 +61,7 @@
         </div>
       </div>
     </div>
+
     <div v-else class="card rounded h-100" :class="data.title" :style="{ 'border-color': data.color}">
       <a :href="data.to" target="_blank">
         <div class="row">
