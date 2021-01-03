@@ -91,4 +91,8 @@ body{
   background-color: var(--background-color);
   color: #4D4D4D !important;
 }
+
+.colse-button{
+  cursor: pointer;
+}
 </style>
