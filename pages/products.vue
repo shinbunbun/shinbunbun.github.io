@@ -120,7 +120,7 @@ export default {
           youtube: 'https://www.youtube.com/embed/8OPSW_0tWmU',
           github: 'https://github.com/shinbunbun/jikanwari-bot',
           qiita: 'https://qiita.com/shinbunbun_/items/00c4064c8133a34cf7c3',
-          webapp: 'jikanwari-bot.shinbunbun.info',
+          webapp: 'https://jikanwari-bot.shinbunbun.info',
           linebot: 'https://line.me/R/ti/p/%40ywg0561x',
           clova: 'https://clova.line.me/clova-ai/skillstore/skill/com.takamuneyuto.skill.second',
           description: `2018年夏に制作。
@@ -133,7 +133,7 @@ export default {
         },
         {
           src: '/images/2019graduate.png',
-          title: '2019年度卒業生御祝いページ',
+          title: '2019年度卒業生お祝いページ',
           tags: ['AWS', 'WebApp', 'Vue.js'],
           date: '2020/12/31',
           github: 'https://github.com/shinbunbun/2019_graduate',

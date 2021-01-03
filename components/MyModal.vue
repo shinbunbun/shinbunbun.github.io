@@ -51,17 +51,17 @@
 
 // オーバーレイのトランジション
 .modal-enter-active, .modal-leave-active {
-  transition: opacity 0.4s;
+  transition: opacity 0.3s;
 
   // オーバーレイに包含されているモーダルウィンドウのトランジション
   .modal-window {
-    transition: opacity 0.4s, transform 0.4s;
+    transition: opacity 0.3s, transform 0.3s;
   }
 }
 
 // ディレイを付けるとモーダルウィンドウが消えた後にオーバーレイが消える
 .modal-leave-active {
-  transition: opacity 0.6s ease 0.4s;
+  transition: opacity 0.4s ease 0.2s;
 }
 
 .modal-enter, .modal-leave-to {
