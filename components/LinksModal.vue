@@ -5,7 +5,7 @@
     </span>
     <br>
     <div class="container modal-container">
-      <div class="row row-cols-md-4 row-cols-sm-2 row-cols-1">
+      <div class="row row-cols-md-4 row-cols-sm-2 row-cols-1 justify-content-center">
         <div v-for="card in links" :key="card.title">
           <HomeCard :data="card" @openModal="openModal" />
         </div>
