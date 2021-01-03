@@ -117,6 +117,10 @@ a{
   background-color: #D4BA11;
   color: white;
 }
+.Others{
+  background-color: #CA59F5;
+  color: white;
+}
 
 @media screen and (max-width:576px) {
   .card-img-top{

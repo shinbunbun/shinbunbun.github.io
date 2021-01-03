@@ -96,8 +96,8 @@ export default {
     return {
       modal: false,
       choseProduct: {},
-      tags: ['WebApp', 'Nuxt.js', 'Vue.js', 'LINE Bot', 'AWS', 'GAS', 'Clova', 'Alexa', 'IoT'],
-      narrowDownTags: ['WebApp', 'Nuxt.js', 'Vue.js', 'LINE Bot', 'AWS', 'GAS', 'Clova', 'Alexa', 'IoT'],
+      tags: ['WebApp', 'Nuxt.js', 'Vue.js', 'LINE Bot', 'AWS', 'GAS', 'Clova', 'Alexa', 'IoT', 'Others'],
+      narrowDownTags: ['WebApp', 'Nuxt.js', 'Vue.js', 'LINE Bot', 'AWS', 'GAS', 'Clova', 'Alexa', 'IoT', 'Others'],
       products: [
         {
           src: '/images/portfolio.png',
@@ -200,9 +200,9 @@ export default {
         },
         {
           src: 'http://img.youtube.com/vi/TQUemTeiCKM/hqdefault.jpg',
-          title: '2019年3月',
+          title: '宿題終わってる？',
           tags: ['AWS', 'Clova'],
-          date: '2020/12/31',
+          date: '2019年3月',
           youtube: 'https://www.youtube.com/embed/TQUemTeiCKM',
           clova: 'https://clova.line.me/clova-ai/skillstore/skill/info.shinbunbun.syukudai',
           description: `2019年3月に制作。
@@ -290,6 +290,18 @@ export default {
           大晦日まであと何日か教えてくれる。
 
           Lambdaを使用している。
+          `
+        },
+        {
+          src: '/images/maruken.jpg',
+          title: '部活出席管理ソフト',
+          tags: ['Others'],
+          date: '2018年11月',
+          youtube: 'https://www.youtube.com/embed/2ag9Z2FxYYg',
+          description: `2018年11月製作。
+          唯一のC#作品。
+          何もわからないままとりあえず動くものを作ってみた。
+          2018年11月〜2019年11月までの1年間、私が所属していた部活で使用された。
           `
         },
         {
@@ -452,6 +464,10 @@ label {
 }
 .label-IoT{
   background-color: #D4BA11;
+  color: white;
+}
+.label-Others{
+  background-color: #CA59F5;
   color: white;
 }
 
