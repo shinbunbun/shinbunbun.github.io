@@ -103,7 +103,7 @@ export default {
           src: '/images/portfolio.png',
           title: 'ポートフォリオサイト',
           tags: ['AWS', 'WebApp', 'Nuxt.js'],
-          date: '2020年1月',
+          date: '2021年1月',
           github: 'https://github.com/shinbunbun/portfolio',
           webapp: 'https://shinbunbun.info',
           description: `2020年12月〜2021年1月にかけて制作。
