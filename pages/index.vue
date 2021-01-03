@@ -67,11 +67,13 @@ export default {
         },
         {
           src: '/images/comming.png',
-          title: 'Comming Soon...'
+          title: 'Comming Soon...',
+          to: 'https://github.com/shinbunbun/shinbunbun.github.io/blob/master/CONTRIBUTING.md'
         },
         {
           src: '/images/comming.png',
-          title: 'Comming Soon...'
+          title: 'Comming Soon...',
+          to: 'https://github.com/shinbunbun/shinbunbun.github.io/blob/master/CONTRIBUTING.md'
         }
         /* {
           src: '/images/work.png',
