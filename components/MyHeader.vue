@@ -4,7 +4,7 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-light">
       <div class="container">
         <NuxtLink class="navbar-brand" to="/">
-          <img src="/images/ポートフォリオサイトロゴ.png" alt="">
+          <img src="/images/portfolio-logo.png" alt="">
         </NuxtLink>
         <button
           class="navbar-toggler"
