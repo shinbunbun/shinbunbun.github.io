@@ -52,6 +52,7 @@ export default {
   background-color: var(--card-color);
   border-radius: 5px;
   box-shadow: 0 2px 5px var(--card-shadow-color);
+  cursor: pointer;
 }
 
 img{

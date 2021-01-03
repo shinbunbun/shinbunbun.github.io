@@ -64,6 +64,14 @@ export default {
           title: 'Others',
           to: 'others',
           internal: true
+        },
+        {
+          src: '/images/comming.png',
+          title: 'Comming Soon...'
+        },
+        {
+          src: '/images/comming.png',
+          title: 'Comming Soon...'
         }
         /* {
           src: '/images/work.png',
