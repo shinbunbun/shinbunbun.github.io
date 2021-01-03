@@ -25,7 +25,7 @@
           <div class="col sns-image-container">
             <a href="https://twitter.com/shinbunbun_" target="blank" rel=“noopener”><img v-lazy="`/images/twitter.png`" alt="twitter" /></a>
             <a href="https://www.facebook.com/yuto.takamune.77/" target="blank" rel=“noopener”><img v-lazy="`/images/facebook.png`" alt="facebook" /></a>
-            <a href="https://github.com/shinbunbu" target="blank" rel=“noopener”><img v-lazy="`/images/GitHub-Mark-120px-plus.png`" alt="github" /></a>
+            <a href="https://github.com/shinbunbun" target="blank" rel=“noopener”><img v-lazy="`/images/GitHub-Mark-120px-plus.png`" alt="github" /></a>
             <a href="https://qiita.com/shinbunbun_" target="blank" rel=“noopener”><img v-lazy="`/images/favicon.png`" alt="qiita" /></a>
             <a href="https://speakerdeck.com/shinbunbun_" target="blank" rel=“noopener”><img v-lazy="`/images/speakerdeck.png`" alt="speaker deck" ></a>
           </div>
