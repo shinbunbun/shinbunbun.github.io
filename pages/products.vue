@@ -423,6 +423,10 @@ label {
   background-color: #1a73e8;
   color: white;
 }
+.label-IoT{
+  background-color: #D4BA11;
+  color: white;
+}
 
 .tags-card{
   display: inline-block;
