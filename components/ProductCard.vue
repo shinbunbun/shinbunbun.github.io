@@ -13,7 +13,7 @@
             </div>
           </div>
           <p class="card-text">
-            追加日: {{ data.date }}
+            制作日: {{ data.date }}
           </p>
         </div>
       </div>
