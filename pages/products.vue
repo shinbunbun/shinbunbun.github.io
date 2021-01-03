@@ -194,6 +194,21 @@ export default {
           `
         },
         {
+          src: '/images/huro.jpg',
+          title: '風呂のボタン押すやつ',
+          tags: ['IoT', 'AWS', 'LINE Bot'],
+          date: '2020/12/31',
+          twitterId: '1125212225914818560',
+          qiita: 'https://qiita.com/shinbunbun_/items/d4dcf2e3ce96c041e9d5',
+          github: 'https://github.com/shinbunbun/huro',
+          description: `2019年5月制作。
+          LINE Botから風呂のボタンを押せる装置。
+          帰宅前にボタンを押しておくと、帰宅する頃には風呂がわいている。
+          最高。
+          ちなみにLightsailの維持コストの関係で現在は停止中。
+          `
+        },
+        {
           src: '/images/tmp.jpg',
           title: '気温チェッカー',
           tags: ['IoT'],
