@@ -6,7 +6,7 @@
 
 <style lang="scss">
   // Default options
-$defaultDuration: .3s;
+$defaultDuration: .2s;
 $primaryColour: #ececec;
 $secondaryColour: #666;
 $shadowColour: rgba(0, 0, 0, .6);
