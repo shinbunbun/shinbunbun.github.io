@@ -96,8 +96,8 @@ export default {
     return {
       modal: false,
       choseProduct: {},
-      tags: ['WebApp', 'Nuxt.js', 'Vue.js', 'LINE Bot', 'AWS', 'GAS', 'Clova', 'Alexa'],
-      narrowDownTags: ['WebApp', 'Nuxt.js', 'Vue.js', 'LINE Bot', 'AWS', 'GAS', 'Clova', 'Alexa'],
+      tags: ['WebApp', 'Nuxt.js', 'Vue.js', 'LINE Bot', 'AWS', 'GAS', 'Clova', 'Alexa', 'IoT'],
+      narrowDownTags: ['WebApp', 'Nuxt.js', 'Vue.js', 'LINE Bot', 'AWS', 'GAS', 'Clova', 'Alexa', 'IoT'],
       products: [
         {
           src: '/images/portfolio.png',
@@ -198,7 +198,8 @@ export default {
           title: '気温チェッカー',
           tags: ['IoT'],
           date: '2020/12/31',
-          twitter: '1138749064810356736',
+          twitterId: '1138749064810356736',
+          qiita: 'https://qiita.com/shinbunbun_/items/86cdd013a4abdf5ff49a',
           description: `2019年6月製作。
           祖母の熱中症対策で、気温が30度を超えたらLEDがチカチカする装置を作った。
           IoTのタグがついているが、Internetにつながってないので厳密にはIoTではない。
