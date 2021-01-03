@@ -61,8 +61,8 @@ export default {
         },
         {
           src: '/images/others.png',
-          title: 'Others',
-          to: 'others',
+          title: 'Extra',
+          to: 'extra',
           internal: true
         },
         {
