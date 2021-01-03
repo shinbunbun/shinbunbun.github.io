@@ -47,6 +47,20 @@
       </NuxtLink>
     </div>
 
+    <div v-else-if="data.disable" class="card-disable-wrapper rounded">
+      <div class="card card-disable rounded h-100" :class="data.title" :style="{ 'border-color': data.color}">
+        <div class="row">
+          <div class="col-md-12 col-3">
+            <img :src="data.src" alt="">
+          </div>
+          <div class="card-body col-md-12 col-9">
+            <p class="card_title">
+              {{ data.title }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
     <div v-else class="card rounded h-100" :class="data.title" :style="{ 'border-color': data.color}">
       <a :href="data.to" target="_blank">
         <div class="row">
@@ -124,5 +138,28 @@ a{
 }
 .homeCard {
   padding-bottom: 20px;
+}
+.card-disable-wrapper{
+  background-color: black;
+}
+.card-disable{
+  opacity: 0.6;
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .card-disable-wrapper{
+    display: none;
+  }
+  .card-disable {
+    display: none;
+  }
+}
+</style>
+
+<style lang="scss" scoped>
+.card-disable{
+  &:hover {
+    transform: none;
+  }
 }
 </style>
