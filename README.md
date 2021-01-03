@@ -1,6 +1,10 @@
-# portfolio
+# しんんぶんぶんのportfolio
+しんぶんぶんのポートフォリオサイトです。サイトは[こちら](https://shinbunbun.github.io/)。
 
-## Build Setup
+
+Nuxt.jsとBootstrap5を使用しており、GitHub Pagesにホスティングしています。
+
+## 開発に参加してくださる方
 
 ```bash
 # install dependencies
