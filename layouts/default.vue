@@ -1,6 +1,8 @@
 <template>
   <div>
+    <MyHeader />
     <Nuxt />
+    <MyFooter />
   </div>
 </template>
 
@@ -30,8 +32,8 @@ $shadowColour: rgba(0, 0, 0, .6);
 
 <style>
 html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif;
+  /*font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;*/
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -78,7 +80,15 @@ html {
 }
 
 :root {
-  --nuxt-green: #00c58e
+  --nuxt-green: #00c58e;
+  --background-color: #F0F5F5;
+  --fot-color: #4D4D4D;
+  --card-color: #FAFCFC;
+  --card-shadow-color: #BABFBF;
 }
 
+body{
+  background-color: var(--background-color);
+  color: #4D4D4D !important;
+}
 </style>

@@ -55,12 +55,17 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/gtm',
     'nuxt-webfontloader'
   ],
 
+  gtm: {
+    id: 'GTM-5QB974C'
+  },
+
   webfontloader: {
     google: {
-      families: ['M+PLUS+1p']
+      families: ['Noto+Sans+JP']
     }
   },
 

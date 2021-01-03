@@ -35,39 +35,12 @@
                 Products
               </NuxtLink>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                id="navbarDropdownMenuLink"
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                SNS
-              </a>
-              <ul
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="https://twitter.com/shinbunbun_"
-                  >
-                    Twitter
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="https://www.facebook.com/yuto.takamune.77"
-                  >
-                    Facebook
-                  </a>
-                </li>
-              </ul>
+            <li class="nav-item">
+              <span class="nav-link" style="cursor: pointer;" @click="openModal">
+                Links
+              </span>
             </li>
+            <LinksModal ref="LinksModal" />
           </ul>
         </div>
       </div>
@@ -84,6 +57,11 @@ export default {
   },
   mounted() {
     this.path = this.$route.path
+  },
+  methods: {
+    openModal() {
+      this.$refs.LinksModal.openModal()
+    }
   }
 }
 </script>
@@ -91,7 +69,8 @@ export default {
 <style scoped>
 .navbar {
   font-size: 130%;
-  background-color: white;
+  background-color: var(--background-color);
+  /*background-color: white;*/
 }
 .nav-item{
   padding-left:  20px !important;

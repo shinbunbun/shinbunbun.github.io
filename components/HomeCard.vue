@@ -108,11 +108,12 @@ export default {
 .card{
   text-align: center;
   border-radius: 5px;
-  box-shadow: 0 2px 5px #ccc;
+  box-shadow: 0 2px 5px var(--card-shadow-color);
+  background-color:var(--card-color);
 }
 
 a{
-  color: black;
+  color: var(--font-color);
   text-decoration: none;
 }
 .Lapras img{

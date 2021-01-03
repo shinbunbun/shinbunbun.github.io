@@ -1,7 +1,5 @@
 <template>
   <div>
-    <MyHeader />
-
     <div class="container">
       <div class="py-4" />
       <h1>About Me</h1>
@@ -112,7 +110,6 @@
         </div>
       </div>
     </div>
-    <MyFooter />
   </div>
 </template>
 
@@ -123,7 +120,7 @@ export default {
     return {
       languages: [
         {
-          src: '/images/nodejs-new-pantone-black.jpg',
+          src: '/images/nodejs-new-pantone-black.png',
           title: 'Node.js',
           to: 'https://nodejs.org/'
         }/*,
@@ -147,7 +144,12 @@ export default {
         {
           src: '/images/bootstrap-solid.svg',
           title: 'Bootstrap4, 5',
-          to: 'https://nuxtjs.org/'
+          to: 'https://getbootstrap.com/'
+        },
+        {
+          src: '/images/vuetify.png',
+          title: 'Vuetify',
+          to: 'https://vuetifyjs.com/'
         }
       ],
       clouds: [

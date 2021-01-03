@@ -13,7 +13,7 @@
             </div>
           </div>
           <p class="card-text">
-            追加日: {{ data.date }}
+            制作日: {{ data.date }}
           </p>
         </div>
       </div>
@@ -49,6 +49,9 @@ export default {
 
 .card{
   text-align: left;
+  background-color: var(--card-color);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px var(--card-shadow-color);
 }
 
 img{
@@ -79,43 +82,43 @@ a{
   background-color: #f67c1b;
   color: white;
 }
-
 .LINE.Bot{
   background-color: #03ba1e;
   color: white;
 }
-
 .WebApp{
   background-color: #cd5c5c;
   color: white;
 }
-
 .Clova{
   background-color: #05d686;
   color: white;
 }
-
 .Nuxt\.js{
   background-color: #2f495e;
   color: white;
 }
-
 .Vue\.js{
   background-color: #2f495e;
   color: white;
 }
-
 .productCard {
   padding-bottom: 20px;
 }
-
 .Alexa{
   background-color: #31C4F3;
   color: white;
 }
-
 .GAS{
   background-color: #1a73e8;
+  color: white;
+}
+.IoT{
+  background-color: #D4BA11;
+  color: white;
+}
+.Others{
+  background-color: #CA59F5;
   color: white;
 }
 

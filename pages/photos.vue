@@ -1,14 +1,13 @@
 <template>
   <div>
-    <MyHeader />
     <div class="container">
       <div class="py-4" />
-      <h1>写真</h1>
+      <h1>Photos</h1>
       <div class="py-4" />
 
       <div class="row">
         <div class="col">
-          <div class="btn-group" role="group">
+          <div class="btn-group border rounded" role="group">
             <button
               type="button"
               class="btn size-btn"
@@ -49,7 +48,6 @@
         <light-box ref="lightbox" :media="images" :show-light-box="false" />
       </client-only>
     </div>
-    <MyFooter />
   </div>
 </template>
 

@@ -1,7 +1,5 @@
 <template>
   <div>
-    <MyHeader />
-
     <div class="container">
       <div class="py-4" />
 
@@ -15,22 +13,8 @@
         <HomeCard v-for="card in cards" :key="card.title" :data="card" @openModal="openModal" />
       </div>
 
-      <MyModal v-if="modal" @close="closeModal">
-        <span class="material-icons colse-button" @click="closeModal">
-          close
-        </span>
-        <br>
-        <div class="container modal-container">
-          <div class="row row-cols-md-4 row-cols-sm-2 row-cols-1">
-            <div v-for="card in links" :key="card.title">
-              <HomeCard :data="card" @openModal="openModal" />
-            </div>
-          </div>
-        </div>
-      </MyModal>
+      <LinksModal ref="LinksModal" />
     </div>
-
-    <MyFooter />
   </div>
 </template>
 
@@ -40,42 +24,6 @@ export default {
   data() {
     return {
       modal: false,
-      links: [
-        {
-          src: '/images/twitter.png',
-          title: 'Twitter',
-          to: 'https://twitter.com/shinbunbun_'
-        },
-        {
-          src: '/images/facebook.png',
-          title: 'Facebook',
-          to: 'https://www.facebook.com/yuto.takamune.77'
-        },
-        {
-          src: '/images/favicon.png',
-          title: 'Qiita',
-          to: 'https://qiita.com/shinbunbun_'
-          // color: 'rgba(157,227,120,0.45)'
-        },
-        {
-          src: '/images/GitHub-Mark-120px-plus.png',
-          title: 'GitHub',
-          to: 'https://github.com/shinbunbun'
-          // color: 'rgba(46,80,166,0.45)'
-        },
-        {
-          src: '/images/lapras.png',
-          title: 'Lapras',
-          to: 'https://lapras.com/public/HNWZIHB'
-          // color: 'rgba(250,228,35,0.45)'
-        },
-        {
-          src: '/images/connpass_logo_3.png',
-          title: 'connpass',
-          to: 'https://connpass.com/user/unix_yuto/'
-          // color: 'rgba(107,73,61,0.45)'
-        }
-      ],
       cards: [
         {
           src: '/images/about.png',
@@ -110,6 +58,12 @@ export default {
           title: 'Links',
           // color: 'rgba(227,98,98,0.45)',
           modal: true
+        },
+        {
+          src: '/images/others.png',
+          title: 'Others',
+          to: 'others',
+          internal: true
         }
         /* {
           src: '/images/work.png',
@@ -140,14 +94,11 @@ export default {
       }) */
   },
   methods: {
+    openModal() {
+      this.$refs.LinksModal.openModal()
+    },
     openLink(url) {
       window.open(url, '_blank')
-    },
-    openModal() {
-      this.modal = true
-    },
-    closeModal() {
-      this.modal = false
     }
   }
 }
@@ -162,7 +113,4 @@ export default {
 .name{
   background: linear-gradient(transparent 70%, var(--nuxt-green) 70%);
 }*/
-.colse-button{
-  font-size: 45px;
-}
 </style>
