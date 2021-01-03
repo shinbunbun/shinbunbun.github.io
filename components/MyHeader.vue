@@ -44,7 +44,7 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                SNS
+                Links
               </a>
               <ul
                 class="dropdown-menu"
@@ -56,6 +56,38 @@
                     href="https://twitter.com/shinbunbun_"
                   >
                     Twitter
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://qiita.com/shinbunbun_"
+                  >
+                    Qiita
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://github.com/shinbunbun"
+                  >
+                    GitHub
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://connpass.com/user/unix_yuto/"
+                  >
+                    connpass
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://lapras.com/public/HNWZIHB"
+                  >
+                    Lapras
                   </a>
                 </li>
                 <li>
