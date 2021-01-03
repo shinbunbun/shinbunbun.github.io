@@ -78,7 +78,15 @@ html {
 }
 
 :root {
-  --nuxt-green: #00c58e
+  --nuxt-green: #00c58e;
+  --background-color: #F0F5F5;
+  --fot-color: #4D4D4D;
+  --card-color: #FAFCFC;
+  --card-shadow-color: #BABFBF;
 }
 
+body{
+  background-color: var(--background-color);
+  color: #4D4D4D !important;
+}
 </style>

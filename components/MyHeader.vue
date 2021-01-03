@@ -91,7 +91,8 @@ export default {
 <style scoped>
 .navbar {
   font-size: 130%;
-  background-color: white;
+  background-color: var(--background-color);
+  /*background-color: white;*/
 }
 .nav-item{
   padding-left:  20px !important;

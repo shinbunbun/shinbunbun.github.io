@@ -92,3 +92,9 @@
   }
 }
 </style>
+
+<style scoped>
+.modal-content{
+  background-color: var(--background-color);
+}
+</style>
