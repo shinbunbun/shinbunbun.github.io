@@ -8,7 +8,7 @@
 
       <div class="row">
         <div class="col">
-          <div class="btn-group" role="group">
+          <div class="btn-group border rounded" role="group">
             <button
               type="button"
               class="btn size-btn"
