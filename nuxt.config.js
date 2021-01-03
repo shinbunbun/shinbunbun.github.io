@@ -60,7 +60,7 @@ export default {
 
   webfontloader: {
     google: {
-      families: ['M+PLUS+1p']
+      families: ['Noto+Sans+JP']
     }
   },
 
