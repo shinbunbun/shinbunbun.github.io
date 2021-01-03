@@ -3,7 +3,7 @@
     <MyHeader />
     <div class="container">
       <div class="py-4" />
-      <h1>写真</h1>
+      <h1>Photos</h1>
       <div class="py-4" />
 
       <div class="row">
