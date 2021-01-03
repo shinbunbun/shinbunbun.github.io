@@ -1,8 +1,5 @@
 export default {
   target: 'static',
-  router: {
-    base: '/portfolio/'
-  },
   env: {
     qiita: 'https://qiita.com/shinbunbun_'
   },
