@@ -1,6 +1,5 @@
 <template>
   <div>
-    <MyHeader />
     <div class="container">
       <div class="py-4" />
       <h1>著書</h1>
@@ -41,8 +40,6 @@
           </div>
         </div>
       </MyModal>
-
-      <MyFooter />
     </div>
   </div>
 </template>

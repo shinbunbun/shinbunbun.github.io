@@ -1,7 +1,5 @@
 <template>
   <div>
-    <MyHeader />
-
     <div class="container">
       <div class="py-4" />
       <h1>Products</h1>
@@ -84,8 +82,6 @@
     </div>
 
     <ProductModal ref="ProductModal" :data="choseProduct" />
-
-    <MyFooter />
   </div>
 </template>
 

@@ -1,6 +1,5 @@
 <template>
   <div>
-    <MyHeader />
     <div class="container">
       <div class="py-4" />
       <h1>Photos</h1>
@@ -49,7 +48,6 @@
         <light-box ref="lightbox" :media="images" :show-light-box="false" />
       </client-only>
     </div>
-    <MyFooter />
   </div>
 </template>
 

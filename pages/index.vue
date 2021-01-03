@@ -1,7 +1,5 @@
 <template>
   <div>
-    <MyHeader />
-
     <div class="container">
       <div class="py-4" />
 
@@ -17,8 +15,6 @@
 
       <LinksModal ref="LinksModal" />
     </div>
-
-    <MyFooter />
   </div>
 </template>
 
@@ -62,6 +58,12 @@ export default {
           title: 'Links',
           // color: 'rgba(227,98,98,0.45)',
           modal: true
+        },
+        {
+          src: '/images/others.png',
+          title: 'Others',
+          to: 'others',
+          internal: true
         }
         /* {
           src: '/images/work.png',

@@ -1,7 +1,5 @@
 <template>
   <div>
-    <MyHeader />
-
     <div class="container">
       <div class="py-4" />
       <h1>About Me</h1>
@@ -112,7 +110,6 @@
         </div>
       </div>
     </div>
-    <MyFooter />
   </div>
 </template>
 
