@@ -22,12 +22,12 @@
 
         <div class="py-2" />
         <div class="sns-icons row text-center">
-          <div class="col">
-            <img src="/images/twitter.png" alt="" @click="openLink('https://twitter.com/shinbunbun_')">
-            <img src="/images/facebook.png" alt="" @click="openLink('https://www.facebook.com/yuto.takamune.77/')">
-            <img src="/images/GitHub-Mark-120px-plus.png" alt="" @click="openLink('https://github.com/shinbunbun')">
-            <img src="/images/favicon.png" alt="qiita" @click="openLink('https://qiita.com/shinbunbun_')">
-            <img src="/images/speakerdeck.png" alt="" @click="openLink('https://speakerdeck.com/shinbunbun_')">
+          <div class="col sns-image-container">
+            <a href="https://twitter.com/shinbunbun_" target="blank" rel=“noopener”><img v-lazy="`/images/twitter.png`" alt="twitter" /></a>
+            <a href="https://www.facebook.com/yuto.takamune.77/" target="blank" rel=“noopener”><img v-lazy="`/images/facebook.png`" alt="facebook" /></a>
+            <a href="https://github.com/shinbunbun" target="blank" rel=“noopener”><img v-lazy="`/images/GitHub-Mark-120px-plus.png`" alt="github" /></a>
+            <a href="https://qiita.com/shinbunbun_" target="blank" rel=“noopener”><img v-lazy="`/images/favicon.png`" alt="qiita" /></a>
+            <a href="https://speakerdeck.com/shinbunbun_" target="blank" rel=“noopener”><img v-lazy="`/images/speakerdeck.png`" alt="speaker deck" ></a>
           </div>
         </div>
 
@@ -210,11 +210,25 @@ export default {
 .title_container{
   text-align: center;
 }
+.sns-image-container a {
+  margin: 0 10px;
+}
+.sns-image-container a > img {
+  width: 40px;
+  transition: 0.1s;
+}
 .border{
   padding: 20px;
 }
 .sns-icons img{
   width: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .sns-image-container a > img:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+  }
 }
 </style>
 
