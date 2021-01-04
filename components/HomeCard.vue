@@ -49,16 +49,18 @@
 
     <div v-else-if="data.disable" class="card-disable-wrapper rounded">
       <div class="card card-disable rounded h-100" :class="data.title" :style="{ 'border-color': data.color}">
-        <div class="row">
-          <div class="col-md-12 col-3">
-            <img :src="data.src" alt="">
+        <a :href="data.to" target="_blank">
+          <div class="row">
+            <div class="col-md-12 col-3">
+              <img :src="data.src" alt="">
+            </div>
+            <div class="card-body col-md-12 col-9">
+              <p class="card_title">
+                {{ data.title }}
+              </p>
+            </div>
           </div>
-          <div class="card-body col-md-12 col-9">
-            <p class="card_title">
-              {{ data.title }}
-            </p>
-          </div>
-        </div>
+        </a>
       </div>
     </div>
 
