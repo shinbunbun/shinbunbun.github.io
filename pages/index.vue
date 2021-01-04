@@ -9,7 +9,7 @@
       </h2>-->
 
       <div class="py-4" />
-      <div class="row row-cols-md-4 row-cols-sm-2 row-cols-1 justify-content-center">
+      <div class="row row-cols-xl-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
         <HomeCard v-for="card in cards" :key="card.title" :data="card" @openModal="openModal" />
       </div>
 
