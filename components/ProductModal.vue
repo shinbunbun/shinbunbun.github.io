@@ -31,51 +31,39 @@
             <h2>{{ data.title }}</h2>
             <div class="py-2" />
             <div v-if="data.github" class="btn-wrapper">
-              <button type="button" class="btn github-btn" @click="openLink(data.github)">
+              <button type="button" class="btn github-btn d-flex align-items-center d-flex align-items-center" @click="openLink(data.github)">
                 <b>GitHub</b>
-                <span style="font-family: Material Icons">
-                  open_in_new
-                </span>
+                <img class="new-tab-img" src="images/open_in_new-black-18dp.svg" alt="">
               </button>
             </div>
             <div v-if="data.qiita" class="btn-wrapper">
-              <button type="button" class="btn qiita-btn" @click="openLink(data.qiita)">
+              <button type="button" class="btn qiita-btn d-flex align-items-center" @click="openLink(data.qiita)">
                 <b>Qiita記事</b>
-                <span style="font-family: Material Icons">
-                  open_in_new
-                </span>
+                <img class="new-tab-img" src="images/open_in_new-black-18dp.svg" alt="">
               </button>
             </div>
             <div v-if="data.webapp" class="btn-wrapper">
-              <button type="button" class="btn webapp-btn" @click="openLink(data.webapp)">
+              <button type="button" class="btn webapp-btn d-flex align-items-center" @click="openLink(data.webapp)">
                 <b>Webアプリ</b>
-                <span style="font-family: Material Icons">
-                  open_in_new
-                </span>
+                <img class="new-tab-img" src="images/open_in_new-black-18dp.svg" alt="">
               </button>
             </div>
             <div v-if="data.linebot" class="btn-wrapper">
-              <button type="button" class="btn line-btn" @click="openLink(data.linebot)">
+              <button type="button" class="btn line-btn d-flex align-items-center" @click="openLink(data.linebot)">
                 <b>LINE友達追加</b>
-                <span style="font-family: Material Icons">
-                  open_in_new
-                </span>
+                <img class="new-tab-img" src="images/open_in_new-black-18dp.svg" alt="">
               </button>
             </div>
             <div v-if="data.clova" class="btn-wrapper">
-              <button type="button" class="btn clova-btn" @click="openLink(data.clova)">
+              <button type="button" class="btn clova-btn d-flex align-items-center" @click="openLink(data.clova)">
                 <b>Clovaスキル</b>
-                <span style="font-family: Material Icons">
-                  open_in_new
-                </span>
+                <img class="new-tab-img" src="images/open_in_new-black-18dp.svg" alt="">
               </button>
             </div>
             <div v-if="data.alexa" class="btn-wrapper">
-              <button type="button" class="btn alexa-btn" @click="openLink(data.alexa)">
+              <button type="button" class="btn alexa-btn d-flex align-items-center" @click="openLink(data.alexa)">
                 <b>Alexaスキル</b>
-                <span style="font-family: Material Icons">
-                  open_in_new
-                </span>
+                <img class="new-tab-img" src="images/open_in_new-black-18dp.svg" alt="">
               </button>
             </div>
             <br><br>
@@ -190,5 +178,8 @@ export default {
 }
 img{
   max-width: 100%;
+}
+.new-tab-img{
+  width: 16px;
 }
 </style>
