@@ -65,8 +65,13 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/gtm',
     'nuxt-webfontloader',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    '@nuxtjs/google-analytics'
   ],
+
+  googleAnalytics: {
+    id: 'UA-93929869-11' // 自身のアナリティクスコード
+  },
 
   gtm: {
     id: 'GTM-5QB974C'
