@@ -17,26 +17,26 @@
         >
           <span class="navbar-toggler-icon" />
         </button>
-        <div id="navbarNavDropdown" class="collapse navbar-collapse">
+        <div id="navbarNavDropdown" class="collapse navbar-collapse" :class="{show: navbarNavDropdownShow}">
           <div class="navbar-nav me-auto mb-2 mb-lg-0" />
           <ul class="navbar-nav">
-            <li class="nav-item">
+            <li class="nav-item" @click="closeNav">
               <NuxtLink class="nav-link" to="/">
                 Home
               </NuxtLink>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" @click="closeNav">
               <NuxtLink class="nav-link" to="/about">
                 About me
               </NuxtLink>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" @click="closeNav">
               <NuxtLink class="nav-link" to="/products">
                 Products
               </NuxtLink>
             </li>
-            <li class="nav-item">
-              <span class="nav-link" style="cursor: pointer;" @click="openModal">
+            <li class="nav-item" @click="openModal">
+              <span class="nav-link" style="cursor: pointer;">
                 Links
               </span>
             </li>
@@ -52,12 +52,20 @@
 export default {
   data() {
     return {
-      path: ''
+      path: '',
+      navbarNavDropdownShow: false
     }
   },
   methods: {
     openModal() {
       this.$refs.LinksModal.openModal()
+    },
+    closeNav() {
+      const myCollapse = document.getElementById('navbarNavDropdown')
+      // eslint-disable-next-line no-undef
+      new bootstrap.Collapse(myCollapse, {
+        hide: true
+      })
     }
   }
 }
