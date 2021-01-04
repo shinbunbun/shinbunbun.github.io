@@ -196,3 +196,25 @@ p{
   text-indent: 0px;
 }
 </style>
+
+<script>
+export default {
+  data() {
+    return {
+      meta: {
+        title: 'Extra',
+        description: '閑話',
+        type: 'article'
+      }
+    }
+  },
+  head () {
+    return {
+      title: this.meta.title,
+      meta: [
+        { hid: 'description', name: 'description', content: this.meta.description }
+      ]
+    }
+  }
+}
+</script>

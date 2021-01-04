@@ -90,6 +90,13 @@
 export default {
   data() {
     return {
+      meta: {
+        title: 'Products',
+        description: '制作物一覧',
+        type: 'article',
+        url: 'https://shinbunbun.info/products/',
+        image: 'https://shinbunbun.info/images/ogp.png'
+      },
       modal: false,
       choseProduct: {},
       tags: ['WebApp', 'Nuxt.js', 'Vue.js', 'LINE Bot', 'AWS', 'GAS', 'Clova', 'Alexa', 'IoT', 'Others'],
@@ -399,6 +406,19 @@ export default {
       } else {
         this.narrowDownTags = []
       }
+    }
+  },
+  head () {
+    return {
+      title: this.meta.title,
+      meta: [
+        { hid: 'description', name: 'description', content: this.meta.description },
+        { hid: 'og:type', property: 'og:type', content: this.meta.type },
+        { hid: 'og:title', property: 'og:title', content: this.meta.title },
+        { hid: 'og:description', property: 'og:description', content: this.meta.description },
+        { hid: 'og:url', property: 'og:url', content: this.meta.url },
+        { hid: 'og:image', property: 'og:image', content: this.meta.image }
+      ]
     }
   }
 }

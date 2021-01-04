@@ -27,7 +27,7 @@ export default {
       cards: [
         {
           src: '/images/about.png',
-          title: 'About Me',
+          title: 'About me',
           to: '/about',
           internal: true
           // color: 'rgba(246,124,27,0.45)'
@@ -111,6 +111,12 @@ export default {
     },
     openLink(url) {
       window.open(url, '_blank')
+    }
+  },
+  head () {
+    return {
+      titleTemplate: null,
+      title: 'しんぶんぶん'
     }
   }
 }

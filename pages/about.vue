@@ -2,7 +2,7 @@
   <div>
     <div class="container">
       <div class="py-4" />
-      <h1>About Me</h1>
+      <h1>About me</h1>
 
       <div class="py-4" />
 
@@ -23,11 +23,11 @@
         <div class="py-2" />
         <div class="sns-icons row text-center">
           <div class="col sns-image-container">
-            <a href="https://twitter.com/shinbunbun_" target="blank" rel=“noopener”><img v-lazy="`/images/twitter.png`" alt="twitter" /></a>
-            <a href="https://www.facebook.com/yuto.takamune.77/" target="blank" rel=“noopener”><img v-lazy="`/images/facebook.png`" alt="facebook" /></a>
-            <a href="https://github.com/shinbunbun" target="blank" rel=“noopener”><img v-lazy="`/images/GitHub-Mark-120px-plus.png`" alt="github" /></a>
-            <a href="https://qiita.com/shinbunbun_" target="blank" rel=“noopener”><img v-lazy="`/images/favicon.png`" alt="qiita" /></a>
-            <a href="https://speakerdeck.com/shinbunbun_" target="blank" rel=“noopener”><img v-lazy="`/images/speakerdeck.png`" alt="speaker deck" ></a>
+            <a href="https://twitter.com/shinbunbun_" target="blank" rel="noopener"><img v-lazy="`/images/twitter.png`" alt="twitter"></a>
+            <a href="https://www.facebook.com/yuto.takamune.77/" target="blank" rel="noopener"><img v-lazy="`/images/facebook.png`" alt="facebook"></a>
+            <a href="https://github.com/shinbunbun" target="blank" rel="noopener"><img v-lazy="`/images/GitHub-Mark-120px-plus.png`" alt="github"></a>
+            <a href="https://qiita.com/shinbunbun_" target="blank" rel="noopener"><img v-lazy="`/images/favicon.png`" alt="qiita"></a>
+            <a href="https://speakerdeck.com/shinbunbun_" target="blank" rel="noopener"><img v-lazy="`/images/speakerdeck.png`" alt="speaker deck"></a>
           </div>
         </div>
 
@@ -118,6 +118,13 @@
 export default {
   data() {
     return {
+      meta: {
+        title: 'About me',
+        description: 'しんぶんぶんとは',
+        type: 'article',
+        url: 'https://shinbunbun.info/about/',
+        image: 'https://shinbunbun.info/images/ogp.png'
+      },
       languages: [
         {
           src: '/images/nodejs-new-pantone-black.png',
@@ -195,6 +202,19 @@ export default {
   methods: {
     openLink(url) {
       window.open(url, '_blank')
+    }
+  },
+  head () {
+    return {
+      title: this.meta.title,
+      meta: [
+        { hid: 'description', name: 'description', content: this.meta.description },
+        { hid: 'og:type', property: 'og:type', content: this.meta.type },
+        { hid: 'og:title', property: 'og:title', content: this.meta.title },
+        { hid: 'og:description', property: 'og:description', content: this.meta.description },
+        { hid: 'og:url', property: 'og:url', content: this.meta.url },
+        { hid: 'og:image', property: 'og:image', content: this.meta.image }
+      ]
     }
   }
 }

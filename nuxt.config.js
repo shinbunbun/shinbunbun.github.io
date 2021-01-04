@@ -5,7 +5,7 @@ export default {
   },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'しんぶんぶん（高棟雄斗） ポートフォリオ',
+    titleTemplate: '%s - しんぶんぶん',
     htmlAttrs: {
       lang: 'ja',
       prefix: 'og: http://ogp.me/ns#'
@@ -64,7 +64,8 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxtjs/gtm',
-    'nuxt-webfontloader'
+    'nuxt-webfontloader',
+    '@nuxtjs/sitemap'
   ],
 
   gtm: {
@@ -91,5 +92,14 @@ export default {
 
   router: {
     linkExactActiveClass: 'active'
+  },
+
+  sitemap: {
+    path: '/sitemap.xml',
+    hostname: 'https://shinbunbun.info',
+    // generate: true,
+    exclude: [
+      '/extra'
+    ]
   }
 }
