@@ -27,7 +27,7 @@
             </li>
             <li class="nav-item">
               <NuxtLink class="nav-link" to="/about">
-                About Me
+                About me
               </NuxtLink>
             </li>
             <li class="nav-item">

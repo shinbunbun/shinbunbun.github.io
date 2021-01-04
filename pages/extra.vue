@@ -21,7 +21,6 @@
     <br>
     <h3>読書</h3>
     <p>
-      僕、実は結構本を読む人なんですよ。
       幼稚園児の頃から児童文学を読み耽っていて、エルマーのぼうけんとかめちゃ読んでました。あのシリーズだったら16ひきのりゅうが一番好き。
       小2くらいからは星新一にどハマりして、小4くらいまでずーっと星新一読んでました。新潮文庫出版のやつは全巻読んでるはず。
       でもどこで道を踏み外したのか、小5くらいからラノベばっか読むようになり、休み時間机の上に俺ガイルを積んでるような小学生になってしまいました。
@@ -196,3 +195,25 @@ p{
   text-indent: 0px;
 }
 </style>
+
+<script>
+export default {
+  data() {
+    return {
+      meta: {
+        title: 'Extra',
+        description: '閑話',
+        type: 'article'
+      }
+    }
+  },
+  head () {
+    return {
+      title: this.meta.title,
+      meta: [
+        { hid: 'description', name: 'description', content: this.meta.description }
+      ]
+    }
+  }
+}
+</script>
