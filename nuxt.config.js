@@ -38,10 +38,7 @@ export default {
 
         src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js'
       }
-    ],
-    base: {
-      href: 'portfolio'
-    }
+    ]
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -90,5 +87,9 @@ export default {
   server: {
     port: 3333, // デフォルト: 3000
     host: '0.0.0.0' // デフォルト: localhost
+  },
+
+  router: {
+    linkExactActiveClass: 'active'
   }
 }

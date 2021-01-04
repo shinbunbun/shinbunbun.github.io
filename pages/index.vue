@@ -67,7 +67,7 @@ export default {
         },
         {
           src: '/images/comming.png',
-          title: 'Comming Soon...',
+          title: 'Comming Soon..',
           disable: true,
           to: 'https://github.com/shinbunbun/shinbunbun.github.io/blob/master/CONTRIBUTING.md'
         },
