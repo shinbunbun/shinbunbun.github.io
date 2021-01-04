@@ -73,11 +73,11 @@ export default {
     id: 'GTM-5QB974C'
   },
 
-  webfontloader: {
+  /* webfontloader: {
     google: {
       families: ['Noto+Sans+JP']
     }
-  },
+  }, */
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
