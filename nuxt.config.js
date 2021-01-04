@@ -5,11 +5,22 @@ export default {
   },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'portfolio',
+    title: 'しんぶんぶん（高棟雄斗） ポートフォリオ',
+    htmlAttrs: {
+      lang: 'ja',
+      prefix: 'og: http://ogp.me/ns#'
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'しんぶんぶん（高棟 雄斗）のポートフォリオサイト' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'shinbunbun\'s portfolio' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:url', property: 'og:url', content: 'https://shinbunbun.info' },
+      { hid: 'og:title', property: 'og:title', content: 'shinbunbun\'s portfolio' },
+      { hid: 'og:description', property: 'og:description', content: 'しんぶんぶんのポートフォリオ' },
+      { hid: 'og:image', property: 'og:image', content: 'https://shinbunbun.info/images/ogp.png' },
+      { name: 'twitter:card', content: 'summary_large_image' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/portfolio/favicon.ico' },
@@ -27,10 +38,7 @@ export default {
 
         src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js'
       }
-    ],
-    base: {
-      href: 'portfolio'
-    }
+    ]
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -79,5 +87,9 @@ export default {
   server: {
     port: 3333, // デフォルト: 3000
     host: '0.0.0.0' // デフォルト: localhost
+  },
+
+  router: {
+    linkExactActiveClass: 'active'
   }
 }

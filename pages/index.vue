@@ -61,17 +61,21 @@ export default {
         },
         {
           src: '/images/others.png',
-          title: 'Others',
-          to: 'others',
+          title: 'Extra',
+          to: 'extra',
           internal: true
         },
         {
           src: '/images/comming.png',
-          title: 'Comming Soon...'
+          title: 'Comming Soon..',
+          disable: true,
+          to: 'https://github.com/shinbunbun/shinbunbun.github.io/blob/master/CONTRIBUTING.md'
         },
         {
           src: '/images/comming.png',
-          title: 'Comming Soon...'
+          title: 'Comming Soon...',
+          disable: true,
+          to: 'https://github.com/shinbunbun/shinbunbun.github.io/blob/master/CONTRIBUTING.md'
         }
         /* {
           src: '/images/work.png',

@@ -21,17 +21,17 @@
           <div class="navbar-nav me-auto mb-2 mb-lg-0" />
           <ul class="navbar-nav">
             <li class="nav-item">
-              <NuxtLink class="nav-link" :class="{ active: path === '/' }" aria-current="page" to="/">
+              <NuxtLink class="nav-link" to="/">
                 Home
               </NuxtLink>
             </li>
             <li class="nav-item">
-              <NuxtLink class="nav-link" to="/about" :class="{ active: path === '/about' }">
+              <NuxtLink class="nav-link" to="/about">
                 About Me
               </NuxtLink>
             </li>
             <li class="nav-item">
-              <NuxtLink class="nav-link" to="/products" :class="{ active: path === '/products' }">
+              <NuxtLink class="nav-link" to="/products">
                 Products
               </NuxtLink>
             </li>
@@ -54,9 +54,6 @@ export default {
     return {
       path: ''
     }
-  },
-  mounted() {
-    this.path = this.$route.path
   },
   methods: {
     openModal() {
