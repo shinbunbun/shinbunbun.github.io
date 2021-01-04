@@ -2,9 +2,7 @@
   <div class="example-modal-window">
     <!-- コンポーネント MyModal -->
     <MyModal v-if="modal" @close="closeModal">
-      <span class="material-icons colse-button" @click="closeModal">
-        close
-      </span>
+      <img src="images/close-black-18dp.svg" alt="" class="close-button" @click="closeModal">
       <br>
       <div class="container modal-container">
         <div class="row">
@@ -138,8 +136,8 @@ export default {
 </style>
 
 <style scoped>
-.colse-button {
-  font-size: 45px;
+.close-button {
+  width: 45px;
 }
 .qiita-btn{
    background-color: #55c500;

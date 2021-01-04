@@ -1,8 +1,6 @@
 <template>
   <MyModal v-if="modal" @close="closeModal">
-    <span class="material-icons colse-button" @click="closeModal">
-      close
-    </span>
+    <img src="images/close-black-18dp.svg" alt="" class="close-button" @click="closeModal">
     <br>
     <div class="container modal-container">
       <div class="row row-cols-md-4 row-cols-sm-2 row-cols-1 justify-content-center">
@@ -72,7 +70,7 @@ export default {
 </script>
 
 <style scoped>
-.colse-button{
-  font-size: 45px;
+.close-button{
+  width: 45px;
 }
 </style>
