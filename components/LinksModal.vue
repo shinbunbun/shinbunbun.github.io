@@ -3,7 +3,7 @@
     <img src="images/close-black-18dp.svg" alt="" class="close-button" @click="closeModal">
     <br>
     <div class="container modal-container">
-      <div class="row row-cols-md-4 row-cols-sm-2 row-cols-1 justify-content-center">
+      <div class="row row-cols-xl-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
         <div v-for="card in links" :key="card.title">
           <HomeCard :data="card" @openModal="openModal" />
         </div>
