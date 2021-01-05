@@ -13,7 +13,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'しんぶんぶん（高棟 雄斗）のポートフォリオサイト' },
+      { hid: 'description', name: 'description', content: 'しんぶんぶん（高棟雄斗）のポートフォリオサイト' },
       { hid: 'og:site_name', property: 'og:site_name', content: 'shinbunbun\'s portfolio' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       { hid: 'og:url', property: 'og:url', content: 'https://shinbunbun.info' },
