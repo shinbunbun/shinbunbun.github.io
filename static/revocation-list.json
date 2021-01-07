@@ -1,1 +1,7 @@
-
+{
+  "@context": "https://w3id.org/openbadges/v2",
+  "id": "https://shinbunbun.info/revocation-list.json",
+  "type": "RevocationList",
+  "issuer": "https://shinbunbun.info/issuer.json",
+  "revokedAssertions": []
+}
