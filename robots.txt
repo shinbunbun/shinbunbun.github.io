@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /extra
+Disallow: /issuer.json
+Disallow: /cert-verifier-js/*
+Sitemap: https://shinbunbun.info/sitemap.xml
