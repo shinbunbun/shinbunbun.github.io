@@ -62,8 +62,17 @@ export default {
     '@nuxtjs/gtm',
     'nuxt-webfontloader',
     '@nuxtjs/sitemap',
-    '@nuxtjs/google-analytics'
+    '@nuxtjs/google-analytics',
+    '@nuxtjs/robots'
   ],
+
+  robots: {
+    UserAgent: '*',
+    // クローリングしないパスを記述
+    Disallow: ['/extra', '/issuer.json', '/cert-verifier-js/*'],
+    // sitemap.xmlのURLを記述
+    Sitemap: 'https://shinbunbun.info/sitemap.xml'
+  },
 
   googleAnalytics: {
     id: 'UA-93929869-11' // 自身のアナリティクスコード
