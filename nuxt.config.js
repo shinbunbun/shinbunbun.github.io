@@ -63,7 +63,8 @@ export default {
     'nuxt-webfontloader',
     '@nuxtjs/sitemap',
     '@nuxtjs/google-analytics',
-    '@nuxtjs/robots'
+    '@nuxtjs/robots',
+    ['nuxt-canonical', { baseUrl: 'https://shinbunbun.info', trailingSlashes: false }]
   ],
 
   robots: {
