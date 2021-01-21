@@ -51,6 +51,12 @@ export default {
           title: 'connpass',
           to: 'https://connpass.com/user/unix_yuto/'
           // color: 'rgba(107,73,61,0.45)'
+        },
+        {
+          src: '/images/speakerdeck.png',
+          title: 'Speaker Deck',
+          to: 'https://speakerdeck.com/shinbunbun_'
+          // color: 'rgba(107,73,61,0.45)'
         }
       ]
     }
