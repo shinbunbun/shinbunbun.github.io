@@ -1,5 +1,9 @@
 # しんんぶんぶんのポートフォリオ
 
+Ver.1.0.6
+
+最終更新: 2021/01/21
+
 しんぶんぶんのポートフォリオサイトです。サイトは[こちら](https://shinbunbun.github.io/)。
 
 Nuxt.jsとBootstrap5を使用しており、GitHub Pagesにホスティングしています。
