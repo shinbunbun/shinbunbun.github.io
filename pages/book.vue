@@ -12,9 +12,7 @@
       </div>
 
       <MyModal v-if="modal" @close="closeModal">
-        <span class="material-icons colse-button" @click="closeModal">
-          close
-        </span>
+        <img src="/images/close-black-18dp.svg" alt="" class="close-button" @click="closeModal">
         <br>
         <div class="container modal-container">
           <div class="row">
@@ -28,9 +26,7 @@
               <div class="btn-wrapper">
                 <button type="button" class="btn amazon-btn" @click="openLink(data.amazon)">
                   <b>Amazonで購入</b>
-                  <span style="font-family: Material Icons">
-                    open_in_new
-                  </span>
+                  <img class="new-tab-img" src="/images/open_in_new-black-18dp.svg" alt="">
                 </button>
               </div>
               <p class="description">
@@ -98,8 +94,8 @@ export default {
 </script>
 
 <style scoped>
-.colse-button{
-  font-size: 45px;
+.close-button{
+  width: 45px;
 }
 .description{
   white-space: pre-line;
@@ -108,5 +104,11 @@ export default {
 .amazon-btn{
   background-color: #f67c1b;
   color: white;
+}
+img{
+  max-width: 100%;
+}
+.new-tab-img{
+  width: 16px;
 }
 </style>
