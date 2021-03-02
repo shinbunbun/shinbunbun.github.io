@@ -72,8 +72,8 @@
               <br>
               <p>
                 <ul>
-                  <!--<li>アイカサ バックエンド開発（2018年12月~2019年12月）</li>
-                  <li>株式会社夜間飛行 ホームページ制作案件受注（2019年12月〜現在）</li>-->
+                  <li><a href="https://www.i-kasa.com/" target="blank_">株式会社 Nature Innovation Group（アイカサ）</a> バックエンド開発（2018年12月~2019年12月）</li>
+                  <li><a href="https://yakan-hiko.co.jp/" target="blank_">株式会社夜間飛行</a> ホームページ制作（2019年12月〜現在）</li>
                   <li><a href="https://lastrust.io/" target="blank_">LasTrust株式会社</a> インターンシップ（R&D） （2021年1月〜現在）</li>
                 </ul>
               </p>
