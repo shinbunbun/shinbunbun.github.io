@@ -102,7 +102,8 @@ export default {
   },
 
   router: {
-    linkExactActiveClass: 'active'
+    linkExactActiveClass: 'active',
+    trailingSlash: true
   },
 
   sitemap: {
