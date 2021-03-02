@@ -80,7 +80,7 @@
             </div>
           </div>
         </div>
-        <div class="py-4" />
+        <div class="py-2" />
         <div class="skils">
           <h3>Skils</h3>
           <br>
