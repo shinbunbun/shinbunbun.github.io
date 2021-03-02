@@ -26,12 +26,12 @@
               </NuxtLink>
             </li>
             <li class="nav-item" @click="closeNav">
-              <NuxtLink class="nav-link" to="/about">
+              <NuxtLink class="nav-link" to="/about/">
                 About me
               </NuxtLink>
             </li>
             <li class="nav-item" @click="closeNav">
-              <NuxtLink class="nav-link" to="/products">
+              <NuxtLink class="nav-link" to="/products/">
                 Products
               </NuxtLink>
             </li>

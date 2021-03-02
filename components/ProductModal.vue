@@ -2,7 +2,7 @@
   <div class="example-modal-window">
     <!-- コンポーネント MyModal -->
     <MyModal v-if="modal" @close="closeModal">
-      <img src="images/close-black-18dp.svg" alt="" class="close-button" @click="closeModal">
+      <img src="/images/close-black-18dp.svg" alt="" class="close-button" @click="closeModal">
       <br>
       <div class="container modal-container">
         <div class="row">
@@ -31,37 +31,37 @@
             <div v-if="data.github" class="btn-wrapper">
               <button type="button" class="btn github-btn d-flex align-items-center d-flex align-items-center" @click="openLink(data.github)">
                 <b>GitHub</b>
-                <img class="new-tab-img" src="images/open_in_new-black-18dp.svg" alt="">
+                <img class="new-tab-img" src="/images/open_in_new-black-18dp.svg" alt="">
               </button>
             </div>
             <div v-if="data.qiita" class="btn-wrapper">
               <button type="button" class="btn qiita-btn d-flex align-items-center" @click="openLink(data.qiita)">
                 <b>Qiita記事</b>
-                <img class="new-tab-img" src="images/open_in_new-black-18dp.svg" alt="">
+                <img class="new-tab-img" src="/images/open_in_new-black-18dp.svg" alt="">
               </button>
             </div>
             <div v-if="data.webapp" class="btn-wrapper">
               <button type="button" class="btn webapp-btn d-flex align-items-center" @click="openLink(data.webapp)">
                 <b>Webアプリ</b>
-                <img class="new-tab-img" src="images/open_in_new-black-18dp.svg" alt="">
+                <img class="new-tab-img" src="/images/open_in_new-black-18dp.svg" alt="">
               </button>
             </div>
             <div v-if="data.linebot" class="btn-wrapper">
               <button type="button" class="btn line-btn d-flex align-items-center" @click="openLink(data.linebot)">
                 <b>LINE友達追加</b>
-                <img class="new-tab-img" src="images/open_in_new-black-18dp.svg" alt="">
+                <img class="new-tab-img" src="/images/open_in_new-black-18dp.svg" alt="">
               </button>
             </div>
             <div v-if="data.clova" class="btn-wrapper">
               <button type="button" class="btn clova-btn d-flex align-items-center" @click="openLink(data.clova)">
                 <b>Clovaスキル</b>
-                <img class="new-tab-img" src="images/open_in_new-black-18dp.svg" alt="">
+                <img class="new-tab-img" src="/images/open_in_new-black-18dp.svg" alt="">
               </button>
             </div>
             <div v-if="data.alexa" class="btn-wrapper">
               <button type="button" class="btn alexa-btn d-flex align-items-center" @click="openLink(data.alexa)">
                 <b>Alexaスキル</b>
-                <img class="new-tab-img" src="images/open_in_new-black-18dp.svg" alt="">
+                <img class="new-tab-img" src="/images/open_in_new-black-18dp.svg" alt="">
               </button>
             </div>
             <br><br>

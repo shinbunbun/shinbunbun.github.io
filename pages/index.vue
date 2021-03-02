@@ -28,28 +28,28 @@ export default {
         {
           src: '/images/about.png',
           title: 'About me',
-          to: '/about',
+          to: '/about/',
           internal: true
           // color: 'rgba(246,124,27,0.45)'
         },
         {
           src: '/images/products.png',
           title: 'Products',
-          to: '/products',
+          to: '/products/',
           internal: true
           // color: 'rgba(227,86,227,0.45)'
         },
         {
           src: '/images/book.png',
           title: 'Book',
-          to: '/book',
+          to: '/book/',
           internal: true
           // color: 'rgba(75,227,204,0.45)'
         },
         {
           src: '/images/photos.png',
           title: 'Photos',
-          to: '/photos',
+          to: '/photos/',
           internal: true
           // color: 'rgba(75,227,204,0.45)'
         },
