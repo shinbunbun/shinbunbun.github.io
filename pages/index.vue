@@ -66,7 +66,7 @@ export default {
           internal: true
         },
         {
-          src: '/images/comming.png',
+          src: '/images/community.png',
           title: 'Community',
           to: '/community/',
           internal: true
