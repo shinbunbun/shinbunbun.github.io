@@ -66,10 +66,10 @@ export default {
           internal: true
         },
         {
-          src: '/images/comming.png',
-          title: 'Comming Soon..',
-          disable: true,
-          to: 'https://github.com/shinbunbun/shinbunbun.github.io/blob/master/CONTRIBUTING.md'
+          src: '/images/community.png',
+          title: 'Community',
+          to: '/community/',
+          internal: true
         },
         {
           src: '/images/comming.png',
