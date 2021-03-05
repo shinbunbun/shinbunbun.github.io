@@ -62,7 +62,7 @@ export default {
         {
           src: '/images/others.png',
           title: 'Extra',
-          to: 'extra',
+          to: '/extra/',
           internal: true
         },
         {
