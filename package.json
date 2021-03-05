@@ -24,6 +24,7 @@
     "nuxt-webfontloader": "^1.1.0",
     "stylus": "^0.54.8",
     "stylus-loader": "^4.3.1",
+    "timeline-vuejs": "^1.1.7",
     "vue": "^2.6.12",
     "vue-image-lightbox": "^7.2.0",
     "vue-js-modal": "^2.0.0-rc.6",
