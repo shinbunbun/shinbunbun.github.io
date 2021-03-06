@@ -142,6 +142,11 @@ export default {
           src: '/images/nodejs-new-pantone-black.png',
           title: 'Node.js',
           to: 'https://nodejs.org/'
+        },
+        {
+          src: '/images/ts.png',
+          title: 'TypeScript',
+          to: 'https://www.typescriptlang.org/'
         }/*,
         {
           src: '/images/HTML5_Logo_512.png',
