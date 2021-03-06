@@ -109,7 +109,7 @@
           </div>
         </div>
         <br>
-        <h4>クラウド</h4>
+        <h4>AWS</h4>
         <br>
         <div class="row row-cols-md-4 row-cols-sm-2 row-cols-1">
           <HomeCard v-for="cloud in clouds" :key="cloud.title" :data="cloud" />
@@ -178,9 +178,44 @@ export default {
       ],
       clouds: [
         {
-          src: '/images/aws.png',
-          title: 'AWS',
-          to: 'https://aws.amazon.com/'
+          src: '/images/api-gateway.png',
+          title: 'API Gateway',
+          to: 'https://aws.amazon.com/jp/api-gateway/'
+        },
+        {
+          src: '/images/Arch_AWS-Lambda_64@5x.png',
+          title: 'Lambda',
+          to: 'https://aws.amazon.com/jp/lambda/'
+        },
+        {
+          src: '/images/Arch_Amazon-DynamoDB_64@5x.png',
+          title: 'DynamoDB',
+          to: 'https://aws.amazon.com/jp/dynamodb/'
+        },
+        {
+          src: '/images/Arch_Amazon-S3-On-Outposts_Storage_64@5x.png',
+          title: 'S3',
+          to: 'https://aws.amazon.com/jp/s3/'
+        },
+        {
+          src: '/images/Arch_Amazon-CloudFront_64@5x.png',
+          title: 'CloudFront',
+          to: 'https://aws.amazon.com/jp/cloudfront/'
+        },
+        {
+          src: '/images/Arch_Amazon-Cognito_64@5x.png',
+          title: 'Cognito',
+          to: 'https://aws.amazon.com/jp/cognito/'
+        },
+        {
+          src: '/images/Arch_Amazon-EC2_64@5x.png',
+          title: 'EC2',
+          to: 'https://aws.amazon.com/jp/ec2/'
+        },
+        {
+          src: '/images/13742415.png',
+          title: 'serverless',
+          to: 'https://www.serverless.com/'
         }
       ],
       others: [
