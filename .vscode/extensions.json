@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "octref.vetur",
+    "ms-azuretools.vscode-docker",
+    "dbaeumer.vscode-eslint"
+  ]
+}
