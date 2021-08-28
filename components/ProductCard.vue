@@ -1,7 +1,7 @@
 <template>
   <transition name="fade">
     <div v-if="narrowTags(data.tags, narrowDownTags)[0]" class="productCard" @click="$emit('openModal', data)">
-      <div class="card h-100">
+      <div class="card my-card h-100">
         <img :src="data.src" class="card-img-top" alt="">
         <div class="card-body border-top">
           <h5 class="card-title">
@@ -47,7 +47,7 @@ export default {
   text-align: left;
 }
 
-.card{
+.my-card{
   text-align: left;
   background-color: var(--card-color);
   border-radius: 5px;
