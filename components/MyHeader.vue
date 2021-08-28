@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="py-4" />
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <nav class="navbar my-navbar fixed-top navbar-expand-lg navbar-light">
       <div class="container">
         <NuxtLink class="navbar-brand" to="/">
           <img src="/images/portfolio-logo.png" alt="">
@@ -72,7 +72,7 @@ export default {
 </script>
 
 <style scoped>
-.navbar {
+.my-navbar {
   font-size: 130%;
   background-color: var(--background-color);
   /*background-color: white;*/

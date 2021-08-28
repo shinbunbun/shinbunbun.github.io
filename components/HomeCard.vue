@@ -16,7 +16,7 @@
           </div>
         </div>
       </div>-->
-    <div class="card rounded h-100" :class="data.title" :style="{ 'border-color': data.color}">
+    <div class="card my-card rounded h-100" :class="data.title" :style="{ 'border-color': data.color}">
       <div @click="$emit('openModal', data)">
         <div class="row">
           <div class="col-md-12 col-3">
@@ -32,7 +32,7 @@
     </div>
   </div>
   <div v-else class="homeCard">
-    <div v-if="data.internal" class="card rounded h-100" :class="data.title" :style="{ 'border-color': data.color}">
+    <div v-if="data.internal" class="card my-card rounded h-100" :class="data.title" :style="{ 'border-color': data.color}">
       <NuxtLink :to="data.to">
         <div class="row">
           <div class="col-md-12 col-3">
@@ -48,7 +48,7 @@
     </div>
 
     <div v-else-if="data.disable" class="card-disable-wrapper rounded">
-      <div class="card card-disable rounded h-100" :class="data.title" :style="{ 'border-color': data.color}">
+      <div class="my-card card-disable rounded h-100" :class="data.title" :style="{ 'border-color': data.color}">
         <a :href="data.to" target="_blank">
           <div class="row">
             <div class="col-md-12 col-3">
@@ -64,7 +64,7 @@
       </div>
     </div>
 
-    <div v-else class="card rounded h-100" :class="data.title" :style="{ 'border-color': data.color}">
+    <div v-else class="card my-card rounded h-100" :class="data.title" :style="{ 'border-color': data.color}">
       <a :href="data.to" target="_blank">
         <div class="row">
           <div class="col-md-12 col-3">
@@ -122,7 +122,7 @@ export default {
   font-size: 25px;
 }
 
-.card{
+.my-card{
   text-align: center;
   border-radius: 5px;
   box-shadow: 0 2px 5px var(--card-shadow-color);
