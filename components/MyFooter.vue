@@ -2,10 +2,20 @@
   <div class="footerFixed">
     <div class="py-4" />
     <footer>
-      <p>©︎2020 しんぶんぶん</p>
+      <p>©︎{{ year }} しんぶんぶん</p>
     </footer>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      year: new Date().getFullYear()
+    }
+  }
+}
+</script>
 
 <style>
 body{
