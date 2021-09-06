@@ -80,13 +80,14 @@
               </p>
             </div>
             <div class="row">
-              <h3>仕事</h3>
+              <h3>職歴</h3>
               <br>
               <p>
                 <ul>
                   <li><a href="https://www.i-kasa.com/" target="blank_">株式会社 Nature Innovation Group（アイカサ）</a> バックエンド開発（2018年12月~2019年12月）</li>
-                  <li><a href="https://yakan-hiko.co.jp/" target="blank_">株式会社夜間飛行</a> ホームページ制作（2019年12月〜現在）</li>
+                  <li><a href="https://yakan-hiko.co.jp/" target="blank_">株式会社夜間飛行</a> ホームページ/Webアプリケーション制作（2019年12月〜現在）</li>
                   <li><a href="https://lastrust.io/" target="blank_">LasTrust株式会社</a> インターンシップ（R&D） （2021年1月〜現在）</li>
+                  <li><a href="https://about.yahoo.co.jp/" target="blank_">Yahoo Japan Corporation</a> インターンシップ（認証・アクセス制御に関するプロダクト開発） （2021年8月）</li>
                 </ul>
               </p>
             </div>
