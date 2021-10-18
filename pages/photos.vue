@@ -62,7 +62,7 @@ export default {
         url: 'https://shinbunbun.info/photos/',
         image: 'https://shinbunbun.info/images/ogp.png'
       },
-      pictureCount: 23,
+      pictureCount: 37,
       btnClass: {
         min: 'btn-light',
         mid: 'btn-secondary',
