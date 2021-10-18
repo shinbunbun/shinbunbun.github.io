@@ -108,6 +108,19 @@
                 </ul>
               </p>
             </div>
+            <div class="row">
+              <h3>大学での活動</h3>
+              <p>
+                <table>
+                  <tbody>
+                    <tr v-for="collegeActivity in collegeActivities" :key="collegeActivity.description">
+                      <td>{{ collegeActivity.date }}</td>
+                      <td><a :href="collegeActivity.url" target="blank" rel="noopener">{{ collegeActivity.title }}</a>{{ collegeActivity.description }}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </p>
+            </div>
           </div>
         </div>
         <div class="py-2" />
@@ -155,6 +168,32 @@ export default {
         url: 'https://shinbunbun.info/about/',
         image: 'https://shinbunbun.info/images/ogp.png'
       },
+      collegeActivities: [
+        {
+          date: '2021/09〜',
+          url: 'https://blog.ascs.dev/',
+          title: 'Aizu Student Creators（ASCs）',
+          description: '代表'
+        },
+        {
+          date: '2021/08',
+          url: 'https://www.u-aizu.ac.jp/sgu/honors_program/discovery_program/',
+          title: '会津大学オナーズプログラム異彩発掘型',
+          description: ' 認定'
+        },
+        {
+          date: '2021/06〜08',
+          url: 'https://blog.ascs.dev/posts/aizuhack-1/',
+          title: 'AizuHack',
+          description: '（勉強会付きハッカソン）主催'
+        },
+        {
+          date: '2021/04〜',
+          url: 'https://zli.works/',
+          title: 'Zli',
+          description: '（LTサークル） 運営メンバー'
+        }
+      ],
       languages: [
         {
           src: '/images/nodejs-new-pantone-black.png',
@@ -313,6 +352,12 @@ export default {
 }
 .sns-icons img{
   width: 50px;
+}
+table{
+  border: none;
+}
+td{
+  padding-right: 5px;
 }
 
 @media screen and (min-width: 768px) {
