@@ -40,7 +40,7 @@
       </div>
 
       <div class="row">
-        <div v-for="index in pictureCount" :key="index" class="py-3" :class="imgClass">
+        <div v-for="index in pictureCount" :key="index" class="py-3 image-wrap text-center" :class="imgClass">
           <img v-lazy="`/images/photos/${pictureCount - index + 1}.jpeg`" @click="showLightbox(index - 1)">
         </div>
       </div>
@@ -136,5 +136,9 @@ export default {
 <style scoped>
 img{
   max-width: 100%;
+  max-height: 100%;
+}
+.image-wrap{
+  aspect-ratio: 2048 / 1364;
 }
 </style>
