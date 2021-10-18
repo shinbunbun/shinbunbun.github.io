@@ -69,7 +69,7 @@
               </p>
             </div>
             <div class="py-2" />
-            <div class="row">
+            <!-- <div class="row">
               <h3>研究分野</h3>
               <br>
               <p>
@@ -79,7 +79,7 @@
                   <li>Verifiable Credentials</li>
                 </ul>
               </p>
-            </div>
+            </div> -->
             <div class="row">
               <h3>職歴</h3>
               <br>
