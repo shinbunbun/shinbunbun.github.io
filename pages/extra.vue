@@ -176,6 +176,7 @@
       <li>Canon EOS 6D MarkII</li>
       <li>Canon EF24-105mm F3.5-5.6 IS STM</li>
       <li>Canon EF50mm F1.8 STM</li>
+      <li>Canon EEF16-35mm F2.8L III USM</li>
       <li>SIGMA 100-400mm F5-6.3 DG OS HSM</li>
     </ul>
     <br>
