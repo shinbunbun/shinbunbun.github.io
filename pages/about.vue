@@ -69,6 +69,22 @@
               </p>
             </div>
             <div class="py-2" />
+            <div class="row">
+              <h3>興味キーワード</h3>
+              <br>
+              <p>
+                <ul>
+                  <li>アイデンティティ管理/認証</li>
+                  <ul>
+                    <li>分散型アイデンティティ（SSI, DIDs, VCsなど）</li>
+                    <li>FIDO2, WebAuthn</li>
+                  </ul>
+                  <li>インフラ, ネットワーク</li>
+                  <li>テスト駆動開発</li>
+                  <li>クリーンアーキテクチャ</li>
+                </ul>
+              </p>
+            </div>
             <!-- <div class="row">
               <h3>研究分野</h3>
               <br>
