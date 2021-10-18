@@ -28,6 +28,7 @@
             <a href="https://github.com/shinbunbun" target="blank" rel="noopener"><img v-lazy="`/images/GitHub-Mark-120px-plus.png`" alt="github"></a>
             <a href="https://qiita.com/shinbunbun_" target="blank" rel="noopener"><img v-lazy="`/images/favicon.png`" alt="qiita"></a>
             <a href="https://speakerdeck.com/shinbunbun_" target="blank" rel="noopener"><img v-lazy="`/images/speakerdeck.png`" alt="speaker deck"></a>
+            <a href="https://scrapbox.io/shinbunbun" target="blank" rel="noopener"><img v-lazy="`/images/scrapbox.png`" alt="scrapbox"></a>
           </div>
         </div>
 
@@ -289,6 +290,7 @@ export default {
 .sns-image-container a > img {
   width: 40px;
   transition: 0.1s;
+  padding-top: 10px;
 }
 .border{
   padding: 20px;
@@ -303,12 +305,4 @@ export default {
     transition: 0.1s;
   }
 }
-</style>
-
-<style>
-/*.AWS img{
-  width: 80%;
-  height: 80%;
-  object-fit: cover;
-}*/
 </style>
