@@ -99,9 +99,20 @@ export default {
       },
       modal: false,
       choseProduct: {},
-      tags: ['WebApp', 'Nuxt.js', 'Vue.js', 'LINE Bot', 'AWS', 'GAS', 'Clova', 'Alexa', 'IoT', 'Others'],
-      narrowDownTags: ['WebApp', 'Nuxt.js', 'Vue.js', 'LINE Bot', 'AWS', 'GAS', 'Clova', 'Alexa', 'IoT', 'Others'],
+      tags: ['WebApp', 'Nuxt.js', 'Vue.js', 'LINE Bot', 'AWS', 'GAS', 'Clova', 'Alexa', 'IoT', 'Network', 'Others'],
+      narrowDownTags: ['WebApp', 'Nuxt.js', 'Vue.js', 'LINE Bot', 'AWS', 'GAS', 'Clova', 'Alexa', 'IoT', 'Network', 'Others'],
       products: [
+        {
+          src: '/images/vpn.png',
+          title: 'ご自宅VPN関連システム',
+          tags: ['Network'],
+          date: '2021年5月',
+          slide: 'https://docs.google.com/presentation/d/1WyGyQrJ1eFJu3ZrbJx6lbRwu3UfohVCFO9bdVaIfckI/edit?usp=sharing',
+          description: `2021年3月〜2021年5月にかけて制作。
+          VPNを用いたリモート開発システムを構築した。
+          NAT越えなど色々ハードルはあったものの、現在はIntel NUCを使って快適なリモート開発を行っている。
+          `
+        },
         {
           src: '/images/portfolio.png',
           title: 'ポートフォリオサイト',
@@ -480,6 +491,10 @@ label {
 }
 .label-IoT{
   background-color: #D4BA11;
+  color: white;
+}
+.label-Network{
+  background-color: black;
   color: white;
 }
 .label-Others{
