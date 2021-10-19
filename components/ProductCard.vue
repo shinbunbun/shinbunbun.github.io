@@ -118,6 +118,10 @@ a{
   background-color: #D4BA11;
   color: white;
 }
+.Network{
+  background-color: black;
+  color: white;
+}
 .Others{
   background-color: #CA59F5;
   color: white;

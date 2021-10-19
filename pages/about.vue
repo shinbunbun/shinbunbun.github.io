@@ -28,6 +28,7 @@
             <a href="https://github.com/shinbunbun" target="blank" rel="noopener"><img v-lazy="`/images/GitHub-Mark-120px-plus.png`" alt="github"></a>
             <a href="https://qiita.com/shinbunbun_" target="blank" rel="noopener"><img v-lazy="`/images/favicon.png`" alt="qiita"></a>
             <a href="https://speakerdeck.com/shinbunbun_" target="blank" rel="noopener"><img v-lazy="`/images/speakerdeck.png`" alt="speaker deck"></a>
+            <a href="https://scrapbox.io/shinbunbun" target="blank" rel="noopener"><img v-lazy="`/images/scrapbox.png`" alt="scrapbox"></a>
           </div>
         </div>
 
@@ -41,7 +42,7 @@
               高二の夏頃からはVue.jsを使ったWebアプリの開発をはじめ、文化祭の出展投票システムや時間割botのLIFFアプリなどを開発した。<br>
               フリーランスとして案件の受注もしており、Webアプリケーション開発などを行っている。<br>
               コミュニティ活動も高一から行っており、高二まではLINE Developer Communityを中心に活動していた。<br>
-              最近の興味分野はアイデンティティ管理や認証形。<br>
+              最近の興味分野はアイデンティティ管理や認証系。<br>
               すごくなりたいがくせいぐるーぷ立ち上げメンバー兼運営。
             </p>
             <div class="py-2" />
@@ -69,6 +70,22 @@
             </div>
             <div class="py-2" />
             <div class="row">
+              <h3>興味キーワード</h3>
+              <br>
+              <p>
+                <ul>
+                  <li>アイデンティティ管理/認証</li>
+                  <ul>
+                    <li>分散型アイデンティティ（SSI, DIDs, VCsなど）</li>
+                    <li>FIDO2, WebAuthn</li>
+                  </ul>
+                  <li>インフラ, ネットワーク</li>
+                  <li>テスト駆動開発</li>
+                  <li>クリーンアーキテクチャ</li>
+                </ul>
+              </p>
+            </div>
+            <!-- <div class="row">
               <h3>研究分野</h3>
               <br>
               <p>
@@ -78,7 +95,7 @@
                   <li>Verifiable Credentials</li>
                 </ul>
               </p>
-            </div>
+            </div> -->
             <div class="row">
               <h3>職歴</h3>
               <br>
@@ -89,6 +106,19 @@
                   <li><a href="https://lastrust.io/" target="blank_">LasTrust株式会社</a> インターンシップ（R&D） （2021年1月〜現在）</li>
                   <li><a href="https://about.yahoo.co.jp/" target="blank_">Yahoo Japan Corporation</a> インターンシップ（認証・アクセス制御に関するプロダクト開発） （2021年8月）</li>
                 </ul>
+              </p>
+            </div>
+            <div class="row">
+              <h3>大学での活動</h3>
+              <p>
+                <table>
+                  <tbody>
+                    <tr v-for="collegeActivity in collegeActivities" :key="collegeActivity.description">
+                      <td>{{ collegeActivity.date }}</td>
+                      <td><a :href="collegeActivity.url" target="blank" rel="noopener">{{ collegeActivity.title }}</a>{{ collegeActivity.description }}</td>
+                    </tr>
+                  </tbody>
+                </table>
               </p>
             </div>
           </div>
@@ -138,6 +168,32 @@ export default {
         url: 'https://shinbunbun.info/about/',
         image: 'https://shinbunbun.info/images/ogp.png'
       },
+      collegeActivities: [
+        {
+          date: '2021/09〜',
+          url: 'https://blog.ascs.dev/',
+          title: 'Aizu Student Creators（ASCs）',
+          description: '代表'
+        },
+        {
+          date: '2021/08',
+          url: 'https://www.u-aizu.ac.jp/sgu/honors_program/discovery_program/',
+          title: '会津大学オナーズプログラム異彩発掘型',
+          description: ' 認定'
+        },
+        {
+          date: '2021/06〜08',
+          url: 'https://blog.ascs.dev/posts/aizuhack-1/',
+          title: 'AizuHack',
+          description: '（勉強会付きハッカソン）主催'
+        },
+        {
+          date: '2021/04〜',
+          url: 'https://zli.works/',
+          title: 'Zli',
+          description: '（LTサークル） 運営メンバー'
+        }
+      ],
       languages: [
         {
           src: '/images/nodejs-new-pantone-black.png',
@@ -289,12 +345,19 @@ export default {
 .sns-image-container a > img {
   width: 40px;
   transition: 0.1s;
+  padding-top: 10px;
 }
 .border{
   padding: 20px;
 }
 .sns-icons img{
   width: 50px;
+}
+table{
+  border: none;
+}
+td{
+  padding-right: 5px;
 }
 
 @media screen and (min-width: 768px) {
@@ -303,12 +366,4 @@ export default {
     transition: 0.1s;
   }
 }
-</style>
-
-<style>
-/*.AWS img{
-  width: 80%;
-  height: 80%;
-  object-fit: cover;
-}*/
 </style>

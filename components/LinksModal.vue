@@ -57,6 +57,12 @@ export default {
           title: 'Speaker Deck',
           to: 'https://speakerdeck.com/shinbunbun_'
           // color: 'rgba(107,73,61,0.45)'
+        },
+        {
+          src: '/images/scrapbox.png',
+          title: 'Scrapbox',
+          to: 'https://scrapbox.io/shinbunbun'
+          // color: 'rgba(107,73,61,0.45)'
         }
       ]
     }
