@@ -64,6 +64,12 @@
                 <img class="new-tab-img" src="/images/open_in_new-black-18dp.svg" alt="">
               </button>
             </div>
+            <div v-if="data.slide" class="btn-wrapper">
+              <button type="button" class="btn slide-btn d-flex align-items-center" @click="openLink(data.slide)">
+                <b>スライド</b>
+                <img class="new-tab-img" src="/images/open_in_new-black-18dp.svg" alt="">
+              </button>
+            </div>
             <br><br>
             <p class="description">
               {{ data.description }}
@@ -161,6 +167,10 @@ export default {
 }
 .alexa-btn{
   background-color: #31C4F3;
+  color: white;
+}
+.slide-btn{
+  background-color: #fcbc04;
   color: white;
 }
 .btn-wrapper{
