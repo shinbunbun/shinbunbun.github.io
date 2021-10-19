@@ -103,6 +103,20 @@ export default {
       narrowDownTags: ['WebApp', 'Nuxt.js', 'Vue.js', 'LINE Bot', 'AWS', 'GAS', 'Clova', 'Alexa', 'IoT', 'Network', 'Others'],
       products: [
         {
+          src: '/images/ubic-raspi.jpg',
+          title: 'UBICネットワークプロジェクト',
+          tags: ['Network'],
+          date: '2021年5月',
+          scrapbox: 'https://scrapbox.io/shinbunbun/UBIC%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88',
+          slide: 'https://speakerdeck.com/shinbunbun_/ubicnetutowakupuroziekutonituite',
+          description: `2021年5月〜製作中。
+          会津大学にあるUBICという施設にラズパイを7台設置してネットワークの実験をするプロジェクト。
+          先輩方の力を借りながらコアメンバー3人ほどで進行中。
+          現在は全機にGentoo Linuxをインストールし、ホスト2台からnode5台をネットブートするという構成で運用している。
+          試験的にdistccの分散コンパイルも実装しており、将来的にはk3sのクラスタなどを構築する予定。
+          `
+        },
+        {
           src: '/images/vpn.png',
           title: 'ご自宅VPN関連システム',
           tags: ['Network'],

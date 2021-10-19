@@ -70,6 +70,12 @@
                 <img class="new-tab-img" src="/images/open_in_new-black-18dp.svg" alt="">
               </button>
             </div>
+            <div v-if="data.scrapbox" class="btn-wrapper">
+              <button type="button" class="btn scrapbox-btn d-flex align-items-center" @click="openLink(data.scrapbox)">
+                <b>Scrapbox</b>
+                <img class="new-tab-img" src="/images/open_in_new-black-18dp.svg" alt="">
+              </button>
+            </div>
             <br><br>
             <p class="description">
               {{ data.description }}
@@ -171,6 +177,10 @@ export default {
 }
 .slide-btn{
   background-color: #fcbc04;
+  color: white;
+}
+.scrapbox-btn{
+  background-color: #02ec40;
   color: white;
 }
 .btn-wrapper{
