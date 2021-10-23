@@ -51,6 +51,7 @@
               <br>
               <p>
                 <ul>
+                  <li><a href="https://ccc2021.code4japan.org/" target="_blank">Civictech Challenge Cup[U-22] 2021</a> Code for Japan賞</li>
                   <li><a href="https://gsacademy.jp/hack-trek-2021/" target="_blank">Hack Trek 2021</a> 優勝</li>
                   <li><a href="https://hmcn.connpass.com/event/173233/" target="_blank">レッドハッカソン オンライン 2020</a> 奨励賞</li>
                   <li><a href="https://linedev.connpass.com/event/96834/" target="_blank">LINE BOOT AWARDS×サイボウズ ビジネス/ワーク部門賞狙いのハッカソン</a> LINE賞・サイボウズ賞</li>
