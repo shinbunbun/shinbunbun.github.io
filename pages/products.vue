@@ -412,6 +412,14 @@ export default {
       ]
     }
   },
+  mounted() {
+    const tag = this.$route.query.tag
+    const tagArr = tag.split(',')
+    this.allCheck('off')
+    tagArr.forEach((element) => {
+      this.changeCheckBox(element)
+    })
+  },
 
   methods: {
     openModal(data) {
