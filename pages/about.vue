@@ -51,10 +51,11 @@
               <br>
               <p>
                 <ul>
-                  <li><a href="https://ccc2021.code4japan.org/" target="_blank">Civictech Challenge Cup[U-22] 2021</a> Code for Japan賞</li>
-                  <li><a href="https://gsacademy.jp/hack-trek-2021/" target="_blank">Hack Trek 2021</a> 優勝</li>
-                  <li><a href="https://hmcn.connpass.com/event/173233/" target="_blank">レッドハッカソン オンライン 2020</a> 奨励賞</li>
-                  <li><a href="https://linedev.connpass.com/event/96834/" target="_blank">LINE BOOT AWARDS×サイボウズ ビジネス/ワーク部門賞狙いのハッカソン</a> LINE賞・サイボウズ賞</li>
+                  <li>2021/11/07 <a href="#">わたしたちのウェルビーイングのためのハッカソン2021</a> 富士通 つながる豊かさ賞</li>
+                  <li>2021/10/09 <a href="https://ccc2021.code4japan.org/" target="blank" rel="noopener">Civictech Challenge Cup[U-22] 2021</a> Code for Japan賞</li>
+                  <li>2021/02/28 <a href="https://gsacademy.jp/hack-trek-2021/" target="blank" rel="noopener">Epson Hack Trek 2021</a> 優勝</li>
+                  <li>2020/05/24 <a href="https://hmcn.connpass.com/event/173233/" target="blank" rel="noopener">レッドハッカソン オンライン 2020</a> 奨励賞</li>
+                  <li>2018/09/02 <a href="https://linedev.connpass.com/event/96834/" target="blank" rel="noopener">LINE BOOT AWARDS×サイボウズ ビジネス/ワーク部門賞狙いのハッカソン</a> LINE賞・サイボウズ賞</li>
                 </ul>
               </p>
             </div>
@@ -102,10 +103,11 @@
               <br>
               <p>
                 <ul>
-                  <li><a href="https://www.i-kasa.com/" target="blank_">株式会社 Nature Innovation Group（アイカサ）</a> バックエンド開発（2018年12月~2019年12月）</li>
-                  <li><a href="https://yakan-hiko.co.jp/" target="blank_">株式会社夜間飛行</a> ホームページ/Webアプリケーション制作（2019年12月〜現在）</li>
-                  <li><a href="https://lastrust.io/" target="blank_">LasTrust株式会社</a> インターンシップ（R&D） （2021年1月〜現在）</li>
-                  <li><a href="https://about.yahoo.co.jp/" target="blank_">Yahoo Japan Corporation</a> インターンシップ（認証・アクセス制御に関するプロダクト開発） （2021年8月）</li>
+                  <li>2021/07~ <a href="https://thedott.io/" target="blank" rel="noopener">株式会社 dott</a> Webフロントエンド開発</li>
+                  <li>2019/12~ <a href="https://yakan-hiko.co.jp/" target="blank" rel="noopener">株式会社夜間飛行</a> ホームページ/Webアプリケーション制作（単発案件を複数）</li>
+                  <li>2021/08 <a href="https://about.yahoo.co.jp/" target="blank" rel="noopener">Yahoo Japan Corporation</a> インターンシップ（認証・アクセス制御に関するプロダクト開発）</li>
+                  <li>2021/01~2021/05 <a href="https://lastrust.io/" target="blank" rel="noopener">LasTrust株式会社</a> インターンシップ（R&D）</li>
+                  <li>2018/12~2019/12 <a href="https://www.i-kasa.com/" target="blank" rel="noopener">株式会社 Nature Innovation Group（アイカサ）</a> バックエンド開発</li>
                 </ul>
               </p>
             </div>
@@ -234,7 +236,7 @@ export default {
       },
       collegeActivities: [
         {
-          date: '2021/09〜',
+          date: '2021/09~',
           url: 'https://blog.ascs.dev/',
           title: 'Aizu Student Creators（ASCs）',
           description: '代表'
@@ -246,13 +248,13 @@ export default {
           description: ' 認定'
         },
         {
-          date: '2021/06〜08',
+          date: '2021/06~08',
           url: 'https://blog.ascs.dev/posts/aizuhack-1/',
           title: 'AizuHack',
           description: '（勉強会付きハッカソン）主催'
         },
         {
-          date: '2021/04〜',
+          date: '2021/04~',
           url: 'https://zli.works/',
           title: 'Zli',
           description: '（LTサークル） 運営メンバー'
