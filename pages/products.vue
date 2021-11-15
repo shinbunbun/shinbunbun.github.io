@@ -414,6 +414,9 @@ export default {
   },
   mounted() {
     const tag = this.$route.query.tag
+    if (!tag) {
+      return
+    }
     const tagArr = tag.split(',')
     this.allCheck('off')
     tagArr.forEach((element) => {
