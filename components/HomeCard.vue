@@ -49,7 +49,7 @@
 
     <div v-else-if="data.disable" class="card-disable-wrapper rounded">
       <div class="my-card card-disable rounded h-100" :class="data.title" :style="{ 'border-color': data.color}">
-        <a :href="data.to" target="_blank">
+        <a :href="data.to" target="blank" rel="noopener">
           <div class="row">
             <div class="col-md-12 col-3">
               <img :src="data.src" alt="">
@@ -65,7 +65,7 @@
     </div>
 
     <div v-else class="card my-card rounded h-100" :class="data.title" :style="{ 'border-color': data.color}">
-      <a :href="data.to" target="_blank">
+      <a :href="data.to" target="blank" rel="noopener">
         <div class="row">
           <div class="col-md-12 col-3">
             <img :src="data.src" alt="">
