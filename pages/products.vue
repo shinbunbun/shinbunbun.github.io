@@ -39,7 +39,7 @@
               全選択
             </button>
             <button class="btn btn-danger" @click="allCheck('off')">
-              選択解除
+              全選択解除
             </button>
           </div>
           <div class="py-1" />
@@ -99,8 +99,8 @@ export default {
       },
       modal: false,
       choseProduct: {},
-      tags: ['WebApp', 'Nuxt.js', 'Vue.js', 'LINE Bot', 'AWS', 'GAS', 'Clova', 'Alexa', 'IoT', 'Network', 'Others'],
-      narrowDownTags: ['WebApp', 'Nuxt.js', 'Vue.js', 'LINE Bot', 'AWS', 'GAS', 'Clova', 'Alexa', 'IoT', 'Network', 'Others'],
+      tags: ['WebApp', 'LINE Bot', 'Go', 'Node.js', 'TypeScript', 'Nuxt.js', 'Vue.js', 'Bootstrap', 'Vuetify', 'AWS', 'serverless', 'CI/CD', 'GAS', 'Clova', 'Alexa', 'IoT', 'Network', 'Others'],
+      narrowDownTags: ['WebApp', 'LINE Bot', 'Go', 'Node.js', 'TypeScript', 'Nuxt.js', 'Vue.js', 'Bootstrap', 'Vuetify', 'AWS', 'serverless', 'CI/CD', 'GAS', 'Clova', 'Alexa', 'IoT', 'Network', 'Others'],
       products: [
         {
           src: '/images/ubic-raspi.jpg',
@@ -524,6 +524,34 @@ label {
 }
 .label-Others{
   background-color: #CA59F5;
+  color: white;
+}
+.label-Go{
+  background-color: #7fd5ea;
+  color: white;
+}
+.label-Node\.js{
+  background-color: #026e00;
+  color: white;
+}
+.label-TypeScript{
+  background-color: #3178c6;
+  color: white;
+}
+.label-Bootstrap{
+  background-color: #7952b3;
+  color: white;
+}
+.label-Vuetify{
+  background-color: #1867c0;
+  color: white;
+}
+.label-serverless{
+  background-color: #fd5750;
+  color: white;
+}
+.label-CI\/CD{
+  background-color: #24292e;
   color: white;
 }
 
