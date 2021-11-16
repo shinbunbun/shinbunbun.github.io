@@ -217,7 +217,7 @@ export default {
         {
           src: '/images/pushtool.png',
           title: 'Push Message送信ツール',
-          tags: ['WebApp'],
+          tags: ['WebApp', 'Node.js', 'Bootstrap'],
           date: '2019年3月',
           github: 'https://github.com/shinbunbun/Sending-Push-Message',
           qiita: 'https://qiita.com/shinbunbun_/items/62b824a1205d31d56427',
@@ -229,7 +229,7 @@ export default {
         {
           src: 'http://img.youtube.com/vi/TQUemTeiCKM/hqdefault.jpg',
           title: '宿題終わってる？',
-          tags: ['AWS', 'Clova'],
+          tags: ['AWS', 'Clova', 'Node.js'],
           date: '2019年3月',
           youtube: 'https://www.youtube.com/embed/TQUemTeiCKM',
           clova: 'https://clova.line.me/clova-ai/skillstore/skill/info.shinbunbun.syukudai',
@@ -242,7 +242,7 @@ export default {
         {
           src: 'http://img.youtube.com/vi/e3FB_Cc9RrQ/hqdefault.jpg',
           title: 'ひな祭りの豆知識',
-          tags: ['AWS', 'Clova', 'Alexa'],
+          tags: ['AWS', 'Clova', 'Alexa', 'Node.js'],
           date: '2019年12月',
           youtube: 'https://www.youtube.com/embed/e3FB_Cc9RrQ',
           alexa: 'https://www.amazon.co.jp/%E3%81%B6%E3%82%93%E3%81%B6%E3%82%93-%E3%81%B2%E3%81%AA%E7%A5%AD%E3%82%8A%E3%81%AE%E8%B1%86%E7%9F%A5%E8%AD%98/dp/B07P6QGDTP',
@@ -255,7 +255,7 @@ export default {
         {
           src: 'http://img.youtube.com/vi/3UH8_1woBak/hqdefault.jpg',
           title: '今日の太陽',
-          tags: ['AWS', 'Alexa'],
+          tags: ['AWS', 'Alexa', 'Node.js'],
           date: '2019年1月',
           youtube: 'https://www.youtube.com/embed/3UH8_1woBak',
           alexa: 'https://www.amazon.co.jp/%E3%81%B6%E3%82%93%E3%81%B6%E3%82%93-%E4%BB%8A%E6%97%A5%E3%81%AE%E5%A4%AA%E9%99%BD/dp/B07N6JJD46',
@@ -267,7 +267,7 @@ export default {
         {
           src: 'http://img.youtube.com/vi/fG9QNzsgg_Q/hqdefault.jpg',
           title: 'トイレの音消し',
-          tags: ['AWS', 'Clova', 'Alexa'],
+          tags: ['AWS', 'Clova', 'Alexa', 'Node.js'],
           date: '2018年12月',
           youtube: 'https://www.youtube.com/embed/fG9QNzsgg_Q',
           qiita: 'https://qiita.com/shinbunbun_/items/21129544134f8f725c83#1%E3%81%A4%E7%9B%AE%E3%83%88%E3%82%A4%E3%83%AC%E3%81%AE%E9%9F%B3%E6%B6%88%E3%81%97',
@@ -282,7 +282,7 @@ export default {
         {
           src: 'http://img.youtube.com/vi/uzbAfId6HkI/hqdefault.jpg',
           title: 'ぶんぶんの電車運行情報',
-          tags: ['AWS', 'Clova', 'Alexa'],
+          tags: ['AWS', 'Clova', 'Alexa', 'Node.js'],
           date: '2018年12月',
           youtube: 'https://www.youtube.com/embed/uzbAfId6HkI',
           qiita: 'https://qiita.com/shinbunbun_/items/21129544134f8f725c83#2%E3%81%A4%E7%9B%AE%E3%81%B6%E3%82%93%E3%81%B6%E3%82%93%E3%81%AE%E9%9B%BB%E8%BB%8A%E9%81%8B%E8%A1%8C%E6%83%85%E5%A0%B1',
@@ -295,7 +295,7 @@ export default {
         {
           src: 'http://img.youtube.com/vi/tqTjjA9f_4M/hqdefault.jpg',
           title: 'ぶんぶんのルーレット',
-          tags: ['AWS', 'Alexa'],
+          tags: ['AWS', 'Alexa', 'Node.js'],
           date: '2018年12月',
           youtube: 'https://www.youtube.com/embed/tqTjjA9f_4M',
           qiita: 'https://qiita.com/shinbunbun_/items/21129544134f8f725c83#4%E3%81%A4%E7%9B%AE%E3%81%B6%E3%82%93%E3%81%B6%E3%82%93%E3%81%AE%E3%83%AB%E3%83%BC%E3%83%AC%E3%83%83%E3%83%88',
@@ -309,7 +309,7 @@ export default {
         {
           src: 'http://img.youtube.com/vi/9uzIM6ICO-U/hqdefault.jpg',
           title: '大晦日カウントダウン',
-          tags: ['AWS', 'Alexa'],
+          tags: ['AWS', 'Alexa', 'Node.js'],
           date: '2018年12月',
           youtube: 'https://www.youtube.com/embed/9uzIM6ICO-U',
           qiita: 'https://qiita.com/shinbunbun_/items/21129544134f8f725c83#3%E3%81%A4%E7%9B%AE%E5%A4%A7%E6%99%A6%E6%97%A5%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%83%80%E3%82%A6%E3%83%B3',
@@ -351,7 +351,7 @@ export default {
         {
           src: '/images/trainbot.jpg',
           title: 'ぶんぶんの運行情報bot',
-          tags: ['AWS', 'LINE Bot'],
+          tags: ['AWS', 'LINE Bot', 'Node.js'],
           date: '2018年9月',
           youtube: 'https://www.youtube.com/embed/j_ET-VkRlNo',
           linebot: 'https://line.me/R/ti/p/%40buo7278w',
@@ -378,7 +378,7 @@ export default {
         {
           src: '/images/2018votesystem.jpg',
           title: '2018年文化祭大賞投票bot',
-          tags: ['AWS', 'LINE Bot'],
+          tags: ['AWS', 'LINE Bot', 'Node.js'],
           date: '2018年9月',
           youtube: 'https://www.youtube.com/embed/urwlANazl-s',
           qiita: 'https://qiita.com/shinbunbun_/items/af55e35888c441a5b878',
@@ -395,7 +395,7 @@ export default {
         {
           src: '/images/2018tgc.jpg',
           title: '2018年ミスコン投票bot',
-          tags: ['AWS', 'LINE Bot'],
+          tags: ['AWS', 'LINE Bot', 'Node.js'],
           date: '2018年9月',
           youtube: 'https://www.youtube.com/embed/mQTMMxiH_y8',
           linebot: 'https://line.me/R/ti/p/%40awj3413y',

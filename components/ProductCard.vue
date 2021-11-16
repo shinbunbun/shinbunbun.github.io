@@ -126,6 +126,34 @@ a{
   background-color: #CA59F5;
   color: white;
 }
+.Go{
+  background-color: #7fd5ea;
+  color: white;
+}
+.Node\.js{
+  background-color: #026e00;
+  color: white;
+}
+.TypeScript{
+  background-color: #3178c6;
+  color: white;
+}
+.Bootstrap{
+  background-color: #7952b3;
+  color: white;
+}
+.Vuetify{
+  background-color: #1867c0;
+  color: white;
+}
+.serverless{
+  background-color: #fd5750;
+  color: white;
+}
+.CI\/CD{
+  background-color: #24292e;
+  color: white;
+}
 
 @media screen and (max-width:576px) {
   .card-img-top{
