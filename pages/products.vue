@@ -39,7 +39,7 @@
               全選択
             </button>
             <button class="btn btn-danger" @click="allCheck('off')">
-              選択解除
+              全選択解除
             </button>
           </div>
           <div class="py-1" />
@@ -99,9 +99,74 @@ export default {
       },
       modal: false,
       choseProduct: {},
-      tags: ['WebApp', 'Nuxt.js', 'Vue.js', 'LINE Bot', 'AWS', 'GAS', 'Clova', 'Alexa', 'IoT', 'Network', 'Others'],
-      narrowDownTags: ['WebApp', 'Nuxt.js', 'Vue.js', 'LINE Bot', 'AWS', 'GAS', 'Clova', 'Alexa', 'IoT', 'Network', 'Others'],
+      tags: ['WebApp', 'LINE Bot', 'Go', 'Node.js', 'TypeScript', 'Nuxt.js', 'Vue.js', 'Bootstrap', 'Vuetify', 'AWS', 'serverless', 'CI/CD', 'GAS', 'Clova', 'Alexa', 'IoT', 'Network', 'Others'],
+      narrowDownTags: ['WebApp', 'LINE Bot', 'Go', 'Node.js', 'TypeScript', 'Nuxt.js', 'Vue.js', 'Bootstrap', 'Vuetify', 'AWS', 'serverless', 'CI/CD', 'GAS', 'Clova', 'Alexa', 'IoT', 'Network', 'Others'],
       products: [
+        {
+          src: '/images/bookommune.png',
+          title: 'bookommune',
+          tags: ['Go', 'WebApp', 'Nuxt.js', 'Bootstrap', 'CI/CD'],
+          date: '2021年11月',
+          github: 'https://github.com/shinbunbun/wb-hackathon-2021',
+          description: `
+         「わたしたちのウェルビーイングのためのハッカソン2021」で「富士通 つながる豊かさ賞」を受賞した作品。
+         自分の今の気持ちを入力すると、その感情を解析しておすすめの本をリコメンドするというプロダクト。
+         自分は主にCI/CDの構築とバックエンド（Go）を担当した。
+         フロントエンドはチームメンバーがNuxt.jsで実装し、自分も少しサポートに入った。
+          `
+        },
+        {
+          src: '/images/dawn.png',
+          title: 'DAWN',
+          tags: ['Go', 'CI/CD', 'AWS'],
+          date: '2021年10月',
+          github: 'https://github.com/jphacks/A_2108',
+          description: `
+         JPHACKS 2021で作成したプロダクト。
+         コンセプトは「旅行に行きたいと思った瞬間に、その人にとって最適な旅行にすぐに行ける仕組みを創ること」で、旅行プランのCtoCプラットフォームになっている。
+         フロントエンドはAndroid、バックエンドはGoで実装した。
+         インフラはAWSのLightsailを使って構築し、DBはMySQLを使用した。
+         私は主にJWTを使った認証周りやAPIの実装、インフラ構築、CI/CD構築を担当した。
+          `
+        },
+        {
+          src: '/images/ubic-stock-management-api.png',
+          title: 'UBIC在庫管理API',
+          tags: ['Go', 'CI/CD', 'AWS', 'serverless'],
+          date: '2021年10月',
+          github: 'https://github.com/shinbunbun/ubic-stock-management-api',
+          description: `
+         前述の「UBIC在庫管理Bot」をクロスプラットフォームで使えるようにするためにREST API化したもの。
+         先輩と2人で開発した。
+         バックエンドはGoで書き、GitHub Actions, serverlessを使ってCI/CDを構築した。
+         テスト駆動開発、ドメイン駆動設計、クリーンアーキテクチャを意識しながら開発を行った。
+         JWTを使ったAPI認証を実装しているのがこだわりポイント（というか、実装してて一番楽しかった）。
+         現在開発中（2021/11/16現在）。
+          `
+        },
+        {
+          src: '/images/ubic-stock-management-bot.png',
+          title: 'UBIC在庫管理Bot',
+          tags: ['Node.js', 'AWS', 'LINE Bot', 'serverless', 'CI/CD'],
+          date: '2021年7月',
+          github: 'https://github.com/shinbunbun/ubic-food-stock-management',
+          description: `
+         大学のUBICという施設にある備蓄食料を管理するLINEBot。
+         バックエンドはAWS LambdaとNode.jsを使ったサーバレスアーキテクチャで構築し、GitHub Actions, serverlessフレームワークを使ってデプロイしている。
+          `
+        },
+        {
+          src: '/images/ubic-notify.png',
+          title: 'UBIC帰宅通知Bot',
+          tags: ['Node.js', 'AWS', 'LINE Bot', 'serverless', 'CI/CD', 'IoT'],
+          date: '2021年6月',
+          github: 'https://github.com/shinbunbun/ubic-bot',
+          qiita: 'https://qiita.com/shinbunbun_/items/215f3f0b022c2ea06ae3',
+          description: `
+          学校にあるUBICという施設に最近よく住んでいるのですが、UBICに帰宅したらSlackへ通知が飛ぶシステム欲しいなーと思い作ってみました。
+          LINE Simple Beaconとmicro:bitを使い、自分のiPhoneがBLEの電波圏内に入ったらSlackへ通知がシステムになっており、バックエンドはAWS Lambdaを使用しています。
+          `
+        },
         {
           src: '/images/ubic-raspi.jpg',
           title: 'UBICネットワークプロジェクト',
@@ -128,9 +193,22 @@ export default {
           `
         },
         {
+          src: '/images/catenary.png',
+          title: 'Catenary',
+          tags: ['TypeScript', 'CI/CD'],
+          date: '2021年2月',
+          github: 'https://github.com/sgg-catenary/catenary',
+          description: `
+         「Epson Hack Trek 2021」で優勝したプロダクト。
+         コロナで放課後の時間が失われたことに着想を得て、放課後先生にオンラインで質問ができるサービスを開発した。
+         このプロダクトはハッカソン終了後、Epson社協力のもと実証実験に向けてユーザーヒアリングなどを行なっていたが、現在は開発を休止している。
+         自分は代表を務め、PMやユーザーヒアリング、ビジネルモデルの検討などを担当した。
+          `
+        },
+        {
           src: '/images/portfolio.png',
           title: 'ポートフォリオサイト',
-          tags: ['AWS', 'WebApp', 'Nuxt.js'],
+          tags: ['AWS', 'WebApp', 'Nuxt.js', 'Bootstrap'],
           date: '2021年1月',
           github: 'https://github.com/shinbunbun/portfolio',
           webapp: 'https://shinbunbun.info',
@@ -143,7 +221,7 @@ export default {
         {
           src: '/images/jikanwai-bot.png',
           title: '時間割bot',
-          tags: ['AWS', 'LINE Bot', 'WebApp', 'Clova', 'Nuxt.js'],
+          tags: ['AWS', 'LINE Bot', 'WebApp', 'Clova', 'Nuxt.js', 'Node.js', 'serverless', 'Vuetify', 'CI/CD'],
           date: '2018年8月(LINE Bot版)',
           youtube: 'https://www.youtube.com/embed/8OPSW_0tWmU',
           github: 'https://github.com/shinbunbun/jikanwari-bot',
@@ -152,17 +230,19 @@ export default {
           linebot: 'https://line.me/R/ti/p/%40ywg0561x',
           clova: 'https://clova.line.me/clova-ai/skillstore/skill/com.takamuneyuto.skill.second',
           description: `2018年夏に制作。
-          友達追加数2739人（2021/01/01現在）で、私が作った作品の中で一番の人気作。
+          友達追加数3399人（2021/11/17現在）で、一番の人気作。
           LINEで時間割を確認できるLINE Bot。
           「今日の時間割」、「明日の時間割」などを確認できるほか、毎日指定した時間に時間割を通知してくれる機能もある。
           「時間割共有機能」もあり、同じクラスの友達内で時間割の共有ができる。
           グループでの使用も可能。
-          Clovaスキル版、LIFFアプリ版もある。`
+          Clovaスキル版、LIFFアプリ版もある。
+          現在も継続的に改修をしている。
+          `
         },
         {
           src: '/images/2019graduate.png',
           title: '2019年度卒業生お祝いページ',
-          tags: ['AWS', 'WebApp', 'Vue.js'],
+          tags: ['AWS', 'WebApp', 'Vue.js', 'Node.js', 'Bootstrap'],
           date: '2020年3月',
           github: 'https://github.com/shinbunbun/2019_graduate',
           description: `2020年3月に制作。
@@ -175,7 +255,7 @@ export default {
         {
           src: '/images/2019votesystem.png',
           title: '2019年文化祭投票システム',
-          tags: ['AWS', 'WebApp', 'Vue.js'],
+          tags: ['AWS', 'WebApp', 'Vue.js', 'Node.js', 'Bootstrap'],
           date: '2019年9月',
           twitterId: '1179361752951250944',
           github: 'https://github.com/shinbunbun/vote-system-2019',
@@ -190,7 +270,7 @@ export default {
         {
           src: '/images/huro.jpg',
           title: '風呂のボタン押すやつ',
-          tags: ['IoT', 'AWS', 'LINE Bot'],
+          tags: ['IoT', 'AWS', 'LINE Bot', 'Node.js'],
           date: '2019年5月',
           twitterId: '1125212225914818560',
           qiita: 'https://qiita.com/shinbunbun_/items/d4dcf2e3ce96c041e9d5',
@@ -217,7 +297,7 @@ export default {
         {
           src: '/images/pushtool.png',
           title: 'Push Message送信ツール',
-          tags: ['WebApp'],
+          tags: ['WebApp', 'Node.js', 'Bootstrap'],
           date: '2019年3月',
           github: 'https://github.com/shinbunbun/Sending-Push-Message',
           qiita: 'https://qiita.com/shinbunbun_/items/62b824a1205d31d56427',
@@ -229,7 +309,7 @@ export default {
         {
           src: 'http://img.youtube.com/vi/TQUemTeiCKM/hqdefault.jpg',
           title: '宿題終わってる？',
-          tags: ['AWS', 'Clova'],
+          tags: ['AWS', 'Clova', 'Node.js'],
           date: '2019年3月',
           youtube: 'https://www.youtube.com/embed/TQUemTeiCKM',
           clova: 'https://clova.line.me/clova-ai/skillstore/skill/info.shinbunbun.syukudai',
@@ -242,7 +322,7 @@ export default {
         {
           src: 'http://img.youtube.com/vi/e3FB_Cc9RrQ/hqdefault.jpg',
           title: 'ひな祭りの豆知識',
-          tags: ['AWS', 'Clova', 'Alexa'],
+          tags: ['AWS', 'Clova', 'Alexa', 'Node.js'],
           date: '2019年12月',
           youtube: 'https://www.youtube.com/embed/e3FB_Cc9RrQ',
           alexa: 'https://www.amazon.co.jp/%E3%81%B6%E3%82%93%E3%81%B6%E3%82%93-%E3%81%B2%E3%81%AA%E7%A5%AD%E3%82%8A%E3%81%AE%E8%B1%86%E7%9F%A5%E8%AD%98/dp/B07P6QGDTP',
@@ -255,7 +335,7 @@ export default {
         {
           src: 'http://img.youtube.com/vi/3UH8_1woBak/hqdefault.jpg',
           title: '今日の太陽',
-          tags: ['AWS', 'Alexa'],
+          tags: ['AWS', 'Alexa', 'Node.js'],
           date: '2019年1月',
           youtube: 'https://www.youtube.com/embed/3UH8_1woBak',
           alexa: 'https://www.amazon.co.jp/%E3%81%B6%E3%82%93%E3%81%B6%E3%82%93-%E4%BB%8A%E6%97%A5%E3%81%AE%E5%A4%AA%E9%99%BD/dp/B07N6JJD46',
@@ -267,7 +347,7 @@ export default {
         {
           src: 'http://img.youtube.com/vi/fG9QNzsgg_Q/hqdefault.jpg',
           title: 'トイレの音消し',
-          tags: ['AWS', 'Clova', 'Alexa'],
+          tags: ['AWS', 'Clova', 'Alexa', 'Node.js'],
           date: '2018年12月',
           youtube: 'https://www.youtube.com/embed/fG9QNzsgg_Q',
           qiita: 'https://qiita.com/shinbunbun_/items/21129544134f8f725c83#1%E3%81%A4%E7%9B%AE%E3%83%88%E3%82%A4%E3%83%AC%E3%81%AE%E9%9F%B3%E6%B6%88%E3%81%97',
@@ -282,7 +362,7 @@ export default {
         {
           src: 'http://img.youtube.com/vi/uzbAfId6HkI/hqdefault.jpg',
           title: 'ぶんぶんの電車運行情報',
-          tags: ['AWS', 'Clova', 'Alexa'],
+          tags: ['AWS', 'Clova', 'Alexa', 'Node.js'],
           date: '2018年12月',
           youtube: 'https://www.youtube.com/embed/uzbAfId6HkI',
           qiita: 'https://qiita.com/shinbunbun_/items/21129544134f8f725c83#2%E3%81%A4%E7%9B%AE%E3%81%B6%E3%82%93%E3%81%B6%E3%82%93%E3%81%AE%E9%9B%BB%E8%BB%8A%E9%81%8B%E8%A1%8C%E6%83%85%E5%A0%B1',
@@ -295,7 +375,7 @@ export default {
         {
           src: 'http://img.youtube.com/vi/tqTjjA9f_4M/hqdefault.jpg',
           title: 'ぶんぶんのルーレット',
-          tags: ['AWS', 'Alexa'],
+          tags: ['AWS', 'Alexa', 'Node.js'],
           date: '2018年12月',
           youtube: 'https://www.youtube.com/embed/tqTjjA9f_4M',
           qiita: 'https://qiita.com/shinbunbun_/items/21129544134f8f725c83#4%E3%81%A4%E7%9B%AE%E3%81%B6%E3%82%93%E3%81%B6%E3%82%93%E3%81%AE%E3%83%AB%E3%83%BC%E3%83%AC%E3%83%83%E3%83%88',
@@ -309,7 +389,7 @@ export default {
         {
           src: 'http://img.youtube.com/vi/9uzIM6ICO-U/hqdefault.jpg',
           title: '大晦日カウントダウン',
-          tags: ['AWS', 'Alexa'],
+          tags: ['AWS', 'Alexa', 'Node.js'],
           date: '2018年12月',
           youtube: 'https://www.youtube.com/embed/9uzIM6ICO-U',
           qiita: 'https://qiita.com/shinbunbun_/items/21129544134f8f725c83#3%E3%81%A4%E7%9B%AE%E5%A4%A7%E6%99%A6%E6%97%A5%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%83%80%E3%82%A6%E3%83%B3',
@@ -351,7 +431,7 @@ export default {
         {
           src: '/images/trainbot.jpg',
           title: 'ぶんぶんの運行情報bot',
-          tags: ['AWS', 'LINE Bot'],
+          tags: ['AWS', 'LINE Bot', 'Node.js'],
           date: '2018年9月',
           youtube: 'https://www.youtube.com/embed/j_ET-VkRlNo',
           linebot: 'https://line.me/R/ti/p/%40buo7278w',
@@ -378,7 +458,7 @@ export default {
         {
           src: '/images/2018votesystem.jpg',
           title: '2018年文化祭大賞投票bot',
-          tags: ['AWS', 'LINE Bot'],
+          tags: ['AWS', 'LINE Bot', 'Node.js'],
           date: '2018年9月',
           youtube: 'https://www.youtube.com/embed/urwlANazl-s',
           qiita: 'https://qiita.com/shinbunbun_/items/af55e35888c441a5b878',
@@ -395,7 +475,7 @@ export default {
         {
           src: '/images/2018tgc.jpg',
           title: '2018年ミスコン投票bot',
-          tags: ['AWS', 'LINE Bot'],
+          tags: ['AWS', 'LINE Bot', 'Node.js'],
           date: '2018年9月',
           youtube: 'https://www.youtube.com/embed/mQTMMxiH_y8',
           linebot: 'https://line.me/R/ti/p/%40awj3413y',
@@ -411,6 +491,17 @@ export default {
         }
       ]
     }
+  },
+  mounted() {
+    const tag = this.$route.query.tag
+    if (!tag) {
+      return
+    }
+    const tagArr = tag.split(',')
+    this.allCheck('off')
+    tagArr.forEach((element) => {
+      this.changeCheckBox(element)
+    })
   },
 
   methods: {
@@ -513,6 +604,34 @@ label {
 }
 .label-Others{
   background-color: #CA59F5;
+  color: white;
+}
+.label-Go{
+  background-color: #7fd5ea;
+  color: white;
+}
+.label-Node\.js{
+  background-color: #026e00;
+  color: white;
+}
+.label-TypeScript{
+  background-color: #3178c6;
+  color: white;
+}
+.label-Bootstrap{
+  background-color: #7952b3;
+  color: white;
+}
+.label-Vuetify{
+  background-color: #1867c0;
+  color: white;
+}
+.label-serverless{
+  background-color: #fd5750;
+  color: white;
+}
+.label-CI\/CD{
+  background-color: #24292e;
   color: white;
 }
 
