@@ -129,23 +129,33 @@
         <div class="py-2" />
         <div class="skils">
           <h3>Skils</h3>
-          <p>
-            ※各項目を選択すると、その技術を使ったプロダクトの一覧に遷移できます
-          </p>
           <br>
           <h4>言語</h4>
+          <p>
+            ※それぞれの言語を選択すると、その言語で作成したプロダクトが表示されます。
+          </p>
           <br>
           <ul>
-            <li>Go</li>
+            <li>
+              <nuxt-link to="/products/?tag=Go">
+                Go
+              </nuxt-link>
+            </li>
             <ul>
-              <li>ginを使ったサーバサイド開発</li>
+              <li>Go（Gin）を使ったサーバサイド開発</li>
               <li>AWS Lambdaを使ったサーバレス開発</li>
               <li>go testを使った単体テスト、結合テスト</li>
               <li>簡易的なドメイン駆動設計</li>
               <li>クリーンアーキテクチャ</li>
-              <li>GitHub Actionsを用いたCIの構築（test, golangci-lintなど）</li>
+              <li>
+                GitHub Actionsを用いたCIの構築（test, golangci-lintなど）
+              </li>
             </ul>
-            <li>Node.js</li>
+            <li>
+              <nuxt-link to="/products/?tag=Node.js">
+                Node.js
+              </nuxt-link>
+            </li>
             <ul>
               <li>LINEBot開発</li>
               <li>Alexaスキル開発</li>
@@ -153,7 +163,11 @@
               <li>AWS Lambdaを使ったサーバレス開発</li>
               <li>Expressを使ったサーバサイド開発</li>
             </ul>
-            <li>TypeScript</li>
+            <li>
+              <nuxt-link to="/products/?tag=TypeScript">
+                TypeScript
+              </nuxt-link>
+            </li>
             <ul>
               <li>Nuxt.js, TypeScriptを組み合わせたフロントエンド開発</li>
             </ul>
@@ -169,19 +183,35 @@
           <h4>フロントエンドフレームワーク</h4>
           <br>
           <ul>
-            <li>Vue.js</li>
+            <li>
+              <nuxt-link to="/products/?tag=Vue.js">
+                Vue.js
+              </nuxt-link>
+            </li>
             <ul>
               <li>SPA（single-page application）開発（ホスティング先はAmazon S3&CloudFront, GitHub Pages, Cloudflare Pagesなど）</li>
             </ul>
-            <li>Nuxt.js</li>
+            <li>
+              <nuxt-link to="/products/?tag=Nuxt.js">
+                Nuxt.js
+              </nuxt-link>
+            </li>
             <ul>
               <li>SSG（Static Site Generator）による静的Webアプリケーション開発（ホスティング先はAmazon S3&CloudFront, GitHub Pages, Cloudflare Pagesなど）</li>
             </ul>
-            <li>Bootstrap</li>
+            <li>
+              <nuxt-link to="/products/?tag=Bootstrap">
+                Bootstrap
+              </nuxt-link>
+            </li>
             <ul>
               <li>Vue.js, Nuxt.jsと組み合わせたフロントエンド開発</li>
             </ul>
-            <li>Vuetify</li>
+            <li>
+              <nuxt-link to="/products/?tag=Vuetify">
+                Vuetify
+              </nuxt-link>
+            </li>
             <ul>
               <li>Vue.js, Nuxt.jsと組み合わせたフロントエンド開発</li>
             </ul>
@@ -191,7 +221,11 @@
           </div> -->
         </div>
         <br>
-        <h4>AWS</h4>
+        <h4>
+          <nuxt-link to="/products/?tag=AWS">
+            AWS
+          </nuxt-link>
+        </h4>
         <br>
         <ul>
           <li>API Gateway, Lambda, DynamoDBを用いたサーバレス開発</li>
@@ -210,9 +244,13 @@
         <h4>その他</h4>
         <br>
         <ul>
-          <li>GitHub Actionsを用いたCI/CDの構築</li>
+          <li>
+            <nuxt-link to="/products/?tag=CI/CD">
+              GitHub Actionsを用いたCI/CDの構築
+            </nuxt-link>
+          </li>
           <li>OpenID Connect RPの実装</li>
-          <li>FIDO2を用いたユーザー認証アプリケーションの実装</li>
+          <li>FIDO2(Web Authentication API)を用いたユーザー認証アプリケーションの実装</li>
         </ul>
         <!-- <div class="row row-cols-md-4 row-cols-sm-2 row-cols-1">
           <HomeCard v-for="other in others" :key="other.title" :data="other" />

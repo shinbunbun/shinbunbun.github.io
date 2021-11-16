@@ -103,6 +103,71 @@ export default {
       narrowDownTags: ['WebApp', 'LINE Bot', 'Go', 'Node.js', 'TypeScript', 'Nuxt.js', 'Vue.js', 'Bootstrap', 'Vuetify', 'AWS', 'serverless', 'CI/CD', 'GAS', 'Clova', 'Alexa', 'IoT', 'Network', 'Others'],
       products: [
         {
+          src: '/images/bookommune.png',
+          title: 'bookommune',
+          tags: ['Go', 'WebApp', 'Nuxt.js', 'Bootstrap', 'CI/CD'],
+          date: '2021年11月',
+          github: 'https://github.com/shinbunbun/wb-hackathon-2021',
+          description: `
+         「わたしたちのウェルビーイングのためのハッカソン2021」で「富士通 つながる豊かさ賞」を受賞した作品。
+         自分の今の気持ちを入力すると、その感情を解析しておすすめの本をリコメンドするというプロダクト。
+         自分は主にCI/CDの構築とバックエンド（Go）を担当した。
+         フロントエンドはチームメンバーがNuxt.jsで実装し、自分も少しサポートに入った。
+          `
+        },
+        {
+          src: '/images/dawn.png',
+          title: 'DAWN',
+          tags: ['Go', 'CI/CD', 'AWS'],
+          date: '2021年10月',
+          github: 'https://github.com/jphacks/A_2108',
+          description: `
+         JPHACKS 2021で作成したプロダクト。
+         コンセプトは「旅行に行きたいと思った瞬間に、その人にとって最適な旅行にすぐに行ける仕組みを創ること」で、旅行プランのCtoCプラットフォームになっている。
+         フロントエンドはAndroid、バックエンドはGoで実装した。
+         インフラはAWSのLightsailを使って構築し、DBはMySQLを使用した。
+         私は主にJWTを使った認証周りやAPIの実装、インフラ構築、CI/CD構築を担当した。
+          `
+        },
+        {
+          src: '/images/ubic-stock-management-api.png',
+          title: 'UBIC在庫管理API',
+          tags: ['Go', 'CI/CD', 'AWS', 'serverless'],
+          date: '2021年10月',
+          github: 'https://github.com/shinbunbun/ubic-stock-management-api',
+          description: `
+         前述の「UBIC在庫管理Bot」をクロスプラットフォームで使えるようにするためにREST API化したもの。
+         先輩と2人で開発した。
+         バックエンドはGoで書き、GitHub Actions, serverlessを使ってCI/CDを構築した。
+         テスト駆動開発、ドメイン駆動設計、クリーンアーキテクチャを意識しながら開発を行った。
+         JWTを使ったAPI認証を実装しているのがこだわりポイント（というか、実装してて一番楽しかった）。
+         現在開発中（2021/11/16現在）。
+          `
+        },
+        {
+          src: '/images/ubic-stock-management-bot.png',
+          title: 'UBIC在庫管理Bot',
+          tags: ['Node.js', 'AWS', 'LINE Bot', 'serverless', 'CI/CD'],
+          date: '2021年7月',
+          github: 'https://github.com/shinbunbun/ubic-food-stock-management',
+          description: `
+         大学のUBICという施設にある備蓄食料を管理するLINEBot。
+         バックエンドはAWS LambdaとNode.jsを使ったサーバレスアーキテクチャで構築し、GitHub Actions, serverlessフレームワークを使ってデプロイしている。
+          `
+        },
+        {
+          src: '/images/ubic-notify.png',
+          title: 'UBIC帰宅通知Bot',
+          tags: ['Node.js', 'AWS', 'LINE Bot', 'serverless', 'CI/CD', 'IoT'],
+          date: '2021年6月',
+          github: 'https://github.com/shinbunbun/ubic-bot',
+          qiita: 'https://qiita.com/shinbunbun_/items/215f3f0b022c2ea06ae3',
+          description: `
+          学校にあるUBICという施設に最近よく住んでいるのですが、UBICに帰宅したらSlackへ通知が飛ぶシステム欲しいなーと思い作ってみました。
+          LINE Simple Beaconとmicro:bitを使い、自分のiPhoneがBLEの電波圏内に入ったらSlackへ通知がシステムになっており、バックエンドはAWS Lambdaを使用しています。
+          `
+        },
+        {
           src: '/images/ubic-raspi.jpg',
           title: 'UBICネットワークプロジェクト',
           tags: ['Network'],
@@ -128,6 +193,19 @@ export default {
           `
         },
         {
+          src: '/images/catenary.png',
+          title: 'Catenary',
+          tags: ['TypeScript', 'CI/CD'],
+          date: '2021年2月',
+          github: 'https://github.com/sgg-catenary/catenary',
+          description: `
+         「Epson Hack Trek 2021」で優勝したプロダクト。
+         コロナで放課後の時間が失われたことに着想を得て、放課後先生にオンラインで質問ができるサービスを開発した。
+         このプロダクトはハッカソン終了後、Epson社協力のもと実証実験に向けてユーザーヒアリングなどを行なっていたが、現在は開発を休止している。
+         自分は代表を務め、PMやユーザーヒアリング、ビジネルモデルの検討などを担当した。
+          `
+        },
+        {
           src: '/images/portfolio.png',
           title: 'ポートフォリオサイト',
           tags: ['AWS', 'WebApp', 'Nuxt.js', 'Bootstrap'],
@@ -143,7 +221,7 @@ export default {
         {
           src: '/images/jikanwai-bot.png',
           title: '時間割bot',
-          tags: ['AWS', 'LINE Bot', 'WebApp', 'Clova', 'Nuxt.js', 'Node.js', 'serverless', 'Bootstrap', 'CI/CD'],
+          tags: ['AWS', 'LINE Bot', 'WebApp', 'Clova', 'Nuxt.js', 'Node.js', 'serverless', 'Vuetify', 'CI/CD'],
           date: '2018年8月(LINE Bot版)',
           youtube: 'https://www.youtube.com/embed/8OPSW_0tWmU',
           github: 'https://github.com/shinbunbun/jikanwari-bot',
@@ -152,7 +230,7 @@ export default {
           linebot: 'https://line.me/R/ti/p/%40ywg0561x',
           clova: 'https://clova.line.me/clova-ai/skillstore/skill/com.takamuneyuto.skill.second',
           description: `2018年夏に制作。
-          友達追加数2739人（2021/01/01現在）で、一番の人気作。
+          友達追加数3399人（2021/11/17現在）で、一番の人気作。
           LINEで時間割を確認できるLINE Bot。
           「今日の時間割」、「明日の時間割」などを確認できるほか、毎日指定した時間に時間割を通知してくれる機能もある。
           「時間割共有機能」もあり、同じクラスの友達内で時間割の共有ができる。
