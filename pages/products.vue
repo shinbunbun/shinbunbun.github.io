@@ -130,7 +130,7 @@ export default {
         {
           src: '/images/portfolio.png',
           title: 'ポートフォリオサイト',
-          tags: ['AWS', 'WebApp', 'Nuxt.js'],
+          tags: ['AWS', 'WebApp', 'Nuxt.js', 'Bootstrap'],
           date: '2021年1月',
           github: 'https://github.com/shinbunbun/portfolio',
           webapp: 'https://shinbunbun.info',
@@ -143,7 +143,7 @@ export default {
         {
           src: '/images/jikanwai-bot.png',
           title: '時間割bot',
-          tags: ['AWS', 'LINE Bot', 'WebApp', 'Clova', 'Nuxt.js'],
+          tags: ['AWS', 'LINE Bot', 'WebApp', 'Clova', 'Nuxt.js', 'Node.js', 'serverless', 'Bootstrap', 'CI/CD'],
           date: '2018年8月(LINE Bot版)',
           youtube: 'https://www.youtube.com/embed/8OPSW_0tWmU',
           github: 'https://github.com/shinbunbun/jikanwari-bot',
@@ -152,17 +152,19 @@ export default {
           linebot: 'https://line.me/R/ti/p/%40ywg0561x',
           clova: 'https://clova.line.me/clova-ai/skillstore/skill/com.takamuneyuto.skill.second',
           description: `2018年夏に制作。
-          友達追加数2739人（2021/01/01現在）で、私が作った作品の中で一番の人気作。
+          友達追加数2739人（2021/01/01現在）で、一番の人気作。
           LINEで時間割を確認できるLINE Bot。
           「今日の時間割」、「明日の時間割」などを確認できるほか、毎日指定した時間に時間割を通知してくれる機能もある。
           「時間割共有機能」もあり、同じクラスの友達内で時間割の共有ができる。
           グループでの使用も可能。
-          Clovaスキル版、LIFFアプリ版もある。`
+          Clovaスキル版、LIFFアプリ版もある。
+          現在も継続的に改修をしている。
+          `
         },
         {
           src: '/images/2019graduate.png',
           title: '2019年度卒業生お祝いページ',
-          tags: ['AWS', 'WebApp', 'Vue.js'],
+          tags: ['AWS', 'WebApp', 'Vue.js', 'Node.js', 'Bootstrap'],
           date: '2020年3月',
           github: 'https://github.com/shinbunbun/2019_graduate',
           description: `2020年3月に制作。
@@ -175,7 +177,7 @@ export default {
         {
           src: '/images/2019votesystem.png',
           title: '2019年文化祭投票システム',
-          tags: ['AWS', 'WebApp', 'Vue.js'],
+          tags: ['AWS', 'WebApp', 'Vue.js', 'Node.js', 'Bootstrap'],
           date: '2019年9月',
           twitterId: '1179361752951250944',
           github: 'https://github.com/shinbunbun/vote-system-2019',
@@ -190,7 +192,7 @@ export default {
         {
           src: '/images/huro.jpg',
           title: '風呂のボタン押すやつ',
-          tags: ['IoT', 'AWS', 'LINE Bot'],
+          tags: ['IoT', 'AWS', 'LINE Bot', 'Node.js'],
           date: '2019年5月',
           twitterId: '1125212225914818560',
           qiita: 'https://qiita.com/shinbunbun_/items/d4dcf2e3ce96c041e9d5',
