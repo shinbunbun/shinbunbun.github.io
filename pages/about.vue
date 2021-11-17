@@ -61,6 +61,20 @@
             </div>
             <div class="py-2" />
             <div class="row">
+              <h3>著書</h3>
+              <br>
+              <p>
+                <ul>
+                  <li><a href="https://www.amazon.co.jp/dp/B08L4FPGNF" target="_blank" rel="noopener noreferrer">LINE API実践ガイド</a></li>
+                  <ul>
+                    <li>LINE API EXPERTを中心としたLINE Developer Communityメンバーの共著で執筆</li>
+                    <li>私は「第二章 LINEログイン」を執筆した</li>
+                  </ul>
+                </ul>
+              </p>
+            </div>
+            <div class="py-2" />
+            <div class="row">
               <h3>保有資格</h3>
               <br>
               <p>
