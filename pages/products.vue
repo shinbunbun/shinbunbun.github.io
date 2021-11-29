@@ -102,7 +102,7 @@ export default {
       tags: ['WebApp', 'LINE Bot', 'Go', 'Node.js', 'TypeScript', 'Nuxt.js', 'Vue.js', 'Bootstrap', 'Vuetify', 'AWS', 'serverless', 'CI/CD', 'GAS', 'Clova', 'Alexa', 'IoT', 'Network', 'Others'],
       narrowDownTags: ['WebApp', 'LINE Bot', 'Go', 'Node.js', 'TypeScript', 'Nuxt.js', 'Vue.js', 'Bootstrap', 'Vuetify', 'AWS', 'serverless', 'CI/CD', 'GAS', 'Clova', 'Alexa', 'IoT', 'Network', 'Others'],
       products: [
-        {
+        /*{
           src: '/images/bookommune.png',
           title: 'bookommune',
           tags: ['Go', 'WebApp', 'Nuxt.js', 'Bootstrap', 'CI/CD'],
@@ -114,7 +114,7 @@ export default {
          自分は主にCI/CDの構築とバックエンド（Go）を担当した。
          フロントエンドはチームメンバーがNuxt.jsで実装し、自分も少しサポートに入った。
           `
-        },
+        },*/
         {
           src: '/images/dawn.png',
           title: 'DAWN',
