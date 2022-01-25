@@ -118,7 +118,6 @@
               <p>
                 <ul>
                   <li>2021/07~ <a href="https://thedott.io/" target="blank" rel="noopener">株式会社 dott</a> Webフロントエンド開発</li>
-                  <li>2019/12~ <a href="https://yakan-hiko.co.jp/" target="blank" rel="noopener">株式会社夜間飛行</a> ホームページ/Webアプリケーション制作（単発案件を複数）</li>
                   <li>2021/08 <a href="https://about.yahoo.co.jp/" target="blank" rel="noopener">Yahoo Japan Corporation</a> インターンシップ（認証・アクセス制御に関するプロダクト開発）</li>
                   <li>2021/01~2021/05 <a href="https://lastrust.io/" target="blank" rel="noopener">LasTrust株式会社</a> インターンシップ（R&D）</li>
                   <li>2018/12~2019/12 <a href="https://www.i-kasa.com/" target="blank" rel="noopener">株式会社 Nature Innovation Group（アイカサ）</a> バックエンド開発</li>
