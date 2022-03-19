@@ -156,6 +156,7 @@
             <ul>
               <li>actix-web, askama, SeaORMを使ったアプリケーション開発</li>
             </ul>
+          </ul>
           <ul>
             <li>
               <nuxt-link to="/products/?tag=Go">
