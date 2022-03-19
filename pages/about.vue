@@ -117,8 +117,9 @@
               <br>
               <p>
                 <ul>
-                  <li>2021/07~ <a href="https://thedott.io/" target="blank" rel="noopener">株式会社 dott</a> Webフロントエンド開発</li>
+                  <li>2022/02~2022/03 <a href="https://www.yumemi.co.jp/" target="blank" rel="noopener">株式会社ゆめみ</a> インターンシップ（Rustを使ったWebアプリケーション開発）</li>
                   <li>2021/08 <a href="https://about.yahoo.co.jp/" target="blank" rel="noopener">Yahoo Japan Corporation</a> インターンシップ（認証・アクセス制御に関するプロダクト開発）</li>
+                  <li>2021/07~ <a href="https://thedott.io/" target="blank" rel="noopener">株式会社 dott</a> Webフロントエンド開発</li>
                   <li>2021/01~2021/05 <a href="https://lastrust.io/" target="blank" rel="noopener">LasTrust株式会社</a> インターンシップ（R&D）</li>
                   <li>2018/12~2019/12 <a href="https://www.i-kasa.com/" target="blank" rel="noopener">株式会社 Nature Innovation Group（アイカサ）</a> バックエンド開発</li>
                 </ul>
@@ -150,6 +151,13 @@
           <br>
           <ul>
             <li>
+                Rust
+            </li>
+            <ul>
+              <li>actix-web, askama, SeaORMを使ったアプリケーション開発</li>
+            </ul>
+          <ul>
+            <li>
               <nuxt-link to="/products/?tag=Go">
                 Go
               </nuxt-link>
@@ -157,9 +165,7 @@
             <ul>
               <li>Go（Gin）を使ったサーバサイド開発</li>
               <li>AWS Lambdaを使ったサーバレス開発</li>
-              <li>go testを使った単体テスト、結合テスト</li>
-              <li>簡易的なドメイン駆動設計</li>
-              <li>クリーンアーキテクチャ</li>
+              <li>go test</li>
               <li>
                 GitHub Actionsを用いたCIの構築（test, golangci-lintなど）
               </li>
