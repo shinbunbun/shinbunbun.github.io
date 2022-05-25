@@ -102,6 +102,18 @@ export default {
       tags: ['WebApp', 'LINE Bot', 'Go', 'Node.js', 'TypeScript', 'Nuxt.js', 'Vue.js', 'Bootstrap', 'Vuetify', 'AWS', 'serverless', 'CI/CD', 'GAS', 'Clova', 'Alexa', 'IoT', 'Network', 'Others'],
       narrowDownTags: ['WebApp', 'LINE Bot', 'Go', 'Node.js', 'TypeScript', 'Nuxt.js', 'Vue.js', 'Bootstrap', 'Vuetify', 'AWS', 'serverless', 'CI/CD', 'GAS', 'Clova', 'Alexa', 'IoT', 'Network', 'Others'],
       products: [
+        {
+          src: '/images/matumoto.png',
+          title: 'まつもとせんぱーい',
+          tags: ['Node.js', 'AWS', 'serverless'],
+          date: '2021年11月',
+          github: 'https://github.com/shinbunbun/matsumoto-tweet',
+          slide: 'https://speakerdeck.com/shinbunbun_/matumotosenpai-wozi-dong-hua-sitemita',
+          description: `
+         LT登壇2時間前にネタがないことに気づいたため、iPhoneのショートカットから「まつもとせんぱーい」とツイートするだけのプログラムをNode.jsで作った。
+         serverlessフレームワークを用いてAWS Lambdaにデプロイしている。
+          `
+        },
         /* {
           src: '/images/bookommune.png',
           title: 'bookommune',
@@ -142,6 +154,7 @@ export default {
          テスト駆動開発、ドメイン駆動設計、クリーンアーキテクチャを意識しながら開発を行った。
          JWTを使ったAPI認証を実装しているのがこだわりポイント（というか、実装してて一番楽しかった）。
          現在開発中（2021/11/16現在）。
+         追記: 開発は頓挫したので未完成
           `
         },
         {
