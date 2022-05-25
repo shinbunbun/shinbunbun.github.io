@@ -42,6 +42,7 @@
               高二の夏頃からはVue.jsを使ったWebアプリの開発をはじめ、文化祭の出展投票システムや時間割botのLIFFアプリなどを開発した。<br>
               フリーランスとして案件の受注もしており、Webアプリケーション開発などを行っている。<br>
               コミュニティ活動も高一から行っており、高二まではLINE Developer Communityを中心に活動していた。<br>
+              現在はLINE認定の<a href="https://www.line-community.me/ja/apiexpert/detail/61e4412669e9a522434aa06c" target="_blank" rel="noopener noreferrer">LINE API Expert</a>として活動している。<br>
               最近の興味分野はアイデンティティ管理や認証系。<br>
               すごくなりたいがくせいぐるーぷ立ち上げメンバー兼運営。
             </p>
@@ -117,6 +118,7 @@
               <br>
               <p>
                 <ul>
+                  <li>2022/03~2022/06 <a href="https://www.pixiv.co.jp/" target="_blank" rel="noopener noreferrer">ピクシブ株式会社</a> 長期インターンシップ（インフラ部SAチーム）</li>
                   <li>2022/02~2022/03 <a href="https://www.yumemi.co.jp/" target="blank" rel="noopener">株式会社ゆめみ</a> インターンシップ（Rustを使ったWebアプリケーション開発）</li>
                   <li>2021/08 <a href="https://about.yahoo.co.jp/" target="blank" rel="noopener">Yahoo Japan Corporation</a> インターンシップ（認証・アクセス制御に関するプロダクト開発）</li>
                   <li>2021/07~ <a href="https://thedott.io/" target="blank" rel="noopener">株式会社 dott</a> Webフロントエンド開発</li>
@@ -294,7 +296,7 @@ export default {
       },
       collegeActivities: [
         {
-          date: '2021/09~',
+          date: '2021/09~2022/03',
           url: 'https://blog.ascs.dev/',
           title: 'Aizu Student Creators（ASCs）',
           description: '代表'
