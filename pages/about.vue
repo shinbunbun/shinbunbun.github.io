@@ -151,7 +151,7 @@
           <br>
           <ul>
             <li>
-                Rust
+              Rust
             </li>
             <ul>
               <li>actix-web, askama, SeaORMを使ったアプリケーション開発</li>
