@@ -23,6 +23,7 @@
         <div class="py-2" />
         <div class="sns-icons row text-center">
           <div class="col sns-image-container">
+            <a href="https://www.line-community.me/ja/apiexpert/detail/61e4412669e9a522434aa06c" target="blank" rel="noopener"><img v-lazy="`/images/LAE_logo_7@2x.png`" alt="lae"></a>
             <a href="https://twitter.com/shinbunbun_" target="blank" rel="noopener"><img v-lazy="`/images/twitter.png`" alt="twitter"></a>
             <a href="https://www.facebook.com/yuto.takamune.77/" target="blank" rel="noopener"><img v-lazy="`/images/facebook.png`" alt="facebook"></a>
             <a href="https://github.com/shinbunbun" target="blank" rel="noopener"><img v-lazy="`/images/GitHub-Mark-120px-plus.png`" alt="github"></a>
