@@ -117,12 +117,48 @@
             <div class="row">
               <h3>職歴</h3>
               <br>
+              <!-- <p>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>2022/03~2022/06</td>
+                      <td><a href="https://www.pixiv.co.jp/" target="_blank" rel="noopener noreferrer">ピクシブ株式会社</a></td>
+                      <td>長期インターンシップ（インフラ部SAチーム）</td>
+                    </tr>
+                    <tr>
+                      <td>2022/02~2022/03</td>
+                      <td><a href="https://www.yumemi.co.jp/" target="blank" rel="noopener">株式会社ゆめみ</a></td>
+                      <td>インターンシップ（Rustを使ったWebアプリケーション開発）</td>
+                    </tr>
+                    <tr>
+                      <td>2021/08</td>
+                      <td><a href="https://about.yahoo.co.jp/" target="blank" rel="noopener">Yahoo Japan Corporation</a></td>
+                      <td>インターンシップ（認証・アクセス制御に関するプロダクト開発）</td>
+                    </tr>
+                    <tr>
+                      <td>2021/07~2022/03</td>
+                      <td><a href="https://thedott.io/" target="blank" rel="noopener">株式会社 dott</a></td>
+                      <td><a href="https://fukushima-covid19.web.app/" target="_blank" rel="noopener noreferrer">福島県新型コロナウイルス対策サイト</a>保守業務</td>
+                    </tr>
+                    <tr>
+                      <td>2021/01~2021/05</td>
+                      <td><a href="https://lastrust.io/" target="blank" rel="noopener">LasTrust株式会社</a></td>
+                      <td> インターンシップ（R&D）</td>
+                    </tr>
+                    <tr>
+                      <td>2018/12~2019/12</td>
+                      <td><a href="https://www.i-kasa.com/" target="blank" rel="noopener">株式会社 Nature Innovation Group（アイカサ）</a></td>
+                      <td>バックエンド開発</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </p> -->
               <p>
                 <ul>
                   <li>2022/03~2022/06 <a href="https://www.pixiv.co.jp/" target="_blank" rel="noopener noreferrer">ピクシブ株式会社</a> 長期インターンシップ（インフラ部SAチーム）</li>
                   <li>2022/02~2022/03 <a href="https://www.yumemi.co.jp/" target="blank" rel="noopener">株式会社ゆめみ</a> インターンシップ（Rustを使ったWebアプリケーション開発）</li>
                   <li>2021/08 <a href="https://about.yahoo.co.jp/" target="blank" rel="noopener">Yahoo Japan Corporation</a> インターンシップ（認証・アクセス制御に関するプロダクト開発）</li>
-                  <li>2021/07~ <a href="https://thedott.io/" target="blank" rel="noopener">株式会社 dott</a> Webフロントエンド開発</li>
+                  <li>2021/07~2022/03 <a href="https://thedott.io/" target="blank" rel="noopener">株式会社 dott</a> <a href="https://fukushima-covid19.web.app/" target="_blank" rel="noopener noreferrer">福島県新型コロナウイルス対策サイト</a>保守業務</li>
                   <li>2021/01~2021/05 <a href="https://lastrust.io/" target="blank" rel="noopener">LasTrust株式会社</a> インターンシップ（R&D）</li>
                   <li>2018/12~2019/12 <a href="https://www.i-kasa.com/" target="blank" rel="noopener">株式会社 Nature Innovation Group（アイカサ）</a> バックエンド開発</li>
                 </ul>
