@@ -103,6 +103,20 @@ export default {
       narrowDownTags: ['WebApp', 'LINE Bot', 'Go', 'Node.js', 'TypeScript', 'Nuxt.js', 'Vue.js', 'Bootstrap', 'Vuetify', 'AWS', 'serverless', 'CI/CD', 'GAS', 'Clova', 'Alexa', 'IoT', 'Network', 'Others'],
       products: [
         {
+          src: '/images/ubic-food-management-api-v2.png',
+          title: 'UBIC食材管理APIv2',
+          tags: ['Go', 'AWS', 'CI/CD'],
+          date: '2022年1月',
+          github: 'https://github.com/shinbunbun/ubic-food-management-api-v2',
+          slide: 'https://speakerdeck.com/shinbunbun_/ubicfalseshi-cai-guan-li-apiwozuo-tutahua',
+          description: `
+         大学のUBICという施設に備蓄しているカップ麺などの食料を管理するためのシステム。
+         前述のUBIC食材管理APIの開発に頓挫したため、1人で1から作り直した。
+         Go, AWS(Lambda, API Gateway, DynamoDB, S3, SAM), LINEログイン, Swagger, Docker, GitHub Actionsなど、色々てんこもりで使っている。
+         テストを回すためにローカルでLambdaやDynamoDB, S3を立てられるDockerを作るなど、結構大変だった。
+          `
+        },
+        {
           src: '/images/matumoto.png',
           title: 'まつもとせんぱーい',
           tags: ['Node.js', 'AWS', 'serverless'],
