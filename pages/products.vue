@@ -99,9 +99,20 @@ export default {
       },
       modal: false,
       choseProduct: {},
-      tags: ['WebApp', 'LINE Bot', 'Go', 'Node.js', 'TypeScript', 'Nuxt.js', 'Vue.js', 'Bootstrap', 'Vuetify', 'AWS', 'serverless', 'CI/CD', 'GAS', 'Clova', 'Alexa', 'IoT', 'Network', 'Others'],
-      narrowDownTags: ['WebApp', 'LINE Bot', 'Go', 'Node.js', 'TypeScript', 'Nuxt.js', 'Vue.js', 'Bootstrap', 'Vuetify', 'AWS', 'serverless', 'CI/CD', 'GAS', 'Clova', 'Alexa', 'IoT', 'Network', 'Others'],
+      tags: ['WebApp', 'LINE Bot', 'Go', 'Node.js', 'TypeScript', 'Nuxt.js', 'Vue.js', 'Bootstrap', 'Vuetify', 'AWS', 'serverless', 'CI/CD', 'GAS', 'Clova', 'Alexa', 'IoT', 'Network', 'Others', 'Elm'],
+      narrowDownTags: ['WebApp', 'LINE Bot', 'Go', 'Node.js', 'TypeScript', 'Nuxt.js', 'Vue.js', 'Bootstrap', 'Vuetify', 'AWS', 'serverless', 'CI/CD', 'GAS', 'Clova', 'Alexa', 'IoT', 'Network', 'Others', 'Elm'],
       products: [
+        {
+          src: '/images/elm-todo-app.png',
+          title: 'Elm製ToDoアプリ',
+          tags: ['Elm'],
+          date: '2022年2月',
+          github: 'https://github.com/shinbunbun/elm-todo-app',
+          description: `
+         関数型パラダイムを学ぶためにElmで作成したToDoアプリ。
+         追加、表示、削除の最低限の機能しかない。
+          `
+        },
         {
           src: '/images/ubic-food-management-api-v2.png',
           title: 'UBIC食材管理APIv2',
@@ -659,6 +670,10 @@ label {
 }
 .label-CI\/CD{
   background-color: #24292e;
+  color: white;
+}
+.label-Elm{
+  background-color: #5c647b;
   color: white;
 }
 
