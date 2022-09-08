@@ -155,6 +155,7 @@
               </p> -->
               <p>
                 <ul>
+                  <li>2022/09~ <a href="https://andpad.co.jp/" target="_blank" rel="noopener noreferrer">株式会社アンドパッド</a> インターンシップ</li>
                   <li>2022/03~2022/06 <a href="https://www.pixiv.co.jp/" target="_blank" rel="noopener noreferrer">ピクシブ株式会社</a> 長期インターンシップ（インフラ部SAチーム）</li>
                   <li>2022/02~2022/03 <a href="https://www.yumemi.co.jp/" target="blank" rel="noopener">株式会社ゆめみ</a> インターンシップ（Rustを使ったWebアプリケーション開発）</li>
                   <li>2021/08 <a href="https://about.yahoo.co.jp/" target="blank" rel="noopener">Yahoo Japan Corporation</a> インターンシップ（認証・アクセス制御に関するプロダクト開発）</li>
