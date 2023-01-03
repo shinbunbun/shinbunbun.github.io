@@ -100,9 +100,20 @@ export default {
       },
       modal: false,
       choseProduct: {},
-      tags: ['WebApp', 'LINE Bot', 'Go', 'Node.js', 'TypeScript', 'Nuxt.js', 'Vue.js', 'Bootstrap', 'Vuetify', 'AWS', 'serverless', 'CI/CD', 'GAS', 'Clova', 'Alexa', 'IoT', 'Network', 'Others', 'Elm'],
-      narrowDownTags: ['WebApp', 'LINE Bot', 'Go', 'Node.js', 'TypeScript', 'Nuxt.js', 'Vue.js', 'Bootstrap', 'Vuetify', 'AWS', 'serverless', 'CI/CD', 'GAS', 'Clova', 'Alexa', 'IoT', 'Network', 'Others', 'Elm'],
+      tags: ['WebApp', 'LINE Bot', 'Go', 'Node.js', 'TypeScript', 'Nuxt.js', 'Vue.js', 'Bootstrap', 'Vuetify', 'AWS', 'serverless', 'CI/CD', 'GAS', 'Clova', 'Alexa', 'IoT', 'Network', 'Others', 'Elm', 'Rust'],
+      narrowDownTags: ['WebApp', 'LINE Bot', 'Go', 'Node.js', 'TypeScript', 'Nuxt.js', 'Vue.js', 'Bootstrap', 'Vuetify', 'AWS', 'serverless', 'CI/CD', 'GAS', 'Clova', 'Alexa', 'IoT', 'Network', 'Others', 'Elm', 'Rust'],
       products: [
+        {
+          src: '/images/rust-sns.png',
+          title: 'Rust製SNS',
+          tags: ['Rust', 'CI/CD'],
+          date: '2022年3月',
+          github: 'https://github.com/shinbunbun/sns',
+          description: `
+         株式会社ゆめみのサーバサイドインターンシップの課題で製作したRust製SNSアプリ。
+         Twitterライクなアプリケーションになっていて、Webサーバフレームワークはactix-web、ORMはsea-orm、テンプレートエンジンはAskamaを使用している。
+          `
+        },
         {
           src: '/images/elm-liff-sample.png',
           title: 'Elm製LIFFアプリ',
@@ -686,6 +697,10 @@ label {
 }
 .label-Elm{
   background-color: #5c647b;
+  color: white;
+}
+.label-Rust{
+  background-color: black;
   color: white;
 }
 
