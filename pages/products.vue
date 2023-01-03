@@ -3,6 +3,7 @@
     <div class="container">
       <div class="py-4" />
       <h1>Products</h1>
+      <p>最終更新: 2023/01</p>
 
       <div class="py-4" />
 
@@ -102,6 +103,17 @@ export default {
       tags: ['WebApp', 'LINE Bot', 'Go', 'Node.js', 'TypeScript', 'Nuxt.js', 'Vue.js', 'Bootstrap', 'Vuetify', 'AWS', 'serverless', 'CI/CD', 'GAS', 'Clova', 'Alexa', 'IoT', 'Network', 'Others', 'Elm'],
       narrowDownTags: ['WebApp', 'LINE Bot', 'Go', 'Node.js', 'TypeScript', 'Nuxt.js', 'Vue.js', 'Bootstrap', 'Vuetify', 'AWS', 'serverless', 'CI/CD', 'GAS', 'Clova', 'Alexa', 'IoT', 'Network', 'Others', 'Elm'],
       products: [
+        {
+          src: '/images/elm-liff-sample.png',
+          title: 'Elm製LIFFアプリ',
+          tags: ['Elm', 'CI/CD'],
+          date: '2022年2月',
+          github: 'https://github.com/shinbunbun/elm-liff-sample',
+          webapp: 'https://shinbunbun.info/elm-liff-sample',
+          description: `
+         <a href="https://developers.line.biz/ja/docs/liff/overview/" target="blank" rel="noopener">LINE Frontend-framework</a>をElmで実装した
+          `
+        },
         {
           src: '/images/elm-todo-app.png',
           title: 'Elm製ToDoアプリ',

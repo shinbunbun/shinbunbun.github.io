@@ -77,9 +77,7 @@
               </button>
             </div>
             <br><br>
-            <p class="description">
-              {{ data.description }}
-            </p>
+            <p class="description" v-html="data.description" />
           </div>
         </div>
       </div>
