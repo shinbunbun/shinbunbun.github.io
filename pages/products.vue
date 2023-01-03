@@ -104,6 +104,17 @@ export default {
       narrowDownTags: ['WebApp', 'LINE Bot', 'Go', 'Node.js', 'TypeScript', 'Nuxt.js', 'Vue.js', 'Bootstrap', 'Vuetify', 'AWS', 'serverless', 'CI/CD', 'GAS', 'Clova', 'Alexa', 'IoT', 'Network', 'Others', 'Elm', 'Rust'],
       products: [
         {
+          src: '/images/line-bot-example-rust.png',
+          title: 'Rust製LINEBotSDK',
+          tags: ['Rust', 'CI/CD'],
+          date: '2022年8月',
+          github: 'https://github.com/shinbunbun/line-bot-example-rust',
+          description: `
+         Rustで製作したLINEBot SDKライブラリ。
+         これを使ったLINEBotの作り方を<a href="https://techbookfest.org/product/svQshiEgMHryYqmNxXKV6u" target="blank" rel="noopener">ZliTechBook V3</a>で紹介しています。
+          `
+        },
+        {
           src: '/images/rust-sns.png',
           title: 'Rust製SNS',
           tags: ['Rust', 'CI/CD'],
