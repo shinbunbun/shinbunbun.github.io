@@ -72,6 +72,10 @@
                     <li>LINE API EXPERTを中心としたLINE Developer Communityメンバーの共著で執筆</li>
                     <li>私は「第二章 LINEログイン」を執筆した</li>
                   </ul>
+                  <li><a href="https://techbookfest.org/product/3EUnJ5WbexvCDyMgSJS1qb" target="_blank" rel="noopener noreferrer">Hands-on LINEBOT（同人誌）</a></li>
+                  <ul>
+                    <li>技術書典13で頒布したLINEBotの入門書</li>
+                  </ul>
                 </ul>
               </p>
             </div>
@@ -98,8 +102,6 @@
                     <li>FIDO2, WebAuthn</li>
                   </ul>
                   <li>インフラ, ネットワーク</li>
-                  <li>テスト駆動開発</li>
-                  <li>クリーンアーキテクチャ</li>
                 </ul>
               </p>
             </div>
@@ -144,7 +146,9 @@
           <br>
           <ul>
             <li>
-              Rust
+              <nuxt-link to="/products/?tag=Rust">
+                Rust
+              </nuxt-link>
             </li>
             <ul>
               <li>actix-web, askama, SeaORMを使ったアプリケーション開発</li>
@@ -228,6 +232,9 @@
             <ul>
               <li>Vue.js, Nuxt.jsと組み合わせたフロントエンド開発</li>
             </ul>
+            <li>
+              React.js
+            </li>
           </ul>
           <!-- <div class="row row-cols-md-4 row-cols-sm-2 row-cols-1">
             <HomeCard v-for="framework in frameworks" :key="framework.title" :data="framework" />
@@ -250,6 +257,7 @@
           <li>Route53を用いたDNS設定</li>
           <li>Cognito, API Gateway, Lambdaを用いたユーザー認証及びAPI認証</li>
         </ul>
+        <p>etc...</p>
         <!-- <div class="row row-cols-md-4 row-cols-sm-2 row-cols-1">
           <HomeCard v-for="cloud in clouds" :key="cloud.title" :data="cloud" />
         </div> -->
@@ -265,6 +273,7 @@
           <li>OpenID Connect RPの実装</li>
           <li>FIDO2(Web Authentication API)を用いたユーザー認証アプリケーションの実装</li>
         </ul>
+        <p>etc...</p>
         <!-- <div class="row row-cols-md-4 row-cols-sm-2 row-cols-1">
           <HomeCard v-for="other in others" :key="other.title" :data="other" />
         </div> -->
