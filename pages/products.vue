@@ -104,6 +104,19 @@ export default {
       narrowDownTags: ['WebApp', 'LINE Bot', 'Go', 'Node.js', 'TypeScript', 'Nuxt.js', 'Vue.js', 'Bootstrap', 'Vuetify', 'AWS', 'serverless', 'CI/CD', 'GAS', 'Clova', 'Alexa', 'IoT', 'Network', 'Others', 'Elm', 'Rust'],
       products: [
         {
+          src: '/images/def.png',
+          title: 'decentralized-event-fairies',
+          tags: ['Rust', 'Node.js', 'TypeScript'],
+          date: '2022年11月',
+          github: 'https://github.com/shinbunbun/decentralized-event-fairies',
+          slide: 'https://docs.google.com/presentation/d/1v4XmGj18FcBZdT08dMQziuJQX8o2QtHUhfp0ye9LrkQ/edit?usp=sharing',
+          description: `
+         IOTAという分散型台帳を使って、Decentralized Identifiers(DIDs)とVerifiable Credentials(VCs)を使った機械的に検証可能なイベント参加証明を発行できるイベント参加者募集プラットフォーム。
+         フロントエンドはReact.js、バックエンドはNode.js(TypeScript), GraphQL(Hasura)を使用している。
+         3人で製作し、自分は主にDIDs・VCsの発行や検証の処理周りを担当した。
+          `
+        },
+        {
           src: '/images/secp256k1-rust.png',
           title: 'secp256k1-rust',
           tags: ['Rust'],
