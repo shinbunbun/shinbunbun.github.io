@@ -296,6 +296,12 @@ export default {
       },
       collegeActivities: [
         {
+          date: '2022/04~',
+          url: 'https://blog.ascs.dev/',
+          title: 'Zli',
+          description: ' 副代表'
+        },
+        {
           date: '2021/09~2022/03',
           url: 'https://blog.ascs.dev/',
           title: 'Aizu Student Creators（ASCs）',
