@@ -3,6 +3,7 @@
     <div class="container">
       <div class="py-4" />
       <h1>Products</h1>
+      <p>最終更新: 2023/01</p>
 
       <div class="py-4" />
 
@@ -99,9 +100,66 @@ export default {
       },
       modal: false,
       choseProduct: {},
-      tags: ['WebApp', 'LINE Bot', 'Go', 'Node.js', 'TypeScript', 'Nuxt.js', 'Vue.js', 'Bootstrap', 'Vuetify', 'AWS', 'serverless', 'CI/CD', 'GAS', 'Clova', 'Alexa', 'IoT', 'Network', 'Others', 'Elm'],
-      narrowDownTags: ['WebApp', 'LINE Bot', 'Go', 'Node.js', 'TypeScript', 'Nuxt.js', 'Vue.js', 'Bootstrap', 'Vuetify', 'AWS', 'serverless', 'CI/CD', 'GAS', 'Clova', 'Alexa', 'IoT', 'Network', 'Others', 'Elm'],
+      tags: ['WebApp', 'LINE Bot', 'Go', 'Node.js', 'TypeScript', 'Nuxt.js', 'Vue.js', 'Bootstrap', 'Vuetify', 'AWS', 'serverless', 'CI/CD', 'GAS', 'Clova', 'Alexa', 'IoT', 'Network', 'Others', 'Elm', 'Rust'],
+      narrowDownTags: ['WebApp', 'LINE Bot', 'Go', 'Node.js', 'TypeScript', 'Nuxt.js', 'Vue.js', 'Bootstrap', 'Vuetify', 'AWS', 'serverless', 'CI/CD', 'GAS', 'Clova', 'Alexa', 'IoT', 'Network', 'Others', 'Elm', 'Rust'],
       products: [
+        {
+          src: '/images/def.png',
+          title: 'decentralized-event-fairies',
+          tags: ['Rust', 'Node.js', 'TypeScript'],
+          date: '2022年11月',
+          github: 'https://github.com/shinbunbun/decentralized-event-fairies',
+          slide: 'https://docs.google.com/presentation/d/1v4XmGj18FcBZdT08dMQziuJQX8o2QtHUhfp0ye9LrkQ/edit?usp=sharing',
+          description: `
+         IOTAという分散型台帳を使って、Decentralized Identifiers(DIDs)とVerifiable Credentials(VCs)を使った機械的に検証可能なイベント参加証明を発行できるイベント参加者募集プラットフォーム。
+         フロントエンドはReact.js、バックエンドはNode.js(TypeScript), GraphQL(Hasura)を使用している。
+         3人で製作し、自分は主にDIDs・VCsの発行や検証の処理周りを担当した。
+          `
+        },
+        {
+          src: '/images/secp256k1-rust.png',
+          title: 'secp256k1-rust',
+          tags: ['Rust'],
+          date: '2022年9月',
+          github: 'https://github.com/shinbunbun/secp256k1-rust',
+          slide: 'https://docs.google.com/presentation/d/15cTM-K8qXES7I6ic2Z7EGjvDPerc6r0_EzZxlQxsEQE/edit?usp=sharing',
+          description: `
+         Rustで楕円曲線暗号の署名アルゴリズム（secp256k1）をフルスクラッチ実装した
+          `
+        },
+        {
+          src: '/images/line-bot-example-rust.png',
+          title: 'Rust製LINEBotSDK',
+          tags: ['Rust', 'CI/CD'],
+          date: '2022年8月',
+          github: 'https://github.com/shinbunbun/line-bot-example-rust',
+          description: `
+         Rustで製作したLINEBot SDKライブラリ。
+         これを使ったLINEBotの作り方を<a href="https://techbookfest.org/product/svQshiEgMHryYqmNxXKV6u" target="blank" rel="noopener">ZliTechBook V3</a>で紹介している。
+          `
+        },
+        {
+          src: '/images/rust-sns.png',
+          title: 'Rust製SNS',
+          tags: ['Rust', 'CI/CD'],
+          date: '2022年3月',
+          github: 'https://github.com/shinbunbun/sns',
+          description: `
+         株式会社ゆめみのサーバサイドインターンシップの課題で製作したRust製SNSアプリ。
+         Twitterライクなアプリケーションになっていて、Webサーバフレームワークはactix-web、ORMはsea-orm、テンプレートエンジンはAskamaを使用している。
+          `
+        },
+        {
+          src: '/images/elm-liff-sample.png',
+          title: 'Elm製LIFFアプリ',
+          tags: ['Elm', 'CI/CD'],
+          date: '2022年2月',
+          github: 'https://github.com/shinbunbun/elm-liff-sample',
+          webapp: 'https://shinbunbun.info/elm-liff-sample',
+          description: `
+         <a href="https://developers.line.biz/ja/docs/liff/overview/" target="blank" rel="noopener">LINE Frontend-framework</a>をElmで実装した
+          `
+        },
         {
           src: '/images/elm-todo-app.png',
           title: 'Elm製ToDoアプリ',
@@ -674,6 +732,10 @@ label {
 }
 .label-Elm{
   background-color: #5c647b;
+  color: white;
+}
+.label-Rust{
+  background-color: black;
   color: white;
 }
 

@@ -72,6 +72,10 @@
                     <li>LINE API EXPERTを中心としたLINE Developer Communityメンバーの共著で執筆</li>
                     <li>私は「第二章 LINEログイン」を執筆した</li>
                   </ul>
+                  <li><a href="https://techbookfest.org/product/3EUnJ5WbexvCDyMgSJS1qb" target="_blank" rel="noopener noreferrer">Hands-on LINEBOT（同人誌）</a></li>
+                  <ul>
+                    <li>技術書典13で頒布したLINEBotの入門書</li>
+                  </ul>
                 </ul>
               </p>
             </div>
@@ -98,64 +102,15 @@
                     <li>FIDO2, WebAuthn</li>
                   </ul>
                   <li>インフラ, ネットワーク</li>
-                  <li>テスト駆動開発</li>
-                  <li>クリーンアーキテクチャ</li>
                 </ul>
               </p>
             </div>
-            <!-- <div class="row">
-              <h3>研究分野</h3>
-              <br>
-              <p>
-                <ul>
-                  <li>Self-Sovereign Identity</li>
-                  <li>Decentralized Identity</li>
-                  <li>Verifiable Credentials</li>
-                </ul>
-              </p>
-            </div> -->
             <div class="row">
               <h3>職歴</h3>
               <br>
-              <!-- <p>
-                <table>
-                  <tbody>
-                    <tr>
-                      <td>2022/03~2022/06</td>
-                      <td><a href="https://www.pixiv.co.jp/" target="_blank" rel="noopener noreferrer">ピクシブ株式会社</a></td>
-                      <td>長期インターンシップ（インフラ部SAチーム）</td>
-                    </tr>
-                    <tr>
-                      <td>2022/02~2022/03</td>
-                      <td><a href="https://www.yumemi.co.jp/" target="blank" rel="noopener">株式会社ゆめみ</a></td>
-                      <td>インターンシップ（Rustを使ったWebアプリケーション開発）</td>
-                    </tr>
-                    <tr>
-                      <td>2021/08</td>
-                      <td><a href="https://about.yahoo.co.jp/" target="blank" rel="noopener">Yahoo Japan Corporation</a></td>
-                      <td>インターンシップ（認証・アクセス制御に関するプロダクト開発）</td>
-                    </tr>
-                    <tr>
-                      <td>2021/07~2022/03</td>
-                      <td><a href="https://thedott.io/" target="blank" rel="noopener">株式会社 dott</a></td>
-                      <td><a href="https://fukushima-covid19.web.app/" target="_blank" rel="noopener noreferrer">福島県新型コロナウイルス対策サイト</a>保守業務</td>
-                    </tr>
-                    <tr>
-                      <td>2021/01~2021/05</td>
-                      <td><a href="https://lastrust.io/" target="blank" rel="noopener">LasTrust株式会社</a></td>
-                      <td> インターンシップ（R&D）</td>
-                    </tr>
-                    <tr>
-                      <td>2018/12~2019/12</td>
-                      <td><a href="https://www.i-kasa.com/" target="blank" rel="noopener">株式会社 Nature Innovation Group（アイカサ）</a></td>
-                      <td>バックエンド開発</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </p> -->
               <p>
                 <ul>
-                  <li>2022/09~ <a href="https://andpad.co.jp/" target="_blank" rel="noopener noreferrer">株式会社アンドパッド</a> インターンシップ</li>
+                  <li>2022/09~2022/11 <a href="https://andpad.co.jp/" target="_blank" rel="noopener noreferrer">株式会社アンドパッド</a> インターンシップ</li>
                   <li>2022/03~2022/06 <a href="https://www.pixiv.co.jp/" target="_blank" rel="noopener noreferrer">ピクシブ株式会社</a> 長期インターンシップ（インフラ部SAチーム）</li>
                   <li>2022/02~2022/03 <a href="https://www.yumemi.co.jp/" target="blank" rel="noopener">株式会社ゆめみ</a> インターンシップ（Rustを使ったWebアプリケーション開発）</li>
                   <li>2021/08 <a href="https://about.yahoo.co.jp/" target="blank" rel="noopener">Yahoo Japan Corporation</a> インターンシップ（認証・アクセス制御に関するプロダクト開発）</li>
@@ -191,7 +146,9 @@
           <br>
           <ul>
             <li>
-              Rust
+              <nuxt-link to="/products/?tag=Rust">
+                Rust
+              </nuxt-link>
             </li>
             <ul>
               <li>actix-web, askama, SeaORMを使ったアプリケーション開発</li>
@@ -275,6 +232,9 @@
             <ul>
               <li>Vue.js, Nuxt.jsと組み合わせたフロントエンド開発</li>
             </ul>
+            <li>
+              React.js
+            </li>
           </ul>
           <!-- <div class="row row-cols-md-4 row-cols-sm-2 row-cols-1">
             <HomeCard v-for="framework in frameworks" :key="framework.title" :data="framework" />
@@ -297,6 +257,7 @@
           <li>Route53を用いたDNS設定</li>
           <li>Cognito, API Gateway, Lambdaを用いたユーザー認証及びAPI認証</li>
         </ul>
+        <p>etc...</p>
         <!-- <div class="row row-cols-md-4 row-cols-sm-2 row-cols-1">
           <HomeCard v-for="cloud in clouds" :key="cloud.title" :data="cloud" />
         </div> -->
@@ -312,6 +273,7 @@
           <li>OpenID Connect RPの実装</li>
           <li>FIDO2(Web Authentication API)を用いたユーザー認証アプリケーションの実装</li>
         </ul>
+        <p>etc...</p>
         <!-- <div class="row row-cols-md-4 row-cols-sm-2 row-cols-1">
           <HomeCard v-for="other in others" :key="other.title" :data="other" />
         </div> -->
@@ -333,6 +295,12 @@ export default {
         image: 'https://shinbunbun.info/images/ogp.png'
       },
       collegeActivities: [
+        {
+          date: '2022/04~',
+          url: 'https://blog.ascs.dev/',
+          title: 'Zli',
+          description: ' 副代表'
+        },
         {
           date: '2021/09~2022/03',
           url: 'https://blog.ascs.dev/',

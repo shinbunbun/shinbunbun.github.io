@@ -158,6 +158,10 @@ a{
   background-color: #5c647b;
   color: white;
 }
+.Rust{
+  background-color: black;
+  color: white;
+}
 
 @media screen and (max-width:576px) {
   .card-img-top{
