@@ -104,6 +104,17 @@ export default {
       narrowDownTags: ['WebApp', 'LINE Bot', 'Go', 'Node.js', 'TypeScript', 'Nuxt.js', 'Vue.js', 'Bootstrap', 'Vuetify', 'AWS', 'serverless', 'CI/CD', 'GAS', 'Clova', 'Alexa', 'IoT', 'Network', 'Others', 'Elm', 'Rust'],
       products: [
         {
+          src: '/images/secp256k1-rust.png',
+          title: 'secp256k1-rust',
+          tags: ['Rust'],
+          date: '2022年9月',
+          github: 'https://github.com/shinbunbun/secp256k1-rust',
+          slide: 'https://docs.google.com/presentation/d/15cTM-K8qXES7I6ic2Z7EGjvDPerc6r0_EzZxlQxsEQE/edit?usp=sharing',
+          description: `
+         Rustで楕円曲線暗号の署名アルゴリズム（secp256k1）をフルスクラッチ実装した
+          `
+        },
+        {
           src: '/images/line-bot-example-rust.png',
           title: 'Rust製LINEBotSDK',
           tags: ['Rust', 'CI/CD'],
@@ -111,7 +122,7 @@ export default {
           github: 'https://github.com/shinbunbun/line-bot-example-rust',
           description: `
          Rustで製作したLINEBot SDKライブラリ。
-         これを使ったLINEBotの作り方を<a href="https://techbookfest.org/product/svQshiEgMHryYqmNxXKV6u" target="blank" rel="noopener">ZliTechBook V3</a>で紹介しています。
+         これを使ったLINEBotの作り方を<a href="https://techbookfest.org/product/svQshiEgMHryYqmNxXKV6u" target="blank" rel="noopener">ZliTechBook V3</a>で紹介している。
           `
         },
         {
