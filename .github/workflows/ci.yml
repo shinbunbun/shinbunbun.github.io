@@ -7,14 +7,12 @@ on:
 
 jobs:
   build-deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
 
     - name: setup node
       uses: actions/setup-node@v1
-      with:
-        node-version: '10.x'
 
     - name: Cache dependencies
       uses: actions/cache@v1
