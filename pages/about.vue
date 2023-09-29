@@ -137,6 +137,19 @@
                 </table>
               </p>
             </div>
+            <div class="row">
+              <h3>その他の活動</h3>
+              <p>
+                <table>
+                  <tbody>
+                    <tr v-for="otherActivity in otherActivities" :key="otherActivity.description">
+                      <td>{{ otherActivity.date }}</td>
+                      <td><a :href="otherActivity.url" target="blank" rel="noopener">{{ otherActivity.title }}</a>{{ otherActivity.description }}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </p>
+            </div>
           </div>
         </div>
         <div class="py-2" />
@@ -328,6 +341,20 @@ export default {
           url: 'https://zli.works/',
           title: 'Zli',
           description: '（LTサークル） 運営メンバー'
+        }
+      ],
+      otherActivities: [
+        {
+          date: '2023/08',
+          url: 'https://www.ipa.go.jp/jinzai/security-camp/2023/zenkoku/index.html',
+          title: 'セキュリティキャンプ全国大会 2023 ',
+          description: 'Y3 分散合意ゼミ 参加'
+        },
+        {
+          date: '2023/06~',
+          url: 'https://labs.cybozu.co.jp/youth.html',
+          title: 'サイボウズ・ラボユース ',
+          description: 'システムソフトウェア研究開発ゼミ ラボユース生 採択'
         }
       ],
       languages: [
